@@ -17,7 +17,7 @@
   "addendum": {
     "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
     "hero_image": "images/INLINE_CODE_2.jpg",
-    "instructor_actions": [
+    "actions": [
       { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
       { "label": "FACILITY ASSISTANCE", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
     ],
