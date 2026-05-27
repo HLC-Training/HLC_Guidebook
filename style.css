@@ -5,14 +5,14 @@
     --urgency: #C8FF08;
 }
 
-body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(--night); background-color: var(--day); }
+body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(--night); }
 
 .hero {
     height: 70vh;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; /* Pushes content to bottom */
     padding: 3rem;
 }
 
@@ -20,20 +20,26 @@ body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(
     color: var(--day);
     background: rgba(0, 94, 96, 0.9);
     padding: 1.5rem 2rem;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 3rem; /* Extra space to clear the sign */
     text-transform: uppercase;
 }
 
-section { padding: 4rem 10%; }
-
-.action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem 10%; }
-
-.rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-
-.card { border: 2px solid var(--evergreen); padding: 1.5rem; }
-
-.btn { display: block; text-align: center; padding: 1.5rem; background: var(--evergreen); color: var(--day); text-decoration: none; font-weight: bold; text-transform: uppercase; }
-.btn:hover { background: var(--urgency); color: var(--night); }
+section { padding: 3rem 10%; }
 
 h2 { color: var(--evergreen); border-left: 5px solid var(--urgency); padding-left: 1rem; }
+
+/* REVERTED TO LIST FORMAT */
+#rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+#rules-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.btn { display: block; text-align: center; padding: 1rem; background: var(--evergreen); color: var(--day); text-decoration: none; font-weight: bold; }
