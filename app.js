@@ -1,36 +1,21 @@
 fetch('data.json')
     .then(res => res.json())
     .then(data => {
-        document.querySelector('.hero').style.backgroundImage = `url('${data.hero.image}')`;
-        document.getElementById('welcome-title').innerText = data.hero.title;
-        
-        const actionGrid = document.getElementById('actions');
-        data.actions.forEach(act => {
-            const btn = document.createElement('a');
-            btn.className = 'btn';
-            btn.href = act.url;
-            btn.innerText = act.label;
-            actionGrid.appendChild(btn);
-        });
+        // Logic to detect page
+        const isAddendum = window.location.pathname.includes('addendum.html');
+        const content = isAddendum ? data.addendum : data.guidebook;
 
-        // This now builds an <ul> and <li> list
-        const rulesList = document.getElementById('rules-list');
-        const ul = document.createElement('ul');
-        data.rules.forEach(rule => {
+        // Apply Hero Title and Image
+        document.getElementById('welcome-title').innerText = content.hero_title;
+        document.querySelector('.hero').style.backgroundImage = `url('${content.hero_image}')`;
+
+        // Load Actions or Rules based on page
+        const container = document.getElementById('rules-list');
+        const items = isAddendum ? content.checklist : content.rules;
+        
+        items.forEach(item => {
             const li = document.createElement('li');
-            li.innerText = rule;
-            ul.appendChild(li);
+            li.innerText = item;
+            container.appendChild(li);
         });
-        rulesList.appendChild(ul);
     });
-// Render Safety Features
-const safetySection = document.getElementById('safety-features');
-const ruleGrid = document.createElement('div');
-ruleGrid.className = 'action-grid';
-data.safety_features.rules.forEach(rule => {
-    const span = document.createElement('span');
-    span.className = 'card';
-    span.innerText = rule;
-    ruleGrid.appendChild(span);
-});
-safetySection.appendChild(ruleGrid);
