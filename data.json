@@ -13,6 +13,16 @@
       "Follow posted 10 mph speed limit on campus.",
       "PPE must be worn at all times in lab and bay areas.",
       "Photography is not permitted without authorization."
+    ],
+    "safety_content": {
+      "title": "SAFETY & EHS POLICY",
+      "text": "We start work only when it is safe and stop when it's not. We are dedicated to safeguarding people, communities, and the environment.",
+      "rules": ["Mechanical Lifting", "Work at Height", "Driving Safety", "Line of Fire", "Energy Isolation", "Live Electrical"]
+    },
+    "campus_info": [
+      { "label": "Wi-Fi", "value": "Network: 'Internet' | Password: Acc3ssGr@nted" },
+      { "label": "Café", "value": "Abby's Café | Mon-Fri, 7am – 1pm" },
+      { "label": "Printing", "value": "Building 1, 1st Floor" }
     ]
   },
   "addendum": {
