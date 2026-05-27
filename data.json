@@ -15,3 +15,15 @@
     "Photography is not permitted without authorization."
   ]
 }
+{
+  ...
+  "safety_features": {
+    "title": "GE VERNOVA EHS COMMITMENT",
+    "policy_summary": "We safeguard people, communities, and the environment by identifying risks and starting work only when it is safe.",
+    "rules": [
+      "Mechanical Lifting", "Work at Height", "Driving Safety", 
+      "Line of Fire", "Work Authorization", "Confined Space", 
+      "Energy Isolation", "Live Electrical", "Fire and Explosion"
+    ]
+  }
+}
