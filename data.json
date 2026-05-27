@@ -36,6 +36,13 @@
       { "label": "Printing", "value": "Building 1, 1st Floor" }
     ]
   },
+  "directory": [
+  { "dept": "EMERGENCY & SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774" },
+  { "dept": "EMERGENCY & SAFETY", "name": "HLC Status Line", "phone": "+1-713-672-3521" },
+  { "dept": "SITE OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513" },
+  { "dept": "TRAINING SUPPORT", "name": "Jim Rosen (Delivery Mgr)", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" },
+  { "dept": "TRAINING SUPPORT", "name": "Marisol Guidry (Enrollment)", "phone": "+1-832-998-4104", "email": "Marisol.Guidry@gevernova.com" }
+]
   "addendum": {
     "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
     "hero_image": "images/INLINE_CODE_2.jpg",
