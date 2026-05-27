@@ -4,8 +4,8 @@
     "hero_image": "images/INLINE_CODE_1.jpg",
     "actions": [
       { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-      { "label": "REPORT CONCERN / STOP WORK", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
-      { "label": "REQUEST FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+      { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
     ],
     "list_title": "QUICK SITE RULES",
     "items": [
@@ -31,25 +31,10 @@
       ]
     },
     "directory": [
-      { "dept": "SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774" },
-      { "dept": "OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513" },
-      { "dept": "TRAINING", "name": "Jim Rosen (Manager)", "phone": "+1-832-714-2496" }
+      { "dept": "SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774", "email": "Lizlee.galley1@gevernova.com" },
+      { "dept": "OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513", "email": "" },
+      { "dept": "TRAINING", "name": "Jim Rosen", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" }
     ]
   },
-  "addendum": {
-    "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
-    "hero_image": "images/INLINE_CODE_2.jpg",
-    "actions": [
-      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-      { "label": "FACILITY ASSISTANCE", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
-    ],
-    "list_title": "CLASSROOM CLOSING CHECKLIST",
-    "items": [
-      "Whiteboard: Erased and cleaned.",
-      "Projector: Turned off and screen retracted.",
-      "Laptops: Closed, unplugged, and stored securely.",
-      "Classroom: Tables aligned and chairs pushed in.",
-      "Security: Doors locked and lights turned off."
-    ]
-  }
+  "addendum": { ... }
 }
