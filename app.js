@@ -23,3 +23,14 @@ fetch('data.json')
         });
         rulesList.appendChild(ul);
     });
+// Render Safety Features
+const safetySection = document.getElementById('safety-features');
+const ruleGrid = document.createElement('div');
+ruleGrid.className = 'action-grid';
+data.safety_features.rules.forEach(rule => {
+    const span = document.createElement('span');
+    span.className = 'card';
+    span.innerText = rule;
+    ruleGrid.appendChild(span);
+});
+safetySection.appendChild(ruleGrid);
