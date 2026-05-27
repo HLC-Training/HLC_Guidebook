@@ -44,6 +44,19 @@ fetch('data.json')
     a.target = "_blank";
     a.innerHTML = `<img src="images/${r.icon}" alt="${r.label}"><p>${r.label}</p>`;
     rulesGrid.appendChild(a);
+                // Render Contacts
+const contactList = document.getElementById('contact-list');
+data.guidebook.directory.forEach(person => {
+    const div = document.createElement('div');
+    div.className = 'card contact-card';
+    div.innerHTML = `
+        <h4 style="margin-top:0; color:var(--evergreen);">${person.dept}</h4>
+        <p style="font-weight:bold; margin-bottom:5px;">${person.name}</p>
+        <a href="tel:${person.phone}" class="btn" style="padding:0.5rem; font-size:0.8rem;">CALL ${person.phone}</a>
+        ${person.email ? `<br><a href="mailto:${person.email}" style="font-size:0.8rem;">EMAIL</a>` : ''}
+    `;
+    contactList.appendChild(div);
+});
 });
         }
     });
