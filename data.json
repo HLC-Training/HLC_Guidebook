@@ -7,7 +7,8 @@
       { "label": "REPORT CONCERN / STOP WORK", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
       { "label": "REQUEST FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
     ],
-    "rules": [
+    "list_title": "QUICK SITE RULES",
+    "items": [
       "Emergency: Dial 911 immediately.",
       "Follow posted 10 mph speed limit on campus.",
       "PPE must be worn at all times in lab and bay areas.",
@@ -19,9 +20,11 @@
     "hero_image": "images/INLINE_CODE_2.jpg",
     "actions": [
       { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-      { "label": "FACILITY ASSISTANCE", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+      { "label": "REPORT CONCERN / STOP WORK", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "REQUEST FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
     ],
-    "checklist": [
+    "list_title": "CLASSROOM CLOSING CHECKLIST",
+    "items": [
       "Whiteboard: Erased and cleaned.",
       "Projector: Turned off and screen retracted.",
       "Laptops: Closed, unplugged, and stored securely.",
