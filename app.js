@@ -24,35 +24,17 @@ fetch('data.json')
 
         if (!isAddendum) {
             document.getElementById('safety-section').style.display = 'block';
-            document.getElementById('campus-section').style.display = 'block';
             document.getElementById('safety-title').innerText = data.guidebook.safety_content.title;
             document.getElementById('safety-text').innerText = data.guidebook.safety_content.text;
+            
             const rulesGrid = document.getElementById('rules-grid');
             data.guidebook.safety_content.rules.forEach(r => {
-                const div = document.createElement('div'); div.className = 'card'; div.innerText = r;
-                rulesGrid.appendChild(div);
-            });
-            const campusList = document.getElementById('campus-list');
-            data.guidebook.campus_info.forEach(item => {
-                const div = document.createElement('div'); div.className = 'card';
-                div.innerHTML = `<strong>${item.label}</strong><br>${item.value}`;
-                campusList.appendChild(div);
+                const a = document.createElement('a');
+                a.className = 'card rule-card';
+                a.href = data.guidebook.safety_content.link;
+                a.target = "_blank";
+                a.innerHTML = `<img src="images/${r.icon}" style="width:50px; height:50px;"> <p>${r.label}</p>`;
+                rulesGrid.appendChild(a);
             });
         }
     });
-// Render Life Saving Rules
-const safetySection = document.getElementById('safety-section');
-const ruleGrid = document.getElementById('rules-grid');
-ruleGrid.innerHTML = ''; // Clear previous
-
-data.guidebook.safety_content.rules.forEach(rule => {
-    const a = document.createElement('a');
-    a.href = data.guidebook.safety_content.link;
-    a.target = "_blank";
-    a.className = 'card rule-card';
-    a.innerHTML = `
-        <img src="images/${rule.icon}" alt="${rule.label}" style="width: 60px; height: 60px; margin-bottom: 10px;">
-        <p style="font-weight:bold; font-size: 0.9rem;">${rule.label}</p>
-    `;
-    ruleGrid.appendChild(a);
-});
