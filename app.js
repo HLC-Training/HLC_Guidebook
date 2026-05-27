@@ -38,13 +38,12 @@ fetch('data.json')
             rulesGrid.innerHTML = ''; // Clear
             
             data.guidebook.safety_content.rules.forEach(r => {
-                const a = document.createElement('a');
-                a.className = 'card rule-card';
-                a.href = data.guidebook.safety_content.link;
-                a.target = "_blank";
-                // Fixed the object access here:
-                a.innerHTML = `<img src="images/${r.icon}" style="width:50px; height:50px;"> <p>${r.label}</p>`;
-                rulesGrid.appendChild(a);
-            });
+    const a = document.createElement('a');
+    a.className = 'rule-card'; // Use the new clean CSS class
+    a.href = data.guidebook.safety_content.link;
+    a.target = "_blank";
+    a.innerHTML = `<img src="images/${r.icon}" alt="${r.label}"><p>${r.label}</p>`;
+    rulesGrid.appendChild(a);
+});
         }
     });
