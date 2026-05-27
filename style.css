@@ -63,3 +63,13 @@ h2 { color: var(--evergreen); border-left: 5px solid var(--urgency); padding-lef
 
 ul { list-style: none; padding: 0; }
 li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.1rem; }
+.contact-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    background: #fdfdfd;
+}
+.contact-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--evergreen);
+}
