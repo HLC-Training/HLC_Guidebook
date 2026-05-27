@@ -36,5 +36,21 @@
       { "dept": "TRAINING", "name": "Jim Rosen", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" }
     ]
   },
-  "addendum": { ... }
+  "addendum": {
+    "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
+    "hero_image": "images/INLINE_CODE_2.jpg",
+    "actions": [
+      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
+      { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+    ],
+    "list_title": "CLASSROOM CLOSING CHECKLIST",
+    "items": [
+      "Whiteboard: Erased and cleaned.",
+      "Projector: Turned off and screen retracted.",
+      "Laptops: Closed, unplugged, and stored securely.",
+      "Classroom: Tables aligned and chairs pushed in.",
+      "Security: Doors locked and lights turned off."
+    ]
+  }
 }
