@@ -1,29 +1,32 @@
 {
-  "hero": {
-    "title": "WELCOME TO THE HOUSTON LEARNING CENTER",
-    "image": "images/INLINE_CODE_1.jpg"
-  },
-  "actions": [
-    { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-    { "label": "REPORT CONCERN / STOP WORK", "url": "#" },
-    { "label": "REQUEST FACILITY HELP", "url": "#" }
-  ],
-  "rules": [
-    "Emergency: Dial 911 immediately.",
-    "Follow posted 10 mph speed limit on campus.",
-    "PPE must be worn at all times in lab and bay areas.",
-    "Photography is not permitted without authorization."
-  ]
-}
-{
-  ...
-  "safety_features": {
-    "title": "GE VERNOVA EHS COMMITMENT",
-    "policy_summary": "We safeguard people, communities, and the environment by identifying risks and starting work only when it is safe.",
+  "guidebook": {
+    "hero_title": "WELCOME TO THE HOUSTON LEARNING CENTER",
+    "hero_image": "images/INLINE_CODE_1.jpg",
+    "actions": [
+      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
+      { "label": "REPORT CONCERN / STOP WORK", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "REQUEST FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+    ],
     "rules": [
-      "Mechanical Lifting", "Work at Height", "Driving Safety", 
-      "Line of Fire", "Work Authorization", "Confined Space", 
-      "Energy Isolation", "Live Electrical", "Fire and Explosion"
+      "Emergency: Dial 911 immediately.",
+      "Follow posted 10 mph speed limit on campus.",
+      "PPE must be worn at all times in lab and bay areas.",
+      "Photography is not permitted without authorization."
+    ]
+  },
+  "addendum": {
+    "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
+    "hero_image": "images/INLINE_CODE_2.jpg",
+    "instructor_actions": [
+      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
+      { "label": "FACILITY ASSISTANCE", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+    ],
+    "checklist": [
+      "Whiteboard: Erased and cleaned.",
+      "Projector: Turned off and screen retracted.",
+      "Laptops: Closed, unplugged, and stored securely.",
+      "Classroom: Tables aligned and chairs pushed in.",
+      "Security: Doors locked and lights turned off."
     ]
   }
 }
