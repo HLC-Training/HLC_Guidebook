@@ -13,11 +13,13 @@ fetch('data.json')
             actionGrid.appendChild(btn);
         });
 
+        // This now builds an <ul> and <li> list
         const rulesList = document.getElementById('rules-list');
+        const ul = document.createElement('ul');
         data.rules.forEach(rule => {
-            const div = document.createElement('div');
-            div.className = 'card';
-            div.innerText = rule;
-            rulesList.appendChild(div);
+            const li = document.createElement('li');
+            li.innerText = rule;
+            ul.appendChild(li);
         });
+        rulesList.appendChild(ul);
     });
