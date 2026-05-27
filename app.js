@@ -47,12 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     rulesGrid.appendChild(a);
                 });
 
-                data.guidebook.directory.forEach(p => {
-                    const div = document.createElement('div'); 
-                    div.className = 'card';
-                    div.innerHTML = `<strong>${p.dept}</strong><br>${p.name}<br><a href="tel:${p.phone}">${p.phone}</a>`;
-                    document.getElementById('contact-list').appendChild(div);
-                });
+         data.guidebook.directory.forEach(p => {
+    const div = document.createElement('div');
+    div.className = 'card contact-card';
+    div.innerHTML = `
+        <h4 style="color:var(--evergreen); margin:0 0 10px 0;">${p.dept}</h4>
+        <p style="font-weight:bold; margin:0;">${p.name}</p>
+        <a href="tel:${p.phone}" class="contact-btn">📞 ${p.phone}</a>
+        ${p.email ? `<br><a href="mailto:${p.email}" class="contact-btn">✉ EMAIL</a>` : ''}
+    `;
+    document.getElementById('contact-list').appendChild(div);
+});
             }
         })
         .catch(err => console.error("Error loading data:", err));
