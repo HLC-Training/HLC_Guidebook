@@ -73,3 +73,19 @@ li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.1rem; }
     margin-top: 10px;
     color: var(--evergreen);
 }
+.contact-card {
+    border: 1px solid #ddd !important;
+    padding: 1.5rem !important;
+    text-align: left !important;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    color: var(--night);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
