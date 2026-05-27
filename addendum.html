@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>HLC Training</title>
 </head>
@@ -11,8 +12,19 @@
 
     <section id="action-panel" class="action-grid"></section>
 
+    <section id="safety-section" style="display:none;">
+        <h2 id="safety-title"></h2>
+        <p id="safety-text"></p>
+        <div id="rules-grid" class="action-grid"></div>
+    </section>
+
+    <section id="campus-section" style="display:none;">
+        <h2>CAMPUS & LOGISTICS</h2>
+        <div id="campus-list" class="rules-grid"></div>
+    </section>
+
     <section>
-        <h2 id="list-title">INFORMATION & RULES</h2>
+        <h2 id="list-title"></h2>
         <ul id="list-container"></ul>
     </section>
 
