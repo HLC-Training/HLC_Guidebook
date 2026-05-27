@@ -19,15 +19,15 @@
   "text": "We start work only when it is safe and stop when it's not.",
   "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
   "rules": [
-    { "label": "CONFINED SPACE", "icon": "Confined-Space.ico" },
-    { "label": "DRIVING SAFETY", "icon": "Driving-Safety.ico" },
-    { "label": "ENERGY ISOLATION", "icon": "Energy-Isolation.ico" },
-    { "label": "FIRE AND EXPLOSION", "icon": "Fire-and-Explosion.ico" },
-    { "label": "LINE OF FIRE", "icon": "Line-of-Fire.ico" },
-    { "label": "LIVE ELECTRICAL", "icon": "Live-Electrical.ico" },
-    { "label": "MECHANICAL LIFTING", "icon": "Mechanical-Lifting.ico" },
-    { "label": "WORK AT HEIGHT", "icon": "Work-at-Height.ico" },
-    { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.ico" }
+    { "label": "CONFINED SPACE", "icon": "Confined-Space.svg" },
+    { "label": "DRIVING SAFETY", "icon": "Driving-Safety.svg" },
+    { "label": "ENERGY ISOLATION", "icon": "Energy-Isolation.svg" },
+    { "label": "FIRE AND EXPLOSION", "icon": "Fire-and-Explosion.svg" },
+    { "label": "LINE OF FIRE", "icon": "Line-of-Fire.svg" },
+    { "label": "LIVE ELECTRICAL", "icon": "Live-Electrical.svg" },
+    { "label": "MECHANICAL LIFTING", "icon": "Mechanical-Lifting.svg" },
+    { "label": "WORK AT HEIGHT", "icon": "Work-at-Height.svg" },
+    { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.svg" }
   ]
 },
     "campus_info": [
