@@ -40,3 +40,19 @@ fetch('data.json')
             });
         }
     });
+// Render Life Saving Rules
+const safetySection = document.getElementById('safety-section');
+const ruleGrid = document.getElementById('rules-grid');
+ruleGrid.innerHTML = ''; // Clear previous
+
+data.guidebook.safety_content.rules.forEach(rule => {
+    const a = document.createElement('a');
+    a.href = data.guidebook.safety_content.link;
+    a.target = "_blank";
+    a.className = 'card rule-card';
+    a.innerHTML = `
+        <img src="images/${rule.icon}" alt="${rule.label}" style="width: 60px; height: 60px; margin-bottom: 10px;">
+        <p style="font-weight:bold; font-size: 0.9rem;">${rule.label}</p>
+    `;
+    ruleGrid.appendChild(a);
+});
