@@ -1,0 +1,14 @@
+{
+  "welcome": {
+    "title": "WELCOME TO THE HOUSTON LEARNING CENTER",
+    "subtitle": "GE VERNOVA TRAINING OPERATIONS",
+    "description": "The GE Vernova Houston Learning Center is dedicated to providing high-quality training in a safe, professional, and innovative environment.",
+    "hero_img": "images/hero_exterior.jpg"
+  },
+  "site_rules": [
+    "Emergency: Dial 911 immediately.",
+    "Follow posted 10 mph speed limit on campus.",
+    "PPE must be worn at all times in lab and bay areas.",
+    "Photography is not permitted without authorization."
+  ]
+}

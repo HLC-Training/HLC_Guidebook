@@ -1,0 +1,25 @@
+:root {
+  --evergreen: #005E60;
+  --day: #FFFFFF;
+  --night: #212121;
+  --urgency: #C8FF08;
+}
+
+body { font-family: 'Inter', sans-serif; color: var(--night); }
+
+h1, h2 {
+  font-family: 'Inter', sans-serif; /* Fallback for Sons Condensed */
+  font-weight: 800;
+  color: var(--evergreen);
+  text-transform: uppercase;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
