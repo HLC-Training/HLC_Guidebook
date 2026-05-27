@@ -34,3 +34,23 @@ section { padding: 2rem 10%; }
 
 ul { list-style: none; padding: 0; }
 li { padding: 1rem; border-bottom: 1px solid #ddd; }
+.hero {
+    /* ... existing code ... */
+    background-image: linear-gradient(rgba(0, 94, 96, 0.4), rgba(0, 94, 96, 0.4)), url('images/INLINE_CODE_1.jpg');
+    align-items: flex-end; /* Keeps it at the bottom */
+}
+
+.hero-content { 
+    margin-bottom: 50px; /* Pushes the title further away from the sign */
+}
+
+.btn {
+    background-color: var(--evergreen);
+    border: 2px solid var(--evergreen);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--day);
+    color: var(--evergreen);
+}
