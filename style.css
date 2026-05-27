@@ -8,22 +8,21 @@
 body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(--night); background-color: var(--day); }
 
 .hero {
-    height: 60vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--evergreen);
+    align-items: flex-end; /* Moves text to bottom */
+    padding: 3rem;
 }
 
 .hero h1 {
     color: var(--day);
-    background: rgba(0, 94, 96, 0.85);
-    padding: 1.5rem 3rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    background: rgba(0, 94, 96, 0.85); /* Evergreen background */
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Adds space from the bottom */
+    max-width: 800px;
 }
 
 section { padding: 4rem 10%; }
