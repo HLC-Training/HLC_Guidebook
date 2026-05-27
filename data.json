@@ -30,26 +30,18 @@
         { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.svg" }
       ]
     },
-    "campus_info": [
-      { "label": "Wi-Fi", "value": "Network: 'Internet' | Password: {PASSWORD}" },
-      { "label": "Café", "value": "Abby's Café | Mon-Fri, 7am – 1pm" },
-      { "label": "Printing", "value": "Building 1, 1st Floor" }
+    "directory": [
+      { "dept": "SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774" },
+      { "dept": "OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513" },
+      { "dept": "TRAINING", "name": "Jim Rosen (Manager)", "phone": "+1-832-714-2496" }
     ]
   },
-  "directory": [
-  { "dept": "EMERGENCY & SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774" },
-  { "dept": "EMERGENCY & SAFETY", "name": "HLC Status Line", "phone": "+1-713-672-3521" },
-  { "dept": "SITE OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513" },
-  { "dept": "TRAINING SUPPORT", "name": "Jim Rosen (Delivery Mgr)", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" },
-  { "dept": "TRAINING SUPPORT", "name": "Marisol Guidry (Enrollment)", "phone": "+1-832-998-4104", "email": "Marisol.Guidry@gevernova.com" }
-]
   "addendum": {
     "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
     "hero_image": "images/INLINE_CODE_2.jpg",
     "actions": [
       { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-      { "label": "REPORT CONCERN / STOP WORK", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
-      { "label": "REQUEST FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+      { "label": "FACILITY ASSISTANCE", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
     ],
     "list_title": "CLASSROOM CLOSING CHECKLIST",
     "items": [
