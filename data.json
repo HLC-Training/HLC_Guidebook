@@ -14,11 +14,22 @@
       "PPE must be worn at all times in lab and bay areas.",
       "Photography is not permitted without authorization."
     ],
-    "safety_content": {
-      "title": "SAFETY & EHS POLICY",
-      "text": "We start work only when it is safe and stop when it's not. We are dedicated to safeguarding people, communities, and the environment.",
-      "rules": ["Mechanical Lifting", "Work at Height", "Driving Safety", "Line of Fire", "Energy Isolation", "Live Electrical"]
-    },
+ "safety_content": {
+  "title": "LIFE SAVING RULES",
+  "text": "We start work only when it is safe and stop when it's not.",
+  "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
+  "rules": [
+    { "label": "CONFINED SPACE", "icon": "Confined-Space.ico" },
+    { "label": "DRIVING SAFETY", "icon": "Driving-Safety.ico" },
+    { "label": "ENERGY ISOLATION", "icon": "Energy-Isolation.ico" },
+    { "label": "FIRE AND EXPLOSION", "icon": "Fire-and-Explosion.ico" },
+    { "label": "LINE OF FIRE", "icon": "Line-of-Fire.ico" },
+    { "label": "LIVE ELECTRICAL", "icon": "Live-Electrical.ico" },
+    { "label": "MECHANICAL LIFTING", "icon": "Mechanical-Lifting.ico" },
+    { "label": "WORK AT HEIGHT", "icon": "Work-at-Height.ico" },
+    { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.ico" }
+  ]
+},
     "campus_info": [
       { "label": "Wi-Fi", "value": "Network: 'Internet' | Password: Acc3ssGr@nted" },
       { "label": "Café", "value": "Abby's Café | Mon-Fri, 7am – 1pm" },
