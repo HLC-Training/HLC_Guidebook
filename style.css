@@ -1,45 +1,57 @@
-:root { --evergreen: #005E60; --day: #FFFFFF; --night: #212121; --urgency: #C8FF08; }
+:root {
+    --evergreen: #005E60;
+    --day: #FFFFFF;
+    --night: #212121;
+    --urgency: #C8FF08;
+}
+
 body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(--night); }
+
 .hero { height: 60vh; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 3rem; }
 .hero h1 { color: var(--day); background: rgba(0, 94, 96, 0.9); padding: 1.5rem 2rem; margin-bottom: 3rem; text-transform: uppercase; }
+
 section { padding: 3rem 10%; }
-.action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 2rem 10%; }
-.btn { display: block; text-align: center; padding: 1.5rem; background: var(--evergreen); color: var(--day); text-decoration: none; font-weight: bold; }
-ul { list-style: none; padding: 0; }
-li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.1rem; }
 h2 { color: var(--evergreen); border-left: 5px solid var(--urgency); padding-left: 1rem; }
-.hero {
-    /* ... existing code ... */
-    background-image: linear-gradient(rgba(0, 94, 96, 0.4), rgba(0, 94, 96, 0.4)), url('images/INLINE_CODE_1.jpg');
-    align-items: flex-end; /* Keeps it at the bottom */
+
+/* The Professional Rules Grid */
+#rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
 }
 
-.hero-content { 
-    margin-bottom: 50px; /* Pushes the title further away from the sign */
-}
-
-.btn {
-    background-color: var(--evergreen);
-    border: 2px solid var(--evergreen);
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--day);
-    color: var(--evergreen);
-}
 .rule-card {
     text-align: center;
     text-decoration: none;
     color: var(--night);
-    border: 2px solid var(--evergreen);
-    padding: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: background 0.3s;
+    justify-content: center;
 }
 
 .rule-card:hover {
-    background-color: var(--urgency);
+    border-color: var(--evergreen);
+    background-color: #f9f9f9;
 }
+
+.rule-card img {
+    width: 80px !important; /* Made icons bigger */
+    height: 80px !important;
+    margin-bottom: 15px;
+}
+
+.rule-card p {
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.btn { display: block; text-align: center; padding: 1.5rem; background: var(--evergreen); color: var(--day); text-decoration: none; font-weight: bold; }
+ul { list-style: none; padding: 0; }
+li { padding: 1rem; border-bottom: 1px solid #ddd; }
