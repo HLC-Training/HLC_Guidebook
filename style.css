@@ -1,5 +1,2817 @@
 :root {
 
+
+
+        --evergreen: #005E60;
+
+
+
+        --day: #FFFFFF;
+
+
+
+        --night: #212121;
+
+
+
+        --urgency: #C8FF08;
+
+
+
+}
+
+
+
+
+
+
+
+body {
+
+
+
+        margin: 0;
+
+
+
+        font-family: 'Inter', Segoe UI, Arial, sans-serif;
+
+
+
+        color: var(--night);
+
+
+
+}
+
+
+
+
+
+
+
+/* HERO */
+
+
+
+.hero {
+
+
+
+        height: 60vh;
+
+
+
+        background-size: cover;
+
+
+
+        background-position: center;
+
+
+
+        display: flex;
+
+
+
+        align-items: flex-end;
+
+
+
+        padding: 3rem;
+
+
+
+}
+
+
+
+.hero h1 {
+
+
+
+        color: var(--day);
+
+
+
+        background: rgba(0, 94, 96, 0.9);
+
+
+
+        padding: 1.5rem 2rem;
+
+
+
+        margin-bottom: 3rem;
+
+
+
+        text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+/* SECTIONS */
+
+
+
+section { padding: 3rem 10%; }
+
+
+
+h2 {
+
+
+
+        color: var(--evergreen);
+
+
+
+        border-left: 5px solid var(--urgency);
+
+
+
+        padding-left: 1rem;
+
+
+
+        margin-bottom: 2rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* ACTION PANEL */
+
+
+
+#action-panel {
+
+
+
+        display: grid;
+
+
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+
+
+        gap: 20px;
+
+
+
+        padding: 2rem 10%;
+
+
+
+        background-color: var(--day);
+
+
+
+}
+
+
+
+
+
+
+
+/* BUTTONS */
+
+
+
+.btn {
+
+
+
+        display: block;
+
+
+
+        text-align: center;
+
+
+
+        padding: 1.5rem;
+
+
+
+        background: var(--evergreen);
+
+
+
+        color: var(--day);
+
+
+
+        text-decoration: none;
+
+
+
+        font-weight: bold;
+
+
+
+        text-transform: uppercase;
+
+
+
+        transition: 0.3s;
+
+
+
+        border: 2px solid var(--evergreen);
+
+
+
+}
+
+
+
+.btn:hover {
+
+
+
+        background: var(--urgency);
+
+
+
+        color: var(--night);
+
+
+
+        border-color: var(--night);
+
+
+
+}
+
+
+
+
+
+
+
+/* RULES GRID */
+
+
+
+#rules-grid {
+
+
+
+        display: grid;
+
+
+
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+
+
+        gap: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+/* BASE CARD - fixes missing .card class */
+
+
+
+.card {
+
+
+
+        background-color: var(--day);
+
+
+
+        border: 1px solid #ddd;
+
+
+
+        padding: 1rem;
+
+
+
+        transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+/* RULE CARDS */
+
+
+
+.rule-card {
+
+
+
+        text-align: center;
+
+
+
+        text-decoration: none;
+
+
+
+        color: var(--night);
+
+
+
+        padding: 2rem 1rem;
+
+
+
+        display: flex;
+
+
+
+        flex-direction: column;
+
+
+
+        align-items: center;
+
+
+
+        justify-content: center;
+
+
+
+}
+
+
+
+.rule-card:hover {
+
+
+
+        border-color: var(--evergreen);
+
+
+
+        background-color: #f0fafa;
+
+
+
+        transform: translateY(-2px);
+
+
+
+        box-shadow: 0 4px 12px rgba(0,94,96,0.15);
+
+
+
+}
+
+
+
+.rule-card img { width: 60px; height: 60px; margin-bottom: 12px; }
+
+
+
+.rule-card p { font-weight: 700; font-size: 0.8rem; margin: 0; text-transform: uppercase; letter-spacing: 0.04em; }
+
+
+
+
+
+
+
+/* LISTS */
+
+
+
+ul { list-style: none; padding: 0; }
+
+
+
+li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.05rem; }
+
+
+
+li:last-child { border-bottom: none; }
+
+
+
+
+
+
+
+/* CONTACT CARDS - merged and cleaned */
+
+
+
+.contact-card {
+
+
+
+        border: 1px solid #ddd;
+
+
+
+        padding: 1.5rem;
+
+
+
+        background: #fdfdfd;
+
+
+
+        text-align: left;
+
+
+
+}
+
+
+
+.contact-card h4 {
+
+
+
+        margin: 0 0 0.25rem 0;
+
+
+
+        font-size: 0.75rem;
+
+
+
+        text-transform: uppercase;
+
+
+
+        letter-spacing: 0.08em;
+
+
+
+        color: var(--evergreen);
+
+
+
+}
+
+
+
+.contact-card p { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; }
+
+
+
+.contact-btn {
+
+
+
+        display: inline-block;
+
+
+
+        margin-top: 6px;
+
+
+
+        margin-right: 8px;
+
+
+
+        padding: 5px 12px;
+
+
+
+        background: #f0f0f0;
+
+
+
+        color: var(--night);
+
+
+
+        text-decoration: none;
+
+
+
+        font-size: 0.85rem;
+
+
+
+        border: 1px solid #ddd;
+
+
+
+        transition: 0.2s;
+
+
+
+}
+
+
+
+.contact-btn:hover { background: var(--evergreen); color: var(--day); border-color: var(--evergreen); }
+
+
+
+
+
+
+
+    /* CAMPUS MAP */
+
+
+
+#map-section { background: #f7f7f7; }
+
+
+
+#map-container {
+
+
+
+        position: relative;
+
+
+
+        width: 100%;
+
+
+
+        padding-bottom: 50%;
+
+
+
+        height: 0;
+
+
+
+        overflow: hidden;
+
+
+
+        border: 2px solid var(--evergreen);
+
+
+
+}
+
+
+
+#map-container iframe {
+
+
+
+        position: absolute;
+
+
+
+        top: 0; left: 0;
+
+
+
+        width: 100%;
+
+
+
+        height: 100%;
+
+
+
+        border: 0;
+
+
+
+}
+
+
+
+.map-legend {
+
+
+
+        display: flex;
+
+
+
+        flex-wrap: wrap;
+
+
+
+        gap: 12px;
+
+
+
+        margin-top: 1.5rem;
+
+
+
+}
+
+
+
+.map-legend-item {
+
+
+
+        display: flex;
+
+
+
+        align-items: center;
+
+
+
+        gap: 8px;
+
+
+
+        font-size: 0.9rem;
+
+
+
+        font-weight: 600;
+
+
+
+}
+
+
+
+.map-legend-dot {
+
+
+
+        width: 14px;
+
+
+
+        height: 14px;
+
+
+
+        border-radius: 50%;
+
+
+
+        flex-shrink: 0;
+
+
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+footer {
+
+
+
+        background: var(--evergreen);
+
+
+
+        color: var(--day);
+
+
+
+        text-align: center;
+
+
+
+        padding: 1.5rem;
+
+
+
+        font-size: 0.85rem;
+
+
+
+        margin-top: 3rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 768px) {
+
+
+
+        .hero { height: 45vh; padding: 1.5rem; }
+
+
+
+        .hero h1 { font-size: 1.2rem; padding: 1rem; margin-bottom: 1rem; }
+
+
+
+        section { padding: 2rem 5%; }
+
+
+
+        #action-panel { padding: 1.5rem 5%; grid-template-columns: 1fr; }
+
+
+
+        #rules-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+
+
+
+        #map-container { padding-bottom: 75%; }
+
+
+
+        h2 { font-size: 1.1rem; }
+
+
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+
+        .hero h1 { font-size: 1rem; }
+
+
+
+        #rules-grid { grid-template-columns: repeat(2, 1fr); }
+
+
+
+        .contact-card { padding: 1rem; }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Ã¢ÂÂÃ¢ÂÂ SITE RULES MODULE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
+
+
+
+
+
+
+
+#site-rules-section {
+
+
+
+        padding: 2rem 1rem;
+
+
+
+        background-color: var(--day, #FFFFFF);
+
+
+
+}
+
+
+
+
+
+
+
+#site-rules-title {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-weight: 900;
+
+
+
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+
+
+
+        text-transform: uppercase;
+
+
+
+        color: var(--evergreen, #005E60);
+
+
+
+        margin: 1.5rem 0 1rem;
+
+
+
+        letter-spacing: 0.05em;
+
+
+
+}
+
+
+
+
+
+
+
+/* Emergency Callout Banner */
+
+
+
+.emergency-callout {
+
+
+
+        background-color: var(--evergreen, #005E60);
+
+
+
+        color: var(--day, #FFFFFF);
+
+
+
+        padding: 1.25rem 1.5rem;
+
+
+
+        margin-bottom: 1.5rem;
+
+
+
+        display: flex;
+
+
+
+        flex-direction: column;
+
+
+
+        align-items: flex-start;
+
+
+
+        gap: 0.25rem;
+
+
+
+}
+
+
+
+
+
+
+
+.emergency-primary {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-weight: 900;
+
+
+
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+
+
+
+        text-transform: uppercase;
+
+
+
+        color: var(--urgency, #C8FF08);
+
+
+
+        line-height: 1;
+
+
+
+}
+
+
+
+
+
+
+
+.emergency-label {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-weight: 700;
+
+
+
+        font-size: clamp(0.85rem, 2vw, 1rem);
+
+
+
+        text-transform: uppercase;
+
+
+
+        color: var(--day, #FFFFFF);
+
+
+
+        letter-spacing: 0.08em;
+
+
+
+}
+
+
+
+
+
+
+
+.emergency-instruction {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+
+
+
+        color: rgba(255, 255, 255, 0.85);
+
+
+
+}
+
+
+
+
+
+
+
+/* Rule Cards Grid */
+
+
+
+#site-rules-grid {
+
+
+
+        display: grid;
+
+
+
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+
+
+        gap: 1rem;
+
+
+
+        margin-bottom: 2rem;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-card {
+
+
+
+        display: flex;
+
+
+
+        flex-direction: row;
+
+
+
+        align-items: flex-start;
+
+
+
+        gap: 0.75rem;
+
+
+
+        background-color: var(--day, #FFFFFF);
+
+
+
+        border: 1px solid #E0E0E0;
+
+
+
+        border-left: 4px solid var(--evergreen, #005E60);
+
+
+
+        padding: 1rem;
+
+
+
+        transition: transform 0.15s ease, border-left-color 0.15s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-card:hover {
+
+
+
+        transform: translateY(-2px);
+
+
+
+        border-left-color: var(--urgency, #C8FF08);
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-icon {
+
+
+
+        font-size: 1.5rem;
+
+
+
+        line-height: 1;
+
+
+
+        flex-shrink: 0;
+
+
+
+        margin-top: 0.1rem;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-body {
+
+
+
+        display: flex;
+
+
+
+        flex-direction: column;
+
+
+
+        gap: 0.4rem;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-category {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-weight: 700;
+
+
+
+        font-size: 0.85rem;
+
+
+
+        text-transform: uppercase;
+
+
+
+        color: var(--evergreen, #005E60);
+
+
+
+        letter-spacing: 0.06em;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-items {
+
+
+
+        margin: 0;
+
+
+
+        padding-left: 1rem;
+
+
+
+        list-style-type: disc;
+
+
+
+}
+
+
+
+
+
+
+
+.site-rule-items li {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+
+
+        color: var(--night, #212121);
+
+
+
+        line-height: 1.5;
+
+
+
+        margin-bottom: 0.2rem;
+
+
+
+        border-bottom: none;
+
+
+
+        padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+/* Non-Emergency Contacts Table */
+
+
+
+#rules-contacts {
+
+
+
+        margin-bottom: 1.5rem;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-title {
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-weight: 700;
+
+
+
+        font-size: clamp(0.85rem, 2vw, 1rem);
+
+
+
+        text-transform: uppercase;
+
+
+
+        color: var(--evergreen, #005E60);
+
+
+
+        letter-spacing: 0.06em;
+
+
+
+        margin-bottom: 0.75rem;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table {
+
+
+
+        width: 100%;
+
+
+
+        border-collapse: collapse;
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table thead tr {
+
+
+
+        background-color: var(--evergreen, #005E60);
+
+
+
+        color: var(--day, #FFFFFF);
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table thead th {
+
+
+
+        padding: 0.6rem 0.75rem;
+
+
+
+        text-align: left;
+
+
+
+        font-weight: 700;
+
+
+
+        text-transform: uppercase;
+
+
+
+        font-size: 0.75rem;
+
+
+
+        letter-spacing: 0.05em;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table tbody tr:nth-child(even) {
+
+
+
+        background-color: #F4F4F4;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table tbody td {
+
+
+
+        padding: 0.6rem 0.75rem;
+
+
+
+        color: var(--night, #212121);
+
+
+
+        border-bottom: 1px solid #E0E0E0;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table tbody td a {
+
+
+
+        color: var(--evergreen, #005E60);
+
+
+
+        text-decoration: none;
+
+
+
+        font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+#rules-contacts-table tbody td a:hover {
+
+
+
+        text-decoration: underline;
+
+
+
+}
+
+
+
+
+
+
+
+/* Signature Acknowledgement Bar */
+
+
+
+.rules-signature-bar {
+
+
+
+        background-color: var(--night, #212121);
+
+
+
+        color: var(--day, #FFFFFF);
+
+
+
+        font-family: 'Inter', sans-serif;
+
+
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+
+
+        font-style: italic;
+
+
+
+        padding: 0.85rem 1.25rem;
+
+
+
+        margin-top: 1rem;
+
+
+
+        border-left: 4px solid var(--urgency, #C8FF08);
+
+
+
+}
+
+
+
+
+
+
+
+/* Ã¢ÂÂÃ¢ÂÂ SITE RULES MOBILE BREAKPOINTS Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
+
+
+
+@media (max-width: 768px) {
+
+
+
+        #site-rules-grid {
+
+
+
+                grid-template-columns: 1fr;
+
+
+
+        }
+
+
+
+        .emergency-callout {
+
+
+
+                padding: 1rem;
+
+
+
+        }
+
+
+
+        #rules-contacts-table thead th,
+
+
+
+        #rules-contacts-table tbody td {
+
+
+
+                padding: 0.5rem;
+
+
+
+        }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+        .site-rule-card {
+
+
+
+                flex-direction: column;
+
+
+
+                gap: 0.5rem;
+
+
+
+        }
+
+
+
+        #rules-contacts-table {
+
+
+
+                display: block;
+
+
+
+                overflow-x: auto;
+
+
+
+                -webkit-overflow-scrolling: touch;
+
+
+
+        }
+
+
+
+}
+
+
+
+
+
+
+
+/* Ã¢ÂÂÃ¢ÂÂ END SITE RULES MODULE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
+
+
+
+
+
+
+
+
+
+
+
+/* -- Contacts Expandable Table -- */
+
+
+
+.contact-row-hidden {
+
+
+
+    display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.contacts-toggle-btn {
+
+
+
+    display: block;
+
+
+
+    width: 100%;
+
+
+
+    margin-top: 12px;
+
+
+
+    padding: 12px 16px;
+
+
+
+    background-color: #005E60;
+
+
+
+    color: #C8FF08;
+
+
+
+    border: none;
+
+
+
+    font-size: 0.9rem;
+
+
+
+    font-weight: 700;
+
+
+
+    text-transform: uppercase;
+
+
+
+    letter-spacing: 0.05em;
+
+
+
+    cursor: pointer;
+
+
+
+    text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.contacts-toggle-btn:hover {
+
+
+
+    background-color: #004244;
+
+
+
+}
+
+
+
+
+
+
+
+/* -- END Contacts Expandable Table -- */
+
+
+
+
+
+/* ââ PLL Directory Cards ââââââââââââââââââââââââââââââââââââââ */
+
+.pll-card-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 16px;
+
+  padding: 16px 0;
+
+}
+
+.pll-card {
+
+  background-color: #FFFFFF;
+
+  border: 2px solid #005E60;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+}
+
+.pll-card-header {
+
+  background-color: #005E60;
+
+  padding: 10px 14px;
+
+}
+
+.pll-product-line {
+
+  color: #C8FF08;
+
+  font-weight: 700;
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+
+}
+
+.pll-card-body {
+
+  padding: 12px 14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+}
+
+.pll-name {
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: #212121;
+
+  margin: 0;
+
+}
+
+.pll-contact-link {
+
+  font-size: 0.85rem;
+
+  color: #005E60;
+
+  text-decoration: none;
+
+  word-break: break-all;
+
+}
+
+.pll-contact-link:hover {
+
+  text-decoration: underline;
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .pll-card-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+        }:root {
+
+        --evergreen: #005E60;
+
+        --day: #FFFFFF;
+
+        --night: #212121;
+
+        --urgency: #C8FF08;
+
+}
+
+
+
+body {
+
+        margin: 0;
+
+        font-family: 'Inter', Segoe UI, Arial, sans-serif;
+
+        color: var(--night);
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+        height: 60vh;
+
+        background-size: cover;
+
+        background-position: center;
+
+        display: flex;
+
+        align-items: flex-end;
+
+        padding: 3rem;
+
+}
+
+.hero h1 {
+
+        color: var(--day);
+
+        background: rgba(0, 94, 96, 0.9);
+
+        padding: 1.5rem 2rem;
+
+        margin-bottom: 3rem;
+
+        text-transform: uppercase;
+
+}
+
+
+
+/* SECTIONS */
+
+section { padding: 3rem 10%; }
+
+h2 {
+
+        color: var(--evergreen);
+
+        border-left: 5px solid var(--urgency);
+
+        padding-left: 1rem;
+
+        margin-bottom: 2rem;
+
+}
+
+
+
+/* ACTION PANEL */
+
+#action-panel {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 20px;
+
+        padding: 2rem 10%;
+
+        background-color: var(--day);
+
+}
+
+
+
+/* BUTTONS */
+
+.btn {
+
+        display: block;
+
+        text-align: center;
+
+        padding: 1.5rem;
+
+        background: var(--evergreen);
+
+        color: var(--day);
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        transition: 0.3s;
+
+        border: 2px solid var(--evergreen);
+
+}
+
+.btn:hover {
+
+        background: var(--urgency);
+
+        color: var(--night);
+
+        border-color: var(--night);
+
+}
+
+
+
+/* RULES GRID */
+
+#rules-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+        gap: 20px;
+
+}
+
+
+
+/* BASE CARD - fixes missing .card class */
+
+.card {
+
+        background-color: var(--day);
+
+        border: 1px solid #ddd;
+
+        padding: 1rem;
+
+        transition: all 0.3s ease;
+
+}
+
+
+
+/* RULE CARDS */
+
+.rule-card {
+
+        text-align: center;
+
+        text-decoration: none;
+
+        color: var(--night);
+
+        padding: 2rem 1rem;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+}
+
+.rule-card:hover {
+
+        border-color: var(--evergreen);
+
+        background-color: #f0fafa;
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 4px 12px rgba(0,94,96,0.15);
+
+}
+
+.rule-card img { width: 60px; height: 60px; margin-bottom: 12px; }
+
+.rule-card p { font-weight: 700; font-size: 0.8rem; margin: 0; text-transform: uppercase; letter-spacing: 0.04em; }
+
+
+
+/* LISTS */
+
+ul { list-style: none; padding: 0; }
+
+li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.05rem; }
+
+li:last-child { border-bottom: none; }
+
+
+
+/* CONTACT CARDS - merged and cleaned */
+
+.contact-card {
+
+        border: 1px solid #ddd;
+
+        padding: 1.5rem;
+
+        background: #fdfdfd;
+
+        text-align: left;
+
+}
+
+.contact-card h4 {
+
+        margin: 0 0 0.25rem 0;
+
+        font-size: 0.75rem;
+
+        text-transform: uppercase;
+
+        letter-spacing: 0.08em;
+
+        color: var(--evergreen);
+
+}
+
+.contact-card p { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; }
+
+.contact-btn {
+
+        display: inline-block;
+
+        margin-top: 6px;
+
+        margin-right: 8px;
+
+        padding: 5px 12px;
+
+        background: #f0f0f0;
+
+        color: var(--night);
+
+        text-decoration: none;
+
+        font-size: 0.85rem;
+
+        border: 1px solid #ddd;
+
+        transition: 0.2s;
+
+}
+
+.contact-btn:hover { background: var(--evergreen); color: var(--day); border-color: var(--evergreen); }
+
+
+
+    /* CAMPUS MAP */
+
+#map-section { background: #f7f7f7; }
+
+#map-container {
+
+        position: relative;
+
+        width: 100%;
+
+        padding-bottom: 50%;
+
+        height: 0;
+
+        overflow: hidden;
+
+        border: 2px solid var(--evergreen);
+
+}
+
+#map-container iframe {
+
+        position: absolute;
+
+        top: 0; left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        border: 0;
+
+}
+
+.map-legend {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+        margin-top: 1.5rem;
+
+}
+
+.map-legend-item {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+        font-size: 0.9rem;
+
+        font-weight: 600;
+
+}
+
+.map-legend-dot {
+
+        width: 14px;
+
+        height: 14px;
+
+        border-radius: 50%;
+
+        flex-shrink: 0;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+        background: var(--evergreen);
+
+        color: var(--day);
+
+        text-align: center;
+
+        padding: 1.5rem;
+
+        font-size: 0.85rem;
+
+        margin-top: 3rem;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+        .hero { height: 45vh; padding: 1.5rem; }
+
+        .hero h1 { font-size: 1.2rem; padding: 1rem; margin-bottom: 1rem; }
+
+        section { padding: 2rem 5%; }
+
+        #action-panel { padding: 1.5rem 5%; grid-template-columns: 1fr; }
+
+        #rules-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+
+        #map-container { padding-bottom: 75%; }
+
+        h2 { font-size: 1.1rem; }
+
+}
+
+@media (max-width: 480px) {
+
+        .hero h1 { font-size: 1rem; }
+
+        #rules-grid { grid-template-columns: repeat(2, 1fr); }
+
+        .contact-card { padding: 1rem; }
+
+}
+
+
+
+
+
+/* ââ SITE RULES MODULE âââââââââââââââââââââââââââââââââââââââââââ */
+
+
+
+#site-rules-section {
+
+        padding: 2rem 1rem;
+
+        background-color: var(--day, #FFFFFF);
+
+}
+
+
+
+#site-rules-title {
+
+        font-family: 'Inter', sans-serif;
+
+        font-weight: 900;
+
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+
+        text-transform: uppercase;
+
+        color: var(--evergreen, #005E60);
+
+        margin: 1.5rem 0 1rem;
+
+        letter-spacing: 0.05em;
+
+}
+
+
+
+/* Emergency Callout Banner */
+
+.emergency-callout {
+
+        background-color: var(--evergreen, #005E60);
+
+        color: var(--day, #FFFFFF);
+
+        padding: 1.25rem 1.5rem;
+
+        margin-bottom: 1.5rem;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.25rem;
+
+}
+
+
+
+.emergency-primary {
+
+        font-family: 'Inter', sans-serif;
+
+        font-weight: 900;
+
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+
+        text-transform: uppercase;
+
+        color: var(--urgency, #C8FF08);
+
+        line-height: 1;
+
+}
+
+
+
+.emergency-label {
+
+        font-family: 'Inter', sans-serif;
+
+        font-weight: 700;
+
+        font-size: clamp(0.85rem, 2vw, 1rem);
+
+        text-transform: uppercase;
+
+        color: var(--day, #FFFFFF);
+
+        letter-spacing: 0.08em;
+
+}
+
+
+
+.emergency-instruction {
+
+        font-family: 'Inter', sans-serif;
+
+        font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+
+        color: rgba(255, 255, 255, 0.85);
+
+}
+
+
+
+/* Rule Cards Grid */
+
+#site-rules-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+        gap: 1rem;
+
+        margin-bottom: 2rem;
+
+}
+
+
+
+.site-rule-card {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: flex-start;
+
+        gap: 0.75rem;
+
+        background-color: var(--day, #FFFFFF);
+
+        border: 1px solid #E0E0E0;
+
+        border-left: 4px solid var(--evergreen, #005E60);
+
+        padding: 1rem;
+
+        transition: transform 0.15s ease, border-left-color 0.15s ease;
+
+}
+
+
+
+.site-rule-card:hover {
+
+        transform: translateY(-2px);
+
+        border-left-color: var(--urgency, #C8FF08);
+
+}
+
+
+
+.site-rule-icon {
+
+        font-size: 1.5rem;
+
+        line-height: 1;
+
+        flex-shrink: 0;
+
+        margin-top: 0.1rem;
+
+}
+
+
+
+.site-rule-body {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0.4rem;
+
+}
+
+
+
+.site-rule-category {
+
+        font-family: 'Inter', sans-serif;
+
+        font-weight: 700;
+
+        font-size: 0.85rem;
+
+        text-transform: uppercase;
+
+        color: var(--evergreen, #005E60);
+
+        letter-spacing: 0.06em;
+
+}
+
+
+
+.site-rule-items {
+
+        margin: 0;
+
+        padding-left: 1rem;
+
+        list-style-type: disc;
+
+}
+
+
+
+.site-rule-items li {
+
+        font-family: 'Inter', sans-serif;
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+        color: var(--night, #212121);
+
+        line-height: 1.5;
+
+        margin-bottom: 0.2rem;
+
+        border-bottom: none;
+
+        padding: 0;
+
+}
+
+
+
+/* Non-Emergency Contacts Table */
+
+#rules-contacts {
+
+        margin-bottom: 1.5rem;
+
+}
+
+
+
+#rules-contacts-title {
+
+        font-family: 'Inter', sans-serif;
+
+        font-weight: 700;
+
+        font-size: clamp(0.85rem, 2vw, 1rem);
+
+        text-transform: uppercase;
+
+        color: var(--evergreen, #005E60);
+
+        letter-spacing: 0.06em;
+
+        margin-bottom: 0.75rem;
+
+}
+
+
+
+#rules-contacts-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        font-family: 'Inter', sans-serif;
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+}
+
+
+
+#rules-contacts-table thead tr {
+
+        background-color: var(--evergreen, #005E60);
+
+        color: var(--day, #FFFFFF);
+
+}
+
+
+
+#rules-contacts-table thead th {
+
+        padding: 0.6rem 0.75rem;
+
+        text-align: left;
+
+        font-weight: 700;
+
+        text-transform: uppercase;
+
+        font-size: 0.75rem;
+
+        letter-spacing: 0.05em;
+
+}
+
+
+
+#rules-contacts-table tbody tr:nth-child(even) {
+
+        background-color: #F4F4F4;
+
+}
+
+
+
+#rules-contacts-table tbody td {
+
+        padding: 0.6rem 0.75rem;
+
+        color: var(--night, #212121);
+
+        border-bottom: 1px solid #E0E0E0;
+
+}
+
+
+
+#rules-contacts-table tbody td a {
+
+        color: var(--evergreen, #005E60);
+
+        text-decoration: none;
+
+        font-weight: 600;
+
+}
+
+
+
+#rules-contacts-table tbody td a:hover {
+
+        text-decoration: underline;
+
+}
+
+
+
+/* Signature Acknowledgement Bar */
+
+.rules-signature-bar {
+
+        background-color: var(--night, #212121);
+
+        color: var(--day, #FFFFFF);
+
+        font-family: 'Inter', sans-serif;
+
+        font-size: clamp(0.78rem, 1.6vw, 0.875rem);
+
+        font-style: italic;
+
+        padding: 0.85rem 1.25rem;
+
+        margin-top: 1rem;
+
+        border-left: 4px solid var(--urgency, #C8FF08);
+
+}
+
+
+
+/* ââ SITE RULES MOBILE BREAKPOINTS âââââââââââââââââââââââââââââââ */
+
+@media (max-width: 768px) {
+
+        #site-rules-grid {
+
+                grid-template-columns: 1fr;
+
+        }
+
+        .emergency-callout {
+
+                padding: 1rem;
+
+        }
+
+        #rules-contacts-table thead th,
+
+        #rules-contacts-table tbody td {
+
+                padding: 0.5rem;
+
+        }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+        .site-rule-card {
+
+                flex-direction: column;
+
+                gap: 0.5rem;
+
+        }
+
+        #rules-contacts-table {
+
+                display: block;
+
+                overflow-x: auto;
+
+                -webkit-overflow-scrolling: touch;
+
+        }
+
+}
+
+
+
+/* ââ END SITE RULES MODULE ââââââââââââââââââââââââââââââââââââââââ */
+
+
+
+
+
+/* -- Contacts Expandable Table -- */
+
+.contact-row-hidden {
+
+    display: none;
+
+}
+
+
+
+.contacts-toggle-btn {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 12px 16px;
+
+    background-color: #005E60;
+
+    color: #C8FF08;
+
+    border: none;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+
+
+.contacts-toggle-btn:hover {
+
+    background-color: #004244;
+
+}
+
+
+
+/* -- END Contacts Expandable Table -- */
+
+
+/* ── Site Rules Accordion ───────────────────────────────── */
+.site-rules-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+.rule-section {
+  border: 1px solid #005E60;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.rule-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: #005E60;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.rule-section-header:hover {
+  background-color: #004749;
+}
+.rule-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.rule-heading {
+  flex: 1;
+}
+.rule-chevron {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+.rule-section.open .rule-chevron {
+  transform: rotate(180deg);
+}
+.rule-list {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 18px 14px 20px;
+  margin: 0;
+  background-color: #FFFFFF;
+  list-style: disc;
+}
+.rule-list li {
+  font-size: 0.9rem;
+  color: #212121;
+  line-height: 1.5;
+}
+.rule-section.open .rule-list {
+  display: flex;
+}
+/* ── Site Rules — Mobile ──────────────────────────── */
+@media (max-width: 600px) {
+  .rule-section-header {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+  .rule-list {
+    padding: 12px 14px;
+  }
+  .rule-list li {
+    font-size: 0.85rem;
+  }
+              }:root {
+
         --evergreen: #005E60;
 
         --day: #FFFFFF;
