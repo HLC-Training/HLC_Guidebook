@@ -127,6 +127,148 @@
           "phone": "+1 (214) 257-4548"
         }
       ]
+    },
+    "siteRules": {
+      "title": "HLC SITE RULES",
+      "intro": "All personnel — students, visitors, instructors, and contractors — are required to acknowledge and comply with the following site rules upon arrival.",
+      "sections": [
+        {
+          "id": "orientation",
+          "heading": "SITE ORIENTATION",
+          "icon": "📋",
+          "rules": [
+            "Upon arrival, all personnel must watch the site safety video. Contact your manager, instructor, or host if you have not done so.",
+            "All visitors must sign in at the building entrance and acknowledge receipt of the HLC Site Rules Card.",
+            "Security will verify receipt of the card and sign-in.",
+            "Prior to lab entry, WBT (Web Based Training) completion will be verified by the EHS Dept.",
+            "All classroom training will be documented via a class roster (subject, trainer, date, attendees).",
+            "Students who have not completed WBT or Instructor Led Training will not be permitted in HLC labs.",
+            "Students who arrive late must complete all EHS training before entering labs.",
+            "Students may complete Instructor Led Training in-region prior to arrival and provide proof of completion for EHS verification."
+          ]
+        },
+        {
+          "id": "ppe",
+          "heading": "PPE REQUIREMENTS",
+          "icon": "🦺",
+          "rules": [
+            "Safety glasses with side shields must be worn at all times in training bays and lab areas.",
+            "Substantial footwear (fully enclosed shoe) must be worn at all times in training bays and lab areas, including within yellow lines.",
+            "PPE compliance is mandatory wherever specified.",
+            "All PPE users will receive training on selection, use, care, and maintenance.",
+            "PPE requirements will be reassessed whenever working conditions change."
+          ]
+        },
+        {
+          "id": "badges",
+          "heading": "BADGES & WORK HOURS",
+          "icon": "🪪",
+          "rules": [
+            "Normal business hours are 7:30 a.m. to 4:30 p.m.",
+            "The building is equipped with an electronic security system.",
+            "Special arrangements must be made to access the building after hours.",
+            "Students must be supervised by a GE HLC employee when in the building outside normal business hours.",
+            "All visitors will be badged and escorted as required."
+          ]
+        },
+        {
+          "id": "dress_code",
+          "heading": "DRESS CODE",
+          "icon": "👔",
+          "rules": [
+            "HLC is a place of business devoted to GE training needs.",
+            "Employees and students are expected to dress and conduct themselves appropriately for the situation.",
+            "Attire must be professional and appropriate for training and lab environments."
+          ]
+        },
+        {
+          "id": "conduct",
+          "heading": "STUDENT COMMITMENTS",
+          "icon": "🤝",
+          "rules": [
+            "Understand and comply with all posted signs, SRAs, and work instructions.",
+            "Actively participate in Safety Task Assessments (STA) and hazard hunts as required.",
+            "Report any concerns to EHS, Instructors, or Management.",
+            "If in doubt, ask before you act.",
+            "Act with Integrity — 100% commitment to The Spirit & The Letter.",
+            "Respect your peers, training staff, and equipment.",
+            "Be Punctual — arrive on time, or report issues to instructors as soon as practical.",
+            "Be Prepared — complete assignments, be ready to learn, and participate."
+          ]
+        },
+        {
+          "id": "ehs_policy",
+          "heading": "EHS POLICY — EMPLOYEE RESPONSIBILITIES",
+          "icon": "⚠️",
+          "rules": [
+            "Follow all applicable laws, regulations, and HLC EHS policies to protect yourself, coworkers, the public, and the environment.",
+            "Know and support the annual EHS goals of the organization.",
+            "Promptly raise any concerns about unsafe conditions or policy violations to your supervisor, local EHS team, or another designated person. Reports may be written, oral, or anonymous.",
+            "Stop immediately and escalate any work that poses imminent danger to yourself, coworkers, contractors, or the community.",
+            "EHS is everyone's responsibility."
+          ]
+        },
+        {
+          "id": "committosafety",
+          "heading": "I COMMIT TO SAFETY",
+          "icon": "✅",
+          "rules": [
+            "Safety is my #1 top priority.",
+            "I will protect my environment.",
+            "My customer determines my success.",
+            "I will wear my PPE while on the job.",
+            "I will report all incidents, near misses, and unsafe conditions.",
+            "I will comply with written and verbal procedures and instructions.",
+            "I will be the best example of compliance and regulatory excellence.",
+            "I have Stop Work authority for all tasks, situations, and people on site.",
+            "I will produce quality work and will not accept, create, or pass any defects.",
+            "I will be a clear thinker and use my knowledge and experience to make good decisions.",
+            "My professionalism and positive attitude directly affects the success of this outage.",
+            "My expertise and skill will lead to intelligent and improved innovations.",
+            "I will be alert, understand my task, and evaluate existing circumstances.",
+            "I commit to fully understand and adhere to the LOTO program.",
+            "I can save a life today. I will not look away."
+          ]
+        },
+        {
+          "id": "incident_reporting",
+          "heading": "INCIDENT REPORTING",
+          "icon": "🚨",
+          "rules": [
+            "All incidents (injuries, near misses, events) must be reported to your Instructor, Supervisor, or EHS immediately — within the same day.",
+            "A team approach will be used for all incident investigations: element champion, EHS, injured employee, and instructor/supervisor.",
+            "All cases are documented; corrective and preventive actions are tracked to closure.",
+            "Safety Notifications and EHS communications are used to share lessons learned with all employees.",
+            "In an emergency: call First Aid at +1 (713) 672-3533 or 911. Numbers are posted on all phones and throughout departments.",
+            "If not an emergency: contact EHS at +1 (713) 672-3564 prior to seeking medical attention.",
+            "HLC posts the OSHA Annual Summary (Form 300A) each year in the lunch room, break rooms, and online on the EHS Training Student Support Central website."
+          ]
+        },
+        {
+          "id": "waste",
+          "heading": "WASTE MANAGEMENT",
+          "icon": "♻️",
+          "rules": [
+            "Universal waste (batteries, lamps, paint): segregated by type, labeled, and kept in closed, structurally sound containers.",
+            "Oily soaked materials: place in red bins located around lab areas. Do not mix with solvents or non-related materials.",
+            "Hazardous waste (aerosol cans, out-of-date chemicals, broken lamps): collected in Satellite Accumulation Areas (SAA) near generation points in labs. Only lab techs may move to hazardous waste storage. Only trained staff may sign manifests.",
+            "Solvent Contaminated Wipes: place only in the drum marked 'Solvent Contaminated Wipes'.",
+            "No chemicals may go down any sink, floor, or storm drains — including equipment cleaning runoff.",
+            "GE manages all waste generated on site. Contractors must not remove hazardous waste. Discuss any project waste with the EHS Manager in advance."
+          ]
+        },
+        {
+          "id": "spill",
+          "heading": "SPILL RESPONSE",
+          "icon": "💧",
+          "rules": [
+            "Unattended spillages can cause slips, trips, falls, or vehicle skids.",
+            "Uncontained spillages can damage the main water system and environment.",
+            "If you discover a spill, follow the S.P.I.L.L. acronym protocol.",
+            "Report all spills to EHS or your supervisor immediately."
+          ]
+        }
+      ]
     }
   },
   "addendum": {
@@ -155,9 +297,9 @@
       "Security: Doors locked and lights turned off."
     ],
     "atlas_reference": {
-      "title": "Attendance & Evaluation Ã¢ÂÂ ATLAS",
+      "title": "Attendance & Evaluation ÃÂ¢ÃÂÃÂ ATLAS",
       "body": "Attendance for all internal classes is recorded in ATLAS (Advanced Training Log and Assessment System). ATLAS is the standard system for attendance tracking, student evaluations, and training records in alignment with DOL apprenticeship program requirements.",
-      "note": "Attendance must be recorded first thing in the morning Ã¢ÂÂ not end of day.",
+      "note": "Attendance must be recorded first thing in the morning ÃÂ¢ÃÂÃÂ not end of day.",
       "link": {
         "label": "Open ATLAS Standard Work Document",
         "url": "https://gevernova.box.com/s/1on1mwa5ejwnqb09swjaom3z7y05l490",
@@ -175,7 +317,7 @@
         "If you already have a blue HLC staff badge, proceed directly to staff parking after checking in with the gate guard.",
         "Contact your PLL upon arrival to confirm you are onsite and for further direction.",
         "Your blue HLC staff badge provides 24/7 facility access. If you do not have one, contact your PLL.",
-        "HLC business hours: MondayÃ¢ÂÂFriday, 7:30 AM Ã¢ÂÂ 4:30 PM."
+        "HLC business hours: MondayÃÂ¢ÃÂÃÂFriday, 7:30 AM ÃÂ¢ÃÂÃÂ 4:30 PM."
       ]
     },
     "escalation_matrix": {
@@ -183,9 +325,9 @@
       "intro": "The instructor is the primary point of contact for students during class and should escalate to the applicable contact as needed.",
       "columns": [
         "Issue",
-        "Internal Ã¢ÂÂ FE",
-        "Internal Ã¢ÂÂ OSS/Repairs",
-        "Internal Ã¢ÂÂ Craft",
+        "Internal ÃÂ¢ÃÂÃÂ FE",
+        "Internal ÃÂ¢ÃÂÃÂ OSS/Repairs",
+        "Internal ÃÂ¢ÃÂÃÂ Craft",
         "Open Enrollment",
         "Site Specific"
       ],
@@ -274,7 +416,7 @@
           "note": "PPE requirements are posted on the door when entering lab areas."
         },
         {
-          "heading": "POWRA Ã¢ÂÂ Point of Work Risk Assessment",
+          "heading": "POWRA ÃÂ¢ÃÂÃÂ Point of Work Risk Assessment",
           "body": "A POWRA must be completed before beginning any hands-on work in lab or bay areas. Contact your PLL for the current POWRA form."
         }
       ]
@@ -287,7 +429,7 @@
           "description": "Common office supplies (dry erase markers, pens, paper, hand sanitizer). PPE items including gloves, safety glasses, shoe covers, hard hats, and masks. Hard hats and overshoes are for temporary use and must be returned. See security at the front desk for access or to request more."
         },
         {
-          "name": "Building 1 Ã¢ÂÂ Room 1202 (2nd Floor)",
+          "name": "Building 1 ÃÂ¢ÃÂÃÂ Room 1202 (2nd Floor)",
           "description": "Office supplies only. Accessible with your employee badge."
         },
         {
@@ -297,12 +439,12 @@
       ]
     },
     "av_system": {
-      "title": "A/V System Ã¢ÂÂ Rooms 1233/1235 and 1128Ã¢ÂÂ1131 (Building 1)",
+      "title": "A/V System ÃÂ¢ÃÂÃÂ Rooms 1233/1235 and 1128ÃÂ¢ÃÂÃÂ1131 (Building 1)",
       "intro": "These rooms use a Crestron switcher system. Follow the steps below to set up A/V before class.",
       "crestron_code": "1234",
       "steps": [
         "Power on the projector using the Crestron panel (code: 1234).",
-        "Select your input source: DisplayPort (HMI tower), HDMI (laptop Ã¢ÂÂ preferred), or VGA (laptop).",
+        "Select your input source: DisplayPort (HMI tower), HDMI (laptop ÃÂ¢ÃÂÃÂ preferred), or VGA (laptop).",
         "For HDMI: Connect HDMI cable to laptop. Sync projector by holding FUNCTION key and toggling to 'Duplicate'.",
         "For VGA: Connect VGA cable to laptop. Select VGA on the Crestron panel.",
         "Verify Crestron Switcher rear connections: VGA, Audio, HDMI, DisplayPort, data cable, and power cable all connected.",
@@ -311,11 +453,11 @@
       ],
       "printers": [
         {
-          "label": "Building 1 Ã¢ÂÂ 1st Floor",
+          "label": "Building 1 ÃÂ¢ÃÂÃÂ 1st Floor",
           "name": "HLCXeroxBldg_1"
         },
         {
-          "label": "Building 3 Ã¢ÂÂ 2nd Floor",
+          "label": "Building 3 ÃÂ¢ÃÂÃÂ 2nd Floor",
           "name": "HLCXeroxBldg_3"
         }
       ]
@@ -385,488 +527,146 @@
           "phone": "+1 (214) 257-4548"
         }
       ]
-    }
-  },
-  "map": {
-    "title": "CAMPUS MAP & MUSTER POINTS",
-    "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1927.4178452070876!2d-95.2716249!3d29.7895164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bb9cdcdb5c63%3A0x11d142364f754e9f!2s8800%20Wallisville%20Rd%2C%20Houston%2C%20TX%2077029!5e1!3m2!1sen!2sus!4v1779973808001!5m2!1sen!2sus",
-    "note": "See the Site Layout Map below for building locations, muster points, and parking."
-  },
-  "siteRules": {
-    "title": "HLC SITE RULES",
-    "emergency": {
-      "title": "FIRE & MEDICAL EMERGENCIES",
-      "primary": "Dial 911",
-      "instruction": "Give your name, location & type of emergency"
     },
-    "rules": [
-      {
-        "icon": "ÃÂ°ÃÂÃÂÃÂ¥",
-        "category": "Fire Alarm",
-        "items": [
-          "Immediately evacuate via emergency exit routes",
-          "Visitors must stay with their host or instructor during an emergency",
-          "Know the Emergency Evacuation Routes posted in all classrooms & meeting areas",
-          "Dedicated muster points are located in Parking Lots 1, 2 & 3",
-          "Do NOT leave the facility or re-enter until ALL CLEAR is announced"
-        ]
-      },
-      {
-        "icon": "ÃÂ°ÃÂÃÂÃÂªÃÂ¯ÃÂ¸ÃÂ",
-        "category": "Tornado",
-        "items": [
-          "Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3",
-          "Look for shelter signs on the doors"
-        ]
-      },
-      {
-        "icon": "ÃÂ°ÃÂÃÂÃÂ",
-        "category": "Speed Limit",
-        "items": [
-          "Follow the posted 10 mph speed limit on all facility roads"
-        ]
-      },
-      {
-        "icon": "ÃÂ°ÃÂÃÂ¦ÃÂº",
-        "category": "PPE",
-        "items": [
-          "PPE is required when performing training in Lab or Bay areas and when working in the facility"
-        ]
-      },
-      {
-        "icon": "ÃÂ°ÃÂÃÂÃÂª",
-        "category": "Entry",
-        "items": [
-          "Enter the building through the main security entrance"
-        ]
-      },
-      {
-        "icon": "ÃÂ¢ÃÂÃÂÃÂ¯ÃÂ¸ÃÂ",
-        "category": "Equipment",
-        "items": [
-          "Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"
-        ]
-      },
-      {
-        "icon": "ÃÂ¢ÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ",
-        "category": "Incident Reporting",
-        "items": [
-          "Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"
-        ]
-      },
-      {
-        "icon": "ÃÂ°ÃÂÃÂÃÂ·",
-        "category": "Photography",
-        "items": [
-          "Taking pictures or photographs is not permitted without site management authorization"
-        ]
-      }
-    ],
-    "nonEmergencyContacts": [
-      {
-        "role": "EHS",
-        "name": "Lizlee Galley",
-        "phone": "346-324-1774",
-        "email": "Lizlee.galley1@gevernova.com"
-      },
-      {
-        "role": "HLC Front Desk",
-        "name": "HLC Security Desk",
-        "phone": "713-672-3513",
-        "email": "hlcsecurity@ge.com"
-      },
-      {
-        "role": "Emergency Status Line",
-        "name": "",
-        "phone": "877-672-3771",
-        "email": ""
-      },
-      {
-        "role": "Medical Emergency",
-        "name": "",
-        "phone": "713-672-3533",
-        "email": ""
-      },
-      {
-        "role": "HLC IT",
-        "name": "Mike Evans",
-        "phone": "757-604-1905",
-        "email": "Michael.Evans@gevernova.com"
-      },
-      {
-        "role": "Facilities",
-        "name": "Steve Urban",
-        "phone": "862-210-5487",
-        "email": "stephen.urban@gevernova.com"
-      },
-      {
-        "role": "Training Delivery Manager",
-        "name": "Jim Rosen",
-        "phone": "832-714-2496",
-        "email": "jim.rosen@gevernova.com"
-      },
-      {
-        "role": "Global Logistics Leader",
-        "name": "Andrew Ruch",
-        "phone": "281-229-5417",
-        "email": "Andrew.Ruch@gevernova.com"
-      },
-      {
-        "role": "OE Project Manager",
-        "name": "Maria Medina",
-        "phone": "713-597-1935",
-        "email": "MARIA.MEDINA@gevernova.com"
-      },
-      {
-        "role": "Training Coordinator",
-        "name": "Marisol Guidry",
-        "phone": "832-998-4104",
-        "email": "Marisol.Guidry1@gevernova.com"
-      },
-      {
-        "role": "PLL - Gas Turbine",
-        "name": "Sherif Khalifa",
-        "phone": "281-387-4979",
-        "email": "Sherif.Khalifa@gevernova.com"
-      },
-      {
-        "role": "PLL - Steam Turbine",
-        "name": "Pablo Schibli",
-        "phone": "+41 79-878-7173",
-        "email": "pablo.schibli@gevernova.com"
-      },
-      {
-        "role": "PLL - Controls",
-        "name": "Mohammed Nizami",
-        "phone": "281-744-2541",
-        "email": "Mohammed.Nizami@gevernova.com"
-      },
-      {
-        "role": "PLL - Excitation/Generator",
-        "name": "Michele Alcantar",
-        "phone": "832-926-0238",
-        "email": "Michele.Alcantar@gevernova.com"
-      },
-      {
-        "role": "PLL - Aero",
-        "name": "Greg Walker",
-        "phone": "936-520-0397",
-        "email": "GregoryD.Walker@gevernova.com"
-      },
-      {
-        "role": "PLL - Craft/Repairs",
-        "name": "Harry Hanson",
-        "phone": "630-561-5231",
-        "email": "harry.hanson@gevernova.com"
-      }
-    ],
-    "contactsTitle": "NON-EMERGENCY CONTACTS",
-    "signature": {
-      "enabled": true,
-      "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
-    }
-  }
-        }{
-  "guidebook": {
-    "hero_title": "WELCOME TO THE HOUSTON LEARNING CENTER",
-    "hero_image": "images/INLINE_CODE_1.jpg",
-    "actions": [
-      {
-        "label": "SAFETY VIDEO",
-        "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd"
-      },
-      {
-        "label": "REPORT CONCERN",
-        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
-      },
-      {
-        "label": "FACILITY HELP",
-        "url": "https://buildsmart.capgemini.com/workflows/initiate/801910"
-      }
-    ],
-    "list_title": "QUICK SITE RULES",
-    "items": [
-      "Emergency: Dial 911 immediately.",
-      "Follow posted 10 mph speed limit on campus.",
-      "PPE must be worn at all times in lab and bay areas.",
-      "Photography is not permitted without authorization."
-    ],
-    "safety_content": {
-      "title": "LIFE SAVING RULES",
-      "text": "We start work only when it is safe and stop when it's not.",
-      "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
-      "rules": [
-        {
-          "label": "CONFINED SPACE",
-          "icon": "Confined-Space.svg"
-        },
-        {
-          "label": "DRIVING SAFETY",
-          "icon": "Driving-Safety.svg"
-        },
-        {
-          "label": "ENERGY ISOLATION",
-          "icon": "Energy-Isolation.svg"
-        },
-        {
-          "label": "FIRE AND EXPLOSION",
-          "icon": "Fire-and-Explosion.svg"
-        },
-        {
-          "label": "LINE OF FIRE",
-          "icon": "Line-of-Fire.svg"
-        },
-        {
-          "label": "LIVE ELECTRICAL",
-          "icon": "Live-Electrical.svg"
-        },
-        {
-          "label": "MECHANICAL LIFTING",
-          "icon": "Mechanical-Lifting.svg"
-        },
-        {
-          "label": "WORK AT HEIGHT",
-          "icon": "Work-at-Height.svg"
-        },
-        {
-          "label": "WORK AUTHORIZATION",
-          "icon": "Work-Authorization.svg"
-        }
-      ]
-    },
-    "directory": [
-      {
-        "dept": "SAFETY",
-        "name": "EHS Manager",
-        "phone": "+1-346-324-1774",
-        "email": "Lizlee.galley1@gevernova.com"
-      },
-      {
-        "dept": "OPERATIONS",
-        "name": "HLC Security Desk",
-        "phone": "713-672-3513",
-        "email": "hlcsecurity@ge.com"
-      },
-      {
-        "dept": "TRAINING",
-        "name": "Jim Rosen",
-        "phone": "+1-832-714-2496",
-        "email": "jim.rosen@gevernova.com"
-      }
-    ]
-  },
-  "addendum": {
-    "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
-    "hero_image": "images/INLINE_CODE_2.jpg",
-    "actions": [
-      {
-        "label": "SAFETY VIDEO",
-        "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd"
-      },
-      {
-        "label": "REPORT CONCERN",
-        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
-      },
-      {
-        "label": "FACILITY HELP",
-        "url": "https://buildsmart.capgemini.com/workflows/initiate/801910"
-      }
-    ],
-    "list_title": "CLASSROOM CLOSING CHECKLIST",
-    "items": [
-      "Whiteboard: Erased and cleaned.",
-      "Projector: Turned off and screen retracted.",
-      "Laptops: Closed, unplugged, and stored securely.",
-      "Classroom: Tables aligned and chairs pushed in.",
-      "Security: Doors locked and lights turned off."
-    ],
-    "atlas_reference": {
-      "title": "Attendance & Evaluation â ATLAS",
-      "body": "Attendance for all internal classes is recorded in ATLAS (Advanced Training Log and Assessment System). ATLAS is the standard system for attendance tracking, student evaluations, and training records in alignment with DOL apprenticeship program requirements.",
-      "note": "Attendance must be recorded first thing in the morning â not end of day.",
-      "link": {
-        "label": "Open ATLAS Standard Work Document",
-        "url": "https://gevernova.box.com/s/1on1mwa5ejwnqb09swjaom3z7y05l490",
-        "target": "_blank"
-      }
-    },
-    "arrival_steps": {
-      "title": "Arrival at the HLC",
-      "steps": [
-        "Check in with the gate guard and park in visitor parking on your first visit.",
-        "Proceed to the security desk in the lobby and ask security to contact your PLL.",
-        "Your PLL will issue you a blue HLC staff badge and direct you to your classroom or lab area.",
-        "If your PLL is unavailable, ask security to contact any PLL or the Training Delivery Manager.",
-        "Once checked in, move your vehicle to the staff parking lot on the east side behind Building 1.",
-        "If you already have a blue HLC staff badge, proceed directly to staff parking after checking in with the gate guard.",
-        "Contact your PLL upon arrival to confirm you are onsite and for further direction.",
-        "Your blue HLC staff badge provides 24/7 facility access. If you do not have one, contact your PLL.",
-        "HLC business hours: MondayâFriday, 7:30 AM â 4:30 PM."
-      ]
-    },
-    "escalation_matrix": {
-      "title": "Primary Point of Contact for Issues",
-      "intro": "The instructor is the primary point of contact for students during class and should escalate to the applicable contact as needed.",
-      "columns": [
-        "Issue",
-        "Internal â FE",
-        "Internal â OSS/Repairs",
-        "Internal â Craft",
-        "Open Enrollment",
-        "Site Specific"
-      ],
-      "rows": [
-        {
-          "issue": "Technical",
-          "contacts": [
-            "PLL",
-            "PLL",
-            "PLL",
-            "PLL",
-            "PLL"
-          ],
-          "note": "Training equipment, simulation, training content, etc."
-        },
-        {
-          "issue": "Student Issue",
-          "contacts": [
-            "PLL / Andrew Ruch",
-            "PLL / Maria Medina",
-            "PLL / SS PM",
-            "PLL / Maria Medina",
-            "PLL / SS PM"
-          ],
-          "note": "Student behavior, medical, car accident, passport, etc."
-        },
-        {
-          "issue": "Logistical",
-          "contacts": [
-            "Mari Guidry",
-            "Mari Guidry / Maria Medina",
-            "John Douglass",
-            "Mari Guidry",
-            "John Douglass"
-          ],
-          "note": "Office supplies, certificates, handouts, manuals, catering, etc."
-        },
-        {
-          "issue": "Facility",
-          "contacts": [
-            "Steve Urban / Mike Evans",
-            "Steve Urban / Mike Evans",
-            "Steve Urban / Mike Evans",
-            "Steve Urban / Mike Evans",
-            "Steve Urban / Mike Evans"
-          ],
-          "note": "HVAC, projectors, lights, elevators, internet, housekeeping, etc."
-        },
-        {
-          "issue": "EHS",
-          "contacts": [
-            "Lizlee Galley / PLL",
-            "Lizlee Galley / PLL",
-            "Lizlee Galley / PLL",
-            "Lizlee Galley / PLL",
-            "Lizlee Galley / PLL"
-          ],
-          "note": ""
-        }
-      ]
-    },
-    "safety_requirements": {
-      "title": "Safety Requirements",
+    "siteRules": {
+      "title": "HLC SITE RULES",
+      "intro": "All personnel — students, visitors, instructors, and contractors — are required to acknowledge and comply with the following site rules upon arrival.",
       "sections": [
         {
-          "heading": "Safety Video",
-          "body": "The safety video MUST be shown to all incoming students on the first day of class before the start of technical training. The video is approximately 11 minutes. Students who arrive after class starts will be shown the video by security.",
-          "link": {
-            "label": "Open Safety Video (GE Box)",
-            "url": "https://ge.ent.box.com/file/280482563214",
-            "target": "_blank"
-          },
-          "note": "Verify access to the video prior to your arrival at the HLC. For access issues, contact Jim Rosen or your PLL. HLC IT has USB and DVD copies as backup."
+          "id": "orientation",
+          "heading": "SITE ORIENTATION",
+          "icon": "📋",
+          "rules": [
+            "Upon arrival, all personnel must watch the site safety video. Contact your manager, instructor, or host if you have not done so.",
+            "All visitors must sign in at the building entrance and acknowledge receipt of the HLC Site Rules Card.",
+            "Security will verify receipt of the card and sign-in.",
+            "Prior to lab entry, WBT (Web Based Training) completion will be verified by the EHS Dept.",
+            "All classroom training will be documented via a class roster (subject, trainer, date, attendees).",
+            "Students who have not completed WBT or Instructor Led Training will not be permitted in HLC labs.",
+            "Students who arrive late must complete all EHS training before entering labs.",
+            "Students may complete Instructor Led Training in-region prior to arrival and provide proof of completion for EHS verification."
+          ]
         },
         {
-          "heading": "PPE Requirements",
-          "items": [
+          "id": "ppe",
+          "heading": "PPE REQUIREMENTS",
+          "icon": "🦺",
+          "rules": [
             "Safety glasses with side shields must be worn at all times in training bays and lab areas.",
-            "Substantial footwear (fully enclosed shoe) must be worn at all times in training bays and lab areas, even within yellow lines.",
-            "Safety shoes must always be worn outside the yellow lines.",
-            "Hard hats must be worn when overhead work is being performed.",
-            "Additional PPE (hearing protection, gloves, additional eye protection) must be worn in designated areas or when performing designated tasks.",
-            "Refer to the Safety Risk Assessment (SRA) for the task you are performing.",
-            "Do not wear clothing or jewelry that could get caught in machinery."
-          ],
-          "note": "PPE requirements are posted on the door when entering lab areas."
+            "Substantial footwear (fully enclosed shoe) must be worn at all times in training bays and lab areas, including within yellow lines.",
+            "PPE compliance is mandatory wherever specified.",
+            "All PPE users will receive training on selection, use, care, and maintenance.",
+            "PPE requirements will be reassessed whenever working conditions change."
+          ]
         },
         {
-          "heading": "POWRA â Point of Work Risk Assessment",
-          "body": "A POWRA must be completed before beginning any hands-on work in lab or bay areas. Contact your PLL for the current POWRA form."
-        }
-      ]
-    },
-    "office_supplies": {
-      "title": "Office Supplies & PPE Locations",
-      "locations": [
-        {
-          "name": "Building 1 Lobby",
-          "description": "Common office supplies (dry erase markers, pens, paper, hand sanitizer). PPE items including gloves, safety glasses, shoe covers, hard hats, and masks. Hard hats and overshoes are for temporary use and must be returned. See security at the front desk for access or to request more."
+          "id": "badges",
+          "heading": "BADGES & WORK HOURS",
+          "icon": "🪪",
+          "rules": [
+            "Normal business hours are 7:30 a.m. to 4:30 p.m.",
+            "The building is equipped with an electronic security system.",
+            "Special arrangements must be made to access the building after hours.",
+            "Students must be supervised by a GE HLC employee when in the building outside normal business hours.",
+            "All visitors will be badged and escorted as required."
+          ]
         },
         {
-          "name": "Building 1 â Room 1202 (2nd Floor)",
-          "description": "Office supplies only. Accessible with your employee badge."
+          "id": "dress_code",
+          "heading": "DRESS CODE",
+          "icon": "👔",
+          "rules": [
+            "HLC is a place of business devoted to GE training needs.",
+            "Employees and students are expected to dress and conduct themselves appropriately for the situation.",
+            "Attire must be professional and appropriate for training and lab environments."
+          ]
         },
         {
-          "name": "Classroom Cabinets",
-          "description": "Each classroom has a black cabinet stocked with notepads, pens, name tags, and attendance sheets. For access issues contact Boyce Hernandez. For restocking contact Chanelle Williams. Do not share passcodes with students or use cabinets for personal storage."
-        }
-      ]
-    },
-    "av_system": {
-      "title": "A/V System â Rooms 1233/1235 and 1128â1131 (Building 1)",
-      "intro": "These rooms use a Crestron switcher system. Follow the steps below to set up A/V before class.",
-      "crestron_code": "1234",
-      "steps": [
-        "Power on the projector using the Crestron panel (code: 1234).",
-        "Select your input source: DisplayPort (HMI tower), HDMI (laptop â preferred), or VGA (laptop).",
-        "For HDMI: Connect HDMI cable to laptop. Sync projector by holding FUNCTION key and toggling to 'Duplicate'.",
-        "For VGA: Connect VGA cable to laptop. Select VGA on the Crestron panel.",
-        "Verify Crestron Switcher rear connections: VGA, Audio, HDMI, DisplayPort, data cable, and power cable all connected.",
-        "Verify Crestron Switcher front panel: PWR light solid green. DM LINK light solid green. No DM LINK light = NO VIDEO.",
-        "Verify wall plate: One end of Ethernet cable in black wall plate, other end in DM OUT port on switcher."
-      ],
-      "printers": [
-        {
-          "label": "Building 1 â 1st Floor",
-          "name": "HLCXeroxBldg_1"
+          "id": "conduct",
+          "heading": "STUDENT COMMITMENTS",
+          "icon": "🤝",
+          "rules": [
+            "Understand and comply with all posted signs, SRAs, and work instructions.",
+            "Actively participate in Safety Task Assessments (STA) and hazard hunts as required.",
+            "Report any concerns to EHS, Instructors, or Management.",
+            "If in doubt, ask before you act.",
+            "Act with Integrity — 100% commitment to The Spirit & The Letter.",
+            "Respect your peers, training staff, and equipment.",
+            "Be Punctual — arrive on time, or report issues to instructors as soon as practical.",
+            "Be Prepared — complete assignments, be ready to learn, and participate."
+          ]
         },
         {
-          "label": "Building 3 â 2nd Floor",
-          "name": "HLCXeroxBldg_3"
-        }
-      ]
-    },
-    "facilities_requests": {
-      "title": "Facilities Issues",
-      "body": "For any facility-related issues (HVAC, lighting, projectors, elevators, internet, housekeeping), submit a request via the GP Training Operations portal or contact Steve Urban directly.",
-      "contacts": [
-        {
-          "role": "Facilities",
-          "name": "Steve Urban",
-          "phone": "862-210-5487",
-          "email": "stephen.urban@gevernova.com"
+          "id": "ehs_policy",
+          "heading": "EHS POLICY — EMPLOYEE RESPONSIBILITIES",
+          "icon": "⚠️",
+          "rules": [
+            "Follow all applicable laws, regulations, and HLC EHS policies to protect yourself, coworkers, the public, and the environment.",
+            "Know and support the annual EHS goals of the organization.",
+            "Promptly raise any concerns about unsafe conditions or policy violations to your supervisor, local EHS team, or another designated person. Reports may be written, oral, or anonymous.",
+            "Stop immediately and escalate any work that poses imminent danger to yourself, coworkers, contractors, or the community.",
+            "EHS is everyone's responsibility."
+          ]
         },
         {
-          "role": "HLC IT",
-          "name": "Mike Evans",
-          "phone": "757-604-1905",
-          "email": "Michael.Evans@gevernova.com"
+          "id": "committosafety",
+          "heading": "I COMMIT TO SAFETY",
+          "icon": "✅",
+          "rules": [
+            "Safety is my #1 top priority.",
+            "I will protect my environment.",
+            "My customer determines my success.",
+            "I will wear my PPE while on the job.",
+            "I will report all incidents, near misses, and unsafe conditions.",
+            "I will comply with written and verbal procedures and instructions.",
+            "I will be the best example of compliance and regulatory excellence.",
+            "I have Stop Work authority for all tasks, situations, and people on site.",
+            "I will produce quality work and will not accept, create, or pass any defects.",
+            "I will be a clear thinker and use my knowledge and experience to make good decisions.",
+            "My professionalism and positive attitude directly affects the success of this outage.",
+            "My expertise and skill will lead to intelligent and improved innovations.",
+            "I will be alert, understand my task, and evaluate existing circumstances.",
+            "I commit to fully understand and adhere to the LOTO program.",
+            "I can save a life today. I will not look away."
+          ]
         },
         {
-          "role": "Facilities / Supplies",
-          "name": "Boyce Hernandez",
-          "phone": "832-339-3500",
-          "email": ""
+          "id": "incident_reporting",
+          "heading": "INCIDENT REPORTING",
+          "icon": "🚨",
+          "rules": [
+            "All incidents (injuries, near misses, events) must be reported to your Instructor, Supervisor, or EHS immediately — within the same day.",
+            "A team approach will be used for all incident investigations: element champion, EHS, injured employee, and instructor/supervisor.",
+            "All cases are documented; corrective and preventive actions are tracked to closure.",
+            "Safety Notifications and EHS communications are used to share lessons learned with all employees.",
+            "In an emergency: call First Aid at +1 (713) 672-3533 or 911. Numbers are posted on all phones and throughout departments.",
+            "If not an emergency: contact EHS at +1 (713) 672-3564 prior to seeking medical attention.",
+            "HLC posts the OSHA Annual Summary (Form 300A) each year in the lunch room, break rooms, and online on the EHS Training Student Support Central website."
+          ]
+        },
+        {
+          "id": "waste",
+          "heading": "WASTE MANAGEMENT",
+          "icon": "♻️",
+          "rules": [
+            "Universal waste (batteries, lamps, paint): segregated by type, labeled, and kept in closed, structurally sound containers.",
+            "Oily soaked materials: place in red bins located around lab areas. Do not mix with solvents or non-related materials.",
+            "Hazardous waste (aerosol cans, out-of-date chemicals, broken lamps): collected in Satellite Accumulation Areas (SAA) near generation points in labs. Only lab techs may move to hazardous waste storage. Only trained staff may sign manifests.",
+            "Solvent Contaminated Wipes: place only in the drum marked 'Solvent Contaminated Wipes'.",
+            "No chemicals may go down any sink, floor, or storm drains — including equipment cleaning runoff.",
+            "GE manages all waste generated on site. Contractors must not remove hazardous waste. Discuss any project waste with the EHS Manager in advance."
+          ]
+        },
+        {
+          "id": "spill",
+          "heading": "SPILL RESPONSE",
+          "icon": "💧",
+          "rules": [
+            "Unattended spillages can cause slips, trips, falls, or vehicle skids.",
+            "Uncontained spillages can damage the main water system and environment.",
+            "If you discover a spill, follow the S.P.I.L.L. acronym protocol.",
+            "Report all spills to EHS or your supervisor immediately."
+          ]
         }
       ]
     }
@@ -885,7 +685,7 @@
     },
     "rules": [
       {
-        "icon": "Ã°ÂÂÂ¥",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ¥",
         "category": "Fire Alarm",
         "items": [
           "Immediately evacuate via emergency exit routes",
@@ -896,7 +696,7 @@
         ]
       },
       {
-        "icon": "Ã°ÂÂÂªÃ¯Â¸Â",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂªÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
         "category": "Tornado",
         "items": [
           "Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3",
@@ -904,42 +704,42 @@
         ]
       },
       {
-        "icon": "Ã°ÂÂÂ",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ",
         "category": "Speed Limit",
         "items": [
           "Follow the posted 10 mph speed limit on all facility roads"
         ]
       },
       {
-        "icon": "Ã°ÂÂ¦Âº",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂ¦ÃÂÃÂº",
         "category": "PPE",
         "items": [
           "PPE is required when performing training in Lab or Bay areas and when working in the facility"
         ]
       },
       {
-        "icon": "Ã°ÂÂÂª",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂª",
         "category": "Entry",
         "items": [
           "Enter the building through the main security entrance"
         ]
       },
       {
-        "icon": "Ã¢ÂÂÃ¯Â¸Â",
+        "icon": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
         "category": "Equipment",
         "items": [
           "Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"
         ]
       },
       {
-        "icon": "Ã¢ÂÂ Ã¯Â¸Â",
+        "icon": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
         "category": "Incident Reporting",
         "items": [
           "Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"
         ]
       },
       {
-        "icon": "Ã°ÂÂÂ·",
+        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ·",
         "category": "Photography",
         "items": [
           "Taking pictures or photographs is not permitted without site management authorization"
@@ -1050,4 +850,4 @@
       "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
     }
   }
-        }
+            }
