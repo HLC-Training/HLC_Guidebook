@@ -165,20 +165,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
 
-      // -- SITE RULES (legacy data.siteRules block, both pages) --
-      if (data.siteRules) {
-        var sr = data.siteRules;
+      // -- SITE RULES extras: emergency banner, contacts table, signature (from content.siteRules, both pages) --
+      if (content && content.siteRules) {
+        var sr = content.siteRules;
         var rulesTitle = document.getElementById('site-rules-title');
         if (rulesTitle) rulesTitle.textContent = sr.title || 'HLC SITE RULES';
         var callout = document.getElementById('emergency-callout');
         if (callout && sr.emergency) {
           callout.innerHTML = '<div class="emergency-callout"><div class="emergency-primary">' + sr.emergency.primary + '</div><div class="emergency-label">' + sr.emergency.title + '</div><div class="emergency-instruction">' + sr.emergency.instruction + '</div></div>';
-        }
-        var rulesGrid = document.getElementById('site-rules-grid');
-        if (rulesGrid && sr.rules) {
-          rulesGrid.innerHTML = sr.rules.map(function(rule) {
-            return '<div class="site-rule-card"><div class="site-rule-icon">' + rule.icon + '</div><div class="site-rule-body"><div class="site-rule-category">' + rule.category + '</div><ul class="site-rule-items">' + rule.items.map(function(item) { return '<li>' + item + '</li>'; }).join('') + '</ul></div></div>';
-          }).join('');
         }
         var contacts = sr.nonEmergencyContacts || [];
         var contactsTitle = document.getElementById('rules-contacts-title');
