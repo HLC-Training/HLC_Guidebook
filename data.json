@@ -129,6 +129,114 @@
       ]
     },
     "siteRules": {
+      "emergency": {
+        "title": "FIRE & MEDICAL EMERGENCIES",
+        "primary": "Dial 911",
+        "instruction": "Give your name, location & type of emergency"
+      },
+      "contactsTitle": "NON-EMERGENCY CONTACTS",
+      "nonEmergencyContacts": [
+        {
+          "role": "EHS",
+          "name": "Lizlee Galley",
+          "phone": "346-324-1774",
+          "email": "Lizlee.galley1@gevernova.com"
+        },
+        {
+          "role": "HLC Front Desk",
+          "name": "HLC Security Desk",
+          "phone": "713-672-3513",
+          "email": "hlcsecurity@ge.com"
+        },
+        {
+          "role": "Emergency Status Line",
+          "name": "",
+          "phone": "877-672-3771",
+          "email": ""
+        },
+        {
+          "role": "Medical Emergency",
+          "name": "",
+          "phone": "713-672-3533",
+          "email": ""
+        },
+        {
+          "role": "HLC IT",
+          "name": "Mike Evans",
+          "phone": "757-604-1905",
+          "email": "Michael.Evans@gevernova.com"
+        },
+        {
+          "role": "Facilities",
+          "name": "Steve Urban",
+          "phone": "862-210-5487",
+          "email": "stephen.urban@gevernova.com"
+        },
+        {
+          "role": "Training Delivery Manager",
+          "name": "Jim Rosen",
+          "phone": "832-714-2496",
+          "email": "jim.rosen@gevernova.com"
+        },
+        {
+          "role": "Global Logistics Leader",
+          "name": "Andrew Ruch",
+          "phone": "281-229-5417",
+          "email": "Andrew.Ruch@gevernova.com"
+        },
+        {
+          "role": "OE Project Manager",
+          "name": "Maria Medina",
+          "phone": "713-597-1935",
+          "email": "MARIA.MEDINA@gevernova.com"
+        },
+        {
+          "role": "Training Coordinator",
+          "name": "Marisol Guidry",
+          "phone": "832-998-4104",
+          "email": "Marisol.Guidry1@gevernova.com"
+        },
+        {
+          "role": "PLL - Gas Turbine",
+          "name": "Sherif Khalifa",
+          "phone": "281-387-4979",
+          "email": "Sherif.Khalifa@gevernova.com"
+        },
+        {
+          "role": "PLL - Steam Turbine",
+          "name": "Pablo Schibli",
+          "phone": "+41 79-878-7173",
+          "email": "pablo.schibli@gevernova.com"
+        },
+        {
+          "role": "PLL - Controls",
+          "name": "Mohammed Nizami",
+          "phone": "281-744-2541",
+          "email": "Mohammed.Nizami@gevernova.com"
+        },
+        {
+          "role": "PLL - Excitation/Generator",
+          "name": "Michele Alcantar",
+          "phone": "832-926-0238",
+          "email": "Michele.Alcantar@gevernova.com"
+        },
+        {
+          "role": "PLL - Aero",
+          "name": "Greg Walker",
+          "phone": "936-520-0397",
+          "email": "GregoryD.Walker@gevernova.com"
+        },
+        {
+          "role": "PLL - Craft/Repairs",
+          "name": "Harry Hanson",
+          "phone": "630-561-5231",
+          "email": "harry.hanson@gevernova.com"
+        }
+      ],
+      "signature": {
+        "enabled": true,
+        "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
+      },
       "title": "HLC SITE RULES",
       "intro": "All personnel — students, visitors, instructors, and contractors — are required to acknowledge and comply with the following site rules upon arrival.",
       "sections": [
@@ -596,6 +704,114 @@
       ]
     },
     "siteRules": {
+      "emergency": {
+        "title": "FIRE & MEDICAL EMERGENCIES",
+        "primary": "Dial 911",
+        "instruction": "Give your name, location & type of emergency"
+      },
+      "contactsTitle": "NON-EMERGENCY CONTACTS",
+      "nonEmergencyContacts": [
+        {
+          "role": "EHS",
+          "name": "Lizlee Galley",
+          "phone": "346-324-1774",
+          "email": "Lizlee.galley1@gevernova.com"
+        },
+        {
+          "role": "HLC Front Desk",
+          "name": "HLC Security Desk",
+          "phone": "713-672-3513",
+          "email": "hlcsecurity@ge.com"
+        },
+        {
+          "role": "Emergency Status Line",
+          "name": "",
+          "phone": "877-672-3771",
+          "email": ""
+        },
+        {
+          "role": "Medical Emergency",
+          "name": "",
+          "phone": "713-672-3533",
+          "email": ""
+        },
+        {
+          "role": "HLC IT",
+          "name": "Mike Evans",
+          "phone": "757-604-1905",
+          "email": "Michael.Evans@gevernova.com"
+        },
+        {
+          "role": "Facilities",
+          "name": "Steve Urban",
+          "phone": "862-210-5487",
+          "email": "stephen.urban@gevernova.com"
+        },
+        {
+          "role": "Training Delivery Manager",
+          "name": "Jim Rosen",
+          "phone": "832-714-2496",
+          "email": "jim.rosen@gevernova.com"
+        },
+        {
+          "role": "Global Logistics Leader",
+          "name": "Andrew Ruch",
+          "phone": "281-229-5417",
+          "email": "Andrew.Ruch@gevernova.com"
+        },
+        {
+          "role": "OE Project Manager",
+          "name": "Maria Medina",
+          "phone": "713-597-1935",
+          "email": "MARIA.MEDINA@gevernova.com"
+        },
+        {
+          "role": "Training Coordinator",
+          "name": "Marisol Guidry",
+          "phone": "832-998-4104",
+          "email": "Marisol.Guidry1@gevernova.com"
+        },
+        {
+          "role": "PLL - Gas Turbine",
+          "name": "Sherif Khalifa",
+          "phone": "281-387-4979",
+          "email": "Sherif.Khalifa@gevernova.com"
+        },
+        {
+          "role": "PLL - Steam Turbine",
+          "name": "Pablo Schibli",
+          "phone": "+41 79-878-7173",
+          "email": "pablo.schibli@gevernova.com"
+        },
+        {
+          "role": "PLL - Controls",
+          "name": "Mohammed Nizami",
+          "phone": "281-744-2541",
+          "email": "Mohammed.Nizami@gevernova.com"
+        },
+        {
+          "role": "PLL - Excitation/Generator",
+          "name": "Michele Alcantar",
+          "phone": "832-926-0238",
+          "email": "Michele.Alcantar@gevernova.com"
+        },
+        {
+          "role": "PLL - Aero",
+          "name": "Greg Walker",
+          "phone": "936-520-0397",
+          "email": "GregoryD.Walker@gevernova.com"
+        },
+        {
+          "role": "PLL - Craft/Repairs",
+          "name": "Harry Hanson",
+          "phone": "630-561-5231",
+          "email": "harry.hanson@gevernova.com"
+        }
+      ],
+      "signature": {
+        "enabled": true,
+        "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
+      },
       "title": "HLC SITE RULES",
       "intro": "All personnel — students, visitors, instructors, and contractors — are required to acknowledge and comply with the following site rules upon arrival.",
       "sections": [
@@ -809,179 +1025,5 @@
     "title": "CAMPUS MAP & MUSTER POINTS",
     "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1927.4178452070876!2d-95.2716249!3d29.7895164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bb9cdcdb5c63%3A0x11d142364f754e9f!2s8800%20Wallisville%20Rd%2C%20Houston%2C%20TX%2077029!5e1!3m2!1sen!2sus!4v1779973808001!5m2!1sen!2sus",
     "note": "See the Site Layout Map below for building locations, muster points, and parking."
-  },
-  "siteRules": {
-    "title": "HLC SITE RULES",
-    "emergency": {
-      "title": "FIRE & MEDICAL EMERGENCIES",
-      "primary": "Dial 911",
-      "instruction": "Give your name, location & type of emergency"
-    },
-    "rules": [
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ¥",
-        "category": "Fire Alarm",
-        "items": [
-          "Immediately evacuate via emergency exit routes",
-          "Visitors must stay with their host or instructor during an emergency",
-          "Know the Emergency Evacuation Routes posted in all classrooms & meeting areas",
-          "Dedicated muster points are located in Parking Lots 1, 2 & 3",
-          "Do NOT leave the facility or re-enter until ALL CLEAR is announced"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂªÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
-        "category": "Tornado",
-        "items": [
-          "Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3",
-          "Look for shelter signs on the doors"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ",
-        "category": "Speed Limit",
-        "items": [
-          "Follow the posted 10 mph speed limit on all facility roads"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂ¦ÃÂÃÂº",
-        "category": "PPE",
-        "items": [
-          "PPE is required when performing training in Lab or Bay areas and when working in the facility"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂª",
-        "category": "Entry",
-        "items": [
-          "Enter the building through the main security entrance"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
-        "category": "Equipment",
-        "items": [
-          "Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ",
-        "category": "Incident Reporting",
-        "items": [
-          "Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"
-        ]
-      },
-      {
-        "icon": "ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ·",
-        "category": "Photography",
-        "items": [
-          "Taking pictures or photographs is not permitted without site management authorization"
-        ]
-      }
-    ],
-    "nonEmergencyContacts": [
-      {
-        "role": "EHS",
-        "name": "Lizlee Galley",
-        "phone": "346-324-1774",
-        "email": "Lizlee.galley1@gevernova.com"
-      },
-      {
-        "role": "HLC Front Desk",
-        "name": "HLC Security Desk",
-        "phone": "713-672-3513",
-        "email": "hlcsecurity@ge.com"
-      },
-      {
-        "role": "Emergency Status Line",
-        "name": "",
-        "phone": "877-672-3771",
-        "email": ""
-      },
-      {
-        "role": "Medical Emergency",
-        "name": "",
-        "phone": "713-672-3533",
-        "email": ""
-      },
-      {
-        "role": "HLC IT",
-        "name": "Mike Evans",
-        "phone": "757-604-1905",
-        "email": "Michael.Evans@gevernova.com"
-      },
-      {
-        "role": "Facilities",
-        "name": "Steve Urban",
-        "phone": "862-210-5487",
-        "email": "stephen.urban@gevernova.com"
-      },
-      {
-        "role": "Training Delivery Manager",
-        "name": "Jim Rosen",
-        "phone": "832-714-2496",
-        "email": "jim.rosen@gevernova.com"
-      },
-      {
-        "role": "Global Logistics Leader",
-        "name": "Andrew Ruch",
-        "phone": "281-229-5417",
-        "email": "Andrew.Ruch@gevernova.com"
-      },
-      {
-        "role": "OE Project Manager",
-        "name": "Maria Medina",
-        "phone": "713-597-1935",
-        "email": "MARIA.MEDINA@gevernova.com"
-      },
-      {
-        "role": "Training Coordinator",
-        "name": "Marisol Guidry",
-        "phone": "832-998-4104",
-        "email": "Marisol.Guidry1@gevernova.com"
-      },
-      {
-        "role": "PLL - Gas Turbine",
-        "name": "Sherif Khalifa",
-        "phone": "281-387-4979",
-        "email": "Sherif.Khalifa@gevernova.com"
-      },
-      {
-        "role": "PLL - Steam Turbine",
-        "name": "Pablo Schibli",
-        "phone": "+41 79-878-7173",
-        "email": "pablo.schibli@gevernova.com"
-      },
-      {
-        "role": "PLL - Controls",
-        "name": "Mohammed Nizami",
-        "phone": "281-744-2541",
-        "email": "Mohammed.Nizami@gevernova.com"
-      },
-      {
-        "role": "PLL - Excitation/Generator",
-        "name": "Michele Alcantar",
-        "phone": "832-926-0238",
-        "email": "Michele.Alcantar@gevernova.com"
-      },
-      {
-        "role": "PLL - Aero",
-        "name": "Greg Walker",
-        "phone": "936-520-0397",
-        "email": "GregoryD.Walker@gevernova.com"
-      },
-      {
-        "role": "PLL - Craft/Repairs",
-        "name": "Harry Hanson",
-        "phone": "630-561-5231",
-        "email": "harry.hanson@gevernova.com"
-      }
-    ],
-    "contactsTitle": "NON-EMERGENCY CONTACTS",
-    "signature": {
-      "enabled": true,
-      "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
-    }
   }
 }
