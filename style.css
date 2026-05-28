@@ -409,3 +409,31 @@ footer {
 }
 
 /* ── END SITE RULES MODULE ──────────────────────────────────────── */
+
+
+/* -- Contacts Expandable Table -- */
+.contact-row-hidden {
+    display: none;
+}
+
+.contacts-toggle-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 16px;
+    background-color: #005E60;
+    color: #C8FF08;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contacts-toggle-btn:hover {
+    background-color: #004244;
+}
+
+/* -- END Contacts Expandable Table -- */
