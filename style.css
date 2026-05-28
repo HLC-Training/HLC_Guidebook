@@ -1,91 +1,198 @@
 :root {
-    --evergreen: #005E60;
-    --day: #FFFFFF;
-    --night: #212121;
-    --urgency: #C8FF08;
+        --evergreen: #005E60;
+        --day: #FFFFFF;
+        --night: #212121;
+        --urgency: #C8FF08;
 }
 
-body { margin: 0; font-family: 'Inter', Segoe UI, Arial, sans-serif; color: var(--night); }
+body {
+        margin: 0;
+        font-family: 'Inter', Segoe UI, Arial, sans-serif;
+        color: var(--night);
+}
 
-.hero { height: 60vh; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 3rem; }
-.hero h1 { color: var(--day); background: rgba(0, 94, 96, 0.9); padding: 1.5rem 2rem; margin-bottom: 3rem; text-transform: uppercase; }
+/* HERO */
+.hero {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+}
+.hero h1 {
+        color: var(--day);
+        background: rgba(0, 94, 96, 0.9);
+        padding: 1.5rem 2rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+}
 
+/* SECTIONS */
 section { padding: 3rem 10%; }
-h2 { color: var(--evergreen); border-left: 5px solid var(--urgency); padding-left: 1rem; margin-bottom: 2rem; }
+h2 {
+        color: var(--evergreen);
+        border-left: 5px solid var(--urgency);
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+}
 
-/* FIX: The Action Panel Grid */
+/* ACTION PANEL */
 #action-panel {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 2rem 10%;
-    background-color: var(--day);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 2rem 10%;
+        background-color: var(--day);
 }
 
+/* BUTTONS */
 .btn {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    background: var(--evergreen);
-    color: var(--day);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-    border: 2px solid var(--evergreen);
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        background: var(--evergreen);
+        color: var(--day);
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border: 2px solid var(--evergreen);
+}
+.btn:hover {
+        background: var(--urgency);
+        color: var(--night);
+        border-color: var(--night);
 }
 
-.btn:hover { background: var(--urgency); color: var(--night); border-color: var(--night); }
-
-/* The Rules Grid */
+/* RULES GRID */
 #rules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
 }
 
+/* BASE CARD - fixes missing .card class */
+.card {
+        background-color: var(--day);
+        border: 1px solid #ddd;
+        padding: 1rem;
+        transition: all 0.3s ease;
+}
+
+/* RULE CARDS */
 .rule-card {
-    text-align: center;
-    text-decoration: none;
-    color: var(--night);
-    border: 1px solid #ddd;
-    padding: 2rem 1rem;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        color: var(--night);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
+.rule-card:hover {
+        border-color: var(--evergreen);
+        background-color: #f0fafa;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,94,96,0.15);
+}
+.rule-card img { width: 60px; height: 60px; margin-bottom: 12px; }
+.rule-card p { font-weight: 700; font-size: 0.8rem; margin: 0; text-transform: uppercase; letter-spacing: 0.04em; }
 
-.rule-card:hover { border-color: var(--evergreen); background-color: #f9f9f9; }
-.rule-card img { width: 80px; height: 80px; margin-bottom: 15px; }
-.rule-card p { font-weight: 700; font-size: 0.85rem; margin: 0; }
-
+/* LISTS */
 ul { list-style: none; padding: 0; }
-li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.1rem; }
+li { padding: 1rem; border-bottom: 1px solid #ddd; font-size: 1.05rem; }
+li:last-child { border-bottom: none; }
+
+/* CONTACT CARDS - merged and cleaned */
 .contact-card {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    background: #fdfdfd;
+        border: 1px solid #ddd;
+        padding: 1.5rem;
+        background: #fdfdfd;
+        text-align: left;
 }
-.contact-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--evergreen);
+.contact-card h4 {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--evergreen);
 }
-.contact-card {
-    border: 1px solid #ddd !important;
-    padding: 1.5rem !important;
-    text-align: left !important;
+.contact-card p { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; }
+.contact-btn {
+        display: inline-block;
+        margin-top: 6px;
+        margin-right: 8px;
+        padding: 5px 12px;
+        background: #f0f0f0;
+        color: var(--night);
+        text-decoration: none;
+        font-size: 0.85rem;
+        border: 1px solid #ddd;
+        transition: 0.2s;
+}
+.contact-btn:hover { background: var(--evergreen); color: var(--day); border-color: var(--evergreen); }
+
+    /* CAMPUS MAP */
+#map-section { background: #f7f7f7; }
+#map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 50%;
+        height: 0;
+        overflow: hidden;
+        border: 2px solid var(--evergreen);
+}
+#map-container iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+}
+.map-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 1.5rem;
+}
+.map-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+}
+.map-legend-dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        flex-shrink: 0;
 }
 
-.contact-btn {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 5px 10px;
-    background: #f0f0f0;
-    color: var(--night);
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-radius: 4px;
+/* FOOTER */
+footer {
+        background: var(--evergreen);
+        color: var(--day);
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+        margin-top: 3rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+        .hero { height: 45vh; padding: 1.5rem; }
+        .hero h1 { font-size: 1.2rem; padding: 1rem; margin-bottom: 1rem; }
+        section { padding: 2rem 5%; }
+        #action-panel { padding: 1.5rem 5%; grid-template-columns: 1fr; }
+        #rules-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+        #map-container { padding-bottom: 75%; }
+        h2 { font-size: 1.1rem; }
+}
+@media (max-width: 480px) {
+        .hero h1 { font-size: 1rem; }
+        #rules-grid { grid-template-columns: repeat(2, 1fr); }
+        .contact-card { padding: 1rem; }
 }
