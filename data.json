@@ -56,15 +56,7 @@
   "map": {
     "title": "CAMPUS MAP & MUSTER POINTS",
     "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1927.4178452070876!2d-95.2716249!3d29.7895164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bb9cdcdb5c63%3A0x11d142364f754e9f!2s8800%20Wallisville%20Rd%2C%20Houston%2C%20TX%2077029!5e1!3m2!1sen!2sus!4v1779973808001!5m2!1sen!2sus",
-    "address": "8800 Wallisville Rd, Houston TX 77029",
-    "legend": [
-      { "label": "Main Entrance / Security", "color": "#005E60" },
-      { "label": "Visitor Parking", "color": "#4A90D9" },
-      { "label": "Staff Parking", "color": "#7B68EE" },
-      { "label": "Muster Points", "color": "#C8FF08" },
-      { "label": "Smoking Area (SW, Bldg 3)", "color": "#888888" },
-      { "label": "Abby's Cafe (Bldg 1)", "color": "#E8A838" }
-    ]
+    "note": "See the Site Layout Map below for building locations, muster points, and parking."
   },
   "siteRules": {
     "title": "HLC SITE RULES",
