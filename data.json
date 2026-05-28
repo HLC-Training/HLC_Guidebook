@@ -1,155 +1,110 @@
 {
-    "guidebook": {
-          "hero_title": "WELCOME TO THE HOUSTON LEARNING CENTER",
-          "hero_image": "images/INLINE_CODE_1.jpg",
-          "actions": [
-                  { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-                  { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
-                  { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
-          ],
-          "list_title": "QUICK SITE RULES",
-          "items": [
-                  "Emergency: Dial 911 immediately.",
-                  "Follow posted 10 mph speed limit on campus.",
-                  "PPE must be worn at all times in lab and bay areas.",
-                  "Photography is not permitted without authorization."
-          ],
-          "safety_content": {
-                  "title": "LIFE SAVING RULES",
-                  "text": "We start work only when it is safe and stop when it's not.",
-                  "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
-                  "rules": [
-                            { "label": "CONFINED SPACE", "icon": "Confined-Space.svg" },
-                            { "label": "DRIVING SAFETY", "icon": "Driving-Safety.svg" },
-                            { "label": "ENERGY ISOLATION", "icon": "Energy-Isolation.svg" },
-                            { "label": "FIRE AND EXPLOSION", "icon": "Fire-and-Explosion.svg" },
-                            { "label": "LINE OF FIRE", "icon": "Line-of-Fire.svg" },
-                            { "label": "LIVE ELECTRICAL", "icon": "Live-Electrical.svg" },
-                            { "label": "MECHANICAL LIFTING", "icon": "Mechanical-Lifting.svg" },
-                            { "label": "WORK AT HEIGHT", "icon": "Work-at-Height.svg" },
-                            { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.svg" }
-                  ]
-          },
-          "directory": [
-                  { "dept": "SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774", "email": "Lizlee.galley1@gevernova.com" },
-                  { "dept": "OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513", "email": "" },
-                  { "dept": "TRAINING", "name": "Jim Rosen", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" }
-          ]
+  "guidebook": {
+    "hero_title": "WELCOME TO THE HOUSTON LEARNING CENTER",
+    "hero_image": "images/INLINE_CODE_1.jpg",
+    "actions": [
+      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
+      { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+    ],
+    "list_title": "QUICK SITE RULES",
+    "items": [
+      "Emergency: Dial 911 immediately.",
+      "Follow posted 10 mph speed limit on campus.",
+      "PPE must be worn at all times in lab and bay areas.",
+      "Photography is not permitted without authorization."
+    ],
+    "safety_content": {
+      "title": "LIFE SAVING RULES",
+      "text": "We start work only when it is safe and stop when it's not.",
+      "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
+      "rules": [
+        { "label": "CONFINED SPACE", "icon": "Confined-Space.svg" },
+        { "label": "DRIVING SAFETY", "icon": "Driving-Safety.svg" },
+        { "label": "ENERGY ISOLATION", "icon": "Energy-Isolation.svg" },
+        { "label": "FIRE AND EXPLOSION", "icon": "Fire-and-Explosion.svg" },
+        { "label": "LINE OF FIRE", "icon": "Line-of-Fire.svg" },
+        { "label": "LIVE ELECTRICAL", "icon": "Live-Electrical.svg" },
+        { "label": "MECHANICAL LIFTING", "icon": "Mechanical-Lifting.svg" },
+        { "label": "WORK AT HEIGHT", "icon": "Work-at-Height.svg" },
+        { "label": "WORK AUTHORIZATION", "icon": "Work-Authorization.svg" }
+      ]
     },
-    "addendum": {
-          "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
-          "hero_image": "images/INLINE_CODE_2.jpg",
-          "actions": [
-                  { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
-                  { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
-                  { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
-          ],
-          "list_title": "CLASSROOM CLOSING CHECKLIST",
-          "items": [
-                  "Whiteboard: Erased and cleaned.",
-                  "Projector: Turned off and screen retracted.",
-                  "Laptops: Closed, unplugged, and stored securely.",
-                  "Classroom: Tables aligned and chairs pushed in.",
-                  "Security: Doors locked and lights turned off."
-          ]
+    "directory": [
+      { "dept": "SAFETY", "name": "EHS Manager", "phone": "+1-346-324-1774", "email": "Lizlee.galley1@gevernova.com" },
+      { "dept": "OPERATIONS", "name": "HLC Front Desk", "phone": "+1-713-672-3513", "email": "" },
+      { "dept": "TRAINING", "name": "Jim Rosen", "phone": "+1-832-714-2496", "email": "jim.rosen@gevernova.com" }
+    ]
+  },
+  "addendum": {
+    "hero_title": "BORROWED INSTRUCTOR ADDENDUM",
+    "hero_image": "images/INLINE_CODE_2.jpg",
+    "actions": [
+      { "label": "SAFETY VIDEO", "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd" },
+      { "label": "REPORT CONCERN", "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137" },
+      { "label": "FACILITY HELP", "url": "https://buildsmart.capgemini.com/workflows/initiate/801910" }
+    ],
+    "list_title": "CLASSROOM CLOSING CHECKLIST",
+    "items": [
+      "Whiteboard: Erased and cleaned.",
+      "Projector: Turned off and screen retracted.",
+      "Laptops: Closed, unplugged, and stored securely.",
+      "Classroom: Tables aligned and chairs pushed in.",
+      "Security: Doors locked and lights turned off."
+    ]
+  },
+  "map": {
+    "title": "CAMPUS MAP & MUSTER POINTS",
+    "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1927.4178452070876!2d-95.2716249!3d29.7895164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bb9cdcdb5c63%3A0x11d142364f754e9f!2s8800%20Wallisville%20Rd%2C%20Houston%2C%20TX%2077029!5e1!3m2!1sen!2sus!4v1779973808001!5m2!1sen!2sus",
+    "address": "8800 Wallisville Rd, Houston TX 77029",
+    "legend": [
+      { "label": "Main Entrance / Security", "color": "#005E60" },
+      { "label": "Visitor Parking", "color": "#4A90D9" },
+      { "label": "Staff Parking", "color": "#7B68EE" },
+      { "label": "Muster Points", "color": "#C8FF08" },
+      { "label": "Smoking Area (SW, Bldg 3)", "color": "#888888" },
+      { "label": "Abby's Cafe (Bldg 1)", "color": "#E8A838" }
+    ]
+  },
+  "siteRules": {
+    "title": "HLC SITE RULES",
+    "emergency": {
+      "title": "FIRE & MEDICAL EMERGENCIES",
+      "primary": "Dial 911",
+      "instruction": "Give your name, location & type of emergency"
     },
-    "map": {
-          "title": "CAMPUS MAP & MUSTER POINTS",
-          "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1927.4178452070876!2d-95.2716249!3d29.7895164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bb9cdcdb5c63%3A0x11d142364f754e9f!2s8800%20Wallisville%20Rd%2C%20Houston%2C%20TX%2077029!5e1!3m2!1sen!2sus!4v1779973808001!5m2!1sen!2sus",
-          "address": "8800 Wallisville Rd, Houston TX 77029",
-          "legend": [
-                  { "label": "Main Entrance / Security", "color": "#005E60" },
-                  { "label": "Visitor Parking", "color": "#4A90D9" },
-                  { "label": "Staff Parking", "color": "#7B68EE" },
-                  { "label": "Muster Points", "color": "#C8FF08" },
-                  { "label": "Smoking Area (SW, Bldg 3)", "color": "#888888" },
-                  { "label": "Abby's Cafe (Bldg 1)", "color": "#E8A838" }
-          ]
-    },
-    "siteRules": {
-          "title": "HLC SITE RULES",
-          "emergency": {
-                  "title": "FIRE & MEDICAL EMERGENCIES",
-                  "primary": "Dial 911",
-                  "instruction": "Give your name, location & type of emergency"
-          },
-          "rules": [
-                  {
-                            "icon": "🔥",
-                            "category": "Fire Alarm",
-                            "items": [
-                                        "Immediately evacuate via emergency exit routes",
-                                        "Visitors must stay with their host or instructor during an emergency",
-                                        "Know the Emergency Evacuation Routes posted in all classrooms & meeting areas",
-                                        "Dedicated muster points are located in Parking Lots 1, 2 & 3",
-                                        "Do NOT leave the facility or re-enter until ALL CLEAR is announced"
-                            ]
-                  },
-                  {
-                            "icon": "🌪️",
-                            "category": "Tornado",
-                            "items": [
-                                        "Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3",
-                                        "Look for shelter signs on the doors"
-                            ]
-                  },
-                  {
-                            "icon": "🚗",
-                            "category": "Speed Limit",
-                            "items": [
-                                        "Follow the posted 10 mph speed limit on all facility roads"
-                            ]
-                  },
-                  {
-                            "icon": "🦺",
-                            "category": "PPE",
-                            "items": [
-                                        "PPE is required when performing training in Lab or Bay areas and when working in the facility"
-                            ]
-                  },
-                  {
-                            "icon": "🚪",
-                            "category": "Entry",
-                            "items": [
-                                        "Enter the building through the main security entrance"
-                            ]
-                  },
-                  {
-                            "icon": "⚙️",
-                            "category": "Equipment",
-                            "items": [
-                                        "Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"
-                            ]
-                  },
-                  {
-                            "icon": "⚠️",
-                            "category": "Incident Reporting",
-                            "items": [
-                                        "Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"
-                            ]
-                  },
-                  {
-                            "icon": "📷",
-                            "category": "Photography",
-                            "items": [
-                                        "Taking pictures or photographs is not permitted without site management authorization"
-                            ]
-                  }
-          ],
-          "contacts": {
-                  "title": "NON-EMERGENCY CONTACTS",
-                  "items": [
-                            { "role": "EHS Manager", "name": "Lizlee Galley", "phone": "+1-346-324-1774" },
-                            { "role": "HLC Front Desk", "name": "", "phone": "+1-713-672-3513" },
-                            { "role": "HLC Status Line", "name": "", "phone": "+1-713-672-3521" },
-                            { "role": "Medical Emergency (On-Site)", "name": "", "phone": "713-672-3533" },
-                            { "role": "HLC IT", "name": "Yegor Spencer", "phone": "409-766-0179" },
-                            { "role": "Facilities", "name": "Steve Urban", "phone": "862-210-5487" }
-                  ]
-          },
-          "signature": {
-                  "enabled": true,
-                  "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
-          }
+    "rules": [
+      { "icon": "🔥", "category": "Fire Alarm", "items": ["Immediately evacuate via emergency exit routes","Visitors must stay with their host or instructor during an emergency","Know the Emergency Evacuation Routes posted in all classrooms & meeting areas","Dedicated muster points are located in Parking Lots 1, 2 & 3","Do NOT leave the facility or re-enter until ALL CLEAR is announced"] },
+      { "icon": "🌪️", "category": "Tornado", "items": ["Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3","Look for shelter signs on the doors"] },
+      { "icon": "🚗", "category": "Speed Limit", "items": ["Follow the posted 10 mph speed limit on all facility roads"] },
+      { "icon": "🦺", "category": "PPE", "items": ["PPE is required when performing training in Lab or Bay areas and when working in the facility"] },
+      { "icon": "🚪", "category": "Entry", "items": ["Enter the building through the main security entrance"] },
+      { "icon": "⚙️", "category": "Equipment", "items": ["Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"] },
+      { "icon": "⚠️", "category": "Incident Reporting", "items": ["Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"] },
+      { "icon": "📷", "category": "Photography", "items": ["Taking pictures or photographs is not permitted without site management authorization"] }
+    ],
+    "nonEmergencyContacts": [
+      { "role": "EHS", "name": "Lizlee Galley", "phone": "346-324-1774", "email": "Lizlee.galley1@gevernova.com" },
+      { "role": "HLC Front Desk", "name": "", "phone": "713-672-3513", "email": "" },
+      { "role": "Emergency Status Line", "name": "", "phone": "877-672-3771", "email": "" },
+      { "role": "Medical Emergency", "name": "", "phone": "713-672-3533", "email": "" },
+      { "role": "HLC IT", "name": "Mike Evans", "phone": "", "email": "Michael.Evans@gevernova.com" },
+      { "role": "Facilities", "name": "Steve Urban", "phone": "862-210-5487", "email": "stephen.urban@gevernova.com" },
+      { "role": "Training Delivery Manager", "name": "Jim Rosen", "phone": "832-714-2496", "email": "jim.rosen@gevernova.com" },
+      { "role": "Global Logistics Leader", "name": "Andrew Ruch", "phone": "281-229-5417", "email": "Andrew.Ruch@gevernova.com" },
+      { "role": "OE Project Manager", "name": "Maria Medina", "phone": "713-597-1935", "email": "MARIA.MEDINA@gevernova.com" },
+      { "role": "Training Coordinator", "name": "Marisol Guidry", "phone": "832-998-4104", "email": "Marisol.Guidry1@gevernova.com" },
+      { "role": "PLL - Gas Turbine", "name": "Sherif Khalifa", "phone": "281-387-4979", "email": "Sherif.Khalifa@gevernova.com" },
+      { "role": "PLL - Steam Turbine", "name": "Pablo Schibli", "phone": "+41 79-878-7173", "email": "pablo.schibli@gevernova.com" },
+      { "role": "PLL - Controls", "name": "Mohammed Nizami", "phone": "281-744-2541", "email": "Mohammed.Nizami@gevernova.com" },
+      { "role": "PLL - Excitation/Generator", "name": "Michele Alcantar", "phone": "832-926-0238", "email": "Michele.Alcantar@gevernova.com" },
+      { "role": "PLL - Aero", "name": "Greg Walker", "phone": "936-520-0397", "email": "GregoryD.Walker@gevernova.com" },
+      { "role": "PLL - Craft/Repairs", "name": "Harry Hanson", "phone": "630-561-5231", "email": "harry.hanson@gevernova.com" }
+    ],
+    "contactsTitle": "NON-EMERGENCY CONTACTS",
+    "signature": {
+      "enabled": true,
+      "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
     }
+  }
 }
