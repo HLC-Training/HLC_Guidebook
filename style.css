@@ -4178,3 +4178,223 @@ footer {
 }
 
 /* -- END Contacts Expandable Table -- */
+
+
+/* ── Incident Reporting Module ────────────────────── */
+.ir-module {
+  margin-top: 24px;
+}
+.ir-subtitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Contact Cards */
+.ir-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.ir-contact-card {
+  border-radius: 4px;
+  padding: 16px;
+}
+.ir-emergency-card {
+  background-color: #212121;
+  border-left: 4px solid #C8FF08;
+}
+.ir-non-emergency-card {
+  background-color: #005E60;
+}
+.ir-card-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #C8FF08;
+}
+.ir-non-emergency-card .ir-card-label {
+  color: #C8FF08;
+}
+.ir-card-instruction {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.ir-card-note {
+  font-size: 0.75rem;
+  color: #AAAAAA;
+  margin-top: 10px;
+  font-style: italic;
+}
+.ir-contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ir-contact-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.ir-contact-btn:hover {
+  opacity: 0.85;
+}
+.emergency-btn {
+  background-color: #C8FF08;
+}
+.emergency-btn .ir-contact-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.emergency-btn .ir-contact-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #212121;
+}
+.non-emergency-btn {
+  background-color: #FFFFFF;
+}
+.non-emergency-btn .ir-contact-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #005E60;
+}
+.non-emergency-btn .ir-contact-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #005E60;
+}
+
+/* Response Flow Steps */
+.ir-steps-block {
+  margin-bottom: 24px;
+}
+.ir-steps-heading,
+.ir-scope-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #005E60;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #005E60;
+  padding-bottom: 4px;
+}
+.ir-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ir-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.ir-step-number {
+  background-color: #005E60;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ir-step-content strong {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.ir-step-content p {
+  font-size: 0.875rem;
+  color: #212121;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* What to Report */
+.ir-scope-block {
+  margin-bottom: 20px;
+}
+.ir-scope-list {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ir-scope-list li {
+  font-size: 0.9rem;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* OSHA Note */
+.ir-osha-note {
+  font-size: 0.8rem;
+  color: #555555;
+  font-style: italic;
+  border-left: 3px solid #C8FF08;
+  padding-left: 10px;
+  margin-bottom: 24px;
+}
+
+/* Action Button */
+.ir-action-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.ir-action-btn {
+  display: inline-block;
+  background-color: #C8FF08;
+  color: #212121;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 3px;
+  transition: background-color 0.15s ease;
+}
+.ir-action-btn:hover {
+  background-color: #b8ef00;
+}
+
+/* ── Incident Reporting — Mobile ──────────────────── */
+@media (max-width: 600px) {
+  .ir-contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .ir-action-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px;
+  }
+}
