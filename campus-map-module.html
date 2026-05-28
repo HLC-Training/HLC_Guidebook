@@ -1,0 +1,129 @@
+<style>
+.campus-map-wrap{font-family:'Inter',sans-serif;max-width:900px;margin:0 auto}
+.campus-map-header{margin-bottom:1rem}
+.campus-map-header h3{color:#005E60;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .25rem}
+.campus-map-header p{font-size:.85rem;color:#555;margin:0}
+.campus-svg-container{position:relative;width:100%;background:#f8f8f6;border:2px solid #005E60;overflow:hidden}
+.campus-svg-container svg{display:block;width:100%;height:auto}
+.map-legend-row{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin:.75rem 0}
+.map-legend-item{display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:#212121}
+.legend-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.map-info-panel{background:#212121;color:#fff;padding:1rem 1.25rem;margin-top:.75rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.map-info-panel .info-item{font-size:.8rem}
+.map-info-panel .info-item strong{display:block;color:#C8FF08;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
+.map-directions-btn{display:inline-block;background:#005E60;color:#C8FF08;padding:.5rem 1rem;font-size:.8rem;font-weight:700;text-transform:uppercase;text-decoration:none;letter-spacing:.05em;white-space:nowrap}
+.map-directions-btn:hover{background:#C8FF08;color:#212121}
+.muster-pulse{animation:muster-pulse 1.8s ease-out infinite;transform-origin:center}
+@keyframes muster-pulse{0%{opacity:1}70%{opacity:0}100%{opacity:0}}
+.bldg-label{font-size:11px;font-weight:700;fill:#005E60;text-transform:uppercase;letter-spacing:.04em}
+.road-label{font-size:10px;fill:#888;letter-spacing:.03em}
+.popover{position:absolute;background:#212121;color:#fff;padding:.5rem .75rem;font-size:.78rem;border-left:3px solid #C8FF08;pointer-events:none;white-space:nowrap;z-index:10;display:none;border-radius:2px}
+.popover.visible{display:block}
+@media(max-width:600px){.map-info-panel{flex-direction:column}}
+</style>
+<div class="campus-map-wrap">
+<div class="campus-map-header">
+<h3>HLC Campus - Site Layout &amp; Muster Points</h3>
+<p>8800 Wallisville Rd, Houston TX 77029 | <strong style="color:#005E60">10 MPH speed limit</strong> on all campus roads</p>
+</div>
+<div class="campus-svg-container" id="hlc-map-container">
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HLC campus site map">
+<rect width="600" height="440" fill="#e8e8e2"/>
+<rect x="0" y="0" width="600" height="38" fill="#b0a898"/>
+<rect x="0" y="17" width="600" height="4" fill="#fff" opacity="0.5"/>
+<text x="300" y="24" class="road-label" text-anchor="middle">WALLISVILLE ROAD</text>
+<rect x="90" y="38" width="30" height="60" fill="#c8c2b6"/>
+<rect x="480" y="38" width="26" height="340" fill="#c8c2b6"/>
+<rect x="60" y="95" width="460" height="22" fill="#c8c2b6" opacity="0.7"/>
+<rect x="70" y="120" width="240" height="105" rx="3" fill="#fff" stroke="#005E60" stroke-width="2.5"/>
+<rect x="70" y="120" width="240" height="22" rx="3" fill="#005E60"/>
+<text x="190" y="135" class="bldg-label" fill="#C8FF08" text-anchor="middle" font-size="12">BUILDING 1</text>
+<text x="190" y="155" class="bldg-label" text-anchor="middle" font-size="9">MAIN ENTRANCE / SECURITY</text>
+<text x="190" y="170" class="road-label" text-anchor="middle">Training Rooms 1233 / 1235 | 1128-1131</text>
+<text x="190" y="184" class="road-label" text-anchor="middle">Abby's Cafe | Printing (B&amp;W)</text>
+<polygon points="105,120 130,120 117,108" fill="#C8FF08" stroke="#005E60" stroke-width="1"/>
+<text x="117" y="105" class="road-label" text-anchor="middle" font-size="8" fill="#005E60">IN</text>
+<rect x="70" y="248" width="240" height="85" rx="3" fill="#fff" stroke="#005E60" stroke-width="2"/>
+<rect x="70" y="248" width="240" height="20" rx="3" fill="#005E60"/>
+<text x="190" y="262" class="bldg-label" fill="#C8FF08" text-anchor="middle" font-size="12">BUILDING 2</text>
+<text x="190" y="285" class="road-label" text-anchor="middle">Lab / Bay Areas | PPE Required</text>
+<rect x="70" y="356" width="240" height="72" rx="3" fill="#fff" stroke="#005E60" stroke-width="2"/>
+<rect x="70" y="356" width="240" height="20" rx="3" fill="#005E60"/>
+<text x="190" y="370" class="bldg-label" fill="#C8FF08" text-anchor="middle" font-size="12">BUILDING 3</text>
+<text x="190" y="392" class="road-label" text-anchor="middle">Tornado Shelter (staircase) | Printing (B&amp;W)</text>
+<rect x="340" y="120" width="120" height="80" rx="2" fill="#4A90D9" opacity="0.25" stroke="#4A90D9" stroke-width="1.5"/>
+<text x="400" y="157" class="bldg-label" fill="#4A90D9" text-anchor="middle" font-size="10">VISITOR PARKING</text>
+<text x="400" y="130" class="road-label" text-anchor="middle" font-size="8" fill="#4A90D9">Reversed parking advised</text>
+<line x1="356" y1="120" x2="356" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<line x1="372" y1="120" x2="372" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<line x1="388" y1="120" x2="388" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<line x1="404" y1="120" x2="404" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<line x1="420" y1="120" x2="420" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<line x1="436" y1="120" x2="436" y2="200" stroke="#4A90D9" stroke-width="0.8" opacity="0.5"/>
+<rect x="10" y="120" width="50" height="210" rx="2" fill="#7B68EE" opacity="0.2" stroke="#7B68EE" stroke-width="1.5"/>
+<text x="35" y="218" class="bldg-label" fill="#7B68EE" text-anchor="middle" font-size="8" transform="rotate(-90,35,218)">STAFF PARKING</text>
+<rect x="10" y="375" width="48" height="40" rx="2" fill="#888" opacity="0.2" stroke="#888" stroke-width="1"/>
+<text x="34" y="391" class="road-label" text-anchor="middle" font-size="8" fill="#888">SMOKE</text>
+<text x="34" y="403" class="road-label" text-anchor="middle" font-size="8" fill="#888">AREA</text>
+<circle cx="38" cy="105" r="18" fill="#C8FF08" opacity="0.2" class="muster-pulse"/>
+<circle cx="38" cy="105" r="10" fill="#C8FF08" stroke="#005E60" stroke-width="2" style="cursor:pointer"/>
+<text x="38" y="109" text-anchor="middle" font-size="9" font-weight="900" fill="#212121" style="pointer-events:none">MP1</text>
+<circle cx="38" cy="295" r="18" fill="#C8FF08" opacity="0.2" class="muster-pulse" style="animation-delay:.6s"/>
+<circle cx="38" cy="295" r="10" fill="#C8FF08" stroke="#005E60" stroke-width="2" style="cursor:pointer"/>
+<text x="38" y="299" text-anchor="middle" font-size="9" font-weight="900" fill="#212121" style="pointer-events:none">MP2</text>
+<circle cx="38" cy="400" r="18" fill="#C8FF08" opacity="0.2" class="muster-pulse" style="animation-delay:1.2s"/>
+<circle cx="38" cy="400" r="10" fill="#C8FF08" stroke="#005E60" stroke-width="2" style="cursor:pointer"/>
+<text x="38" y="404" text-anchor="middle" font-size="9" font-weight="900" fill="#212121" style="pointer-events:none">MP3</text>
+<g transform="translate(555,65)">
+<circle cx="0" cy="0" r="16" fill="#fff" stroke="#005E60" stroke-width="1.5" opacity="0.9"/>
+<polygon points="0,-13 3,-4 0,-7 -3,-4" fill="#005E60"/>
+<polygon points="0,13 3,4 0,7 -3,4" fill="#aaa"/>
+<text x="0" y="-5" text-anchor="middle" font-size="8" font-weight="900" fill="#005E60">N</text>
+</g>
+<line x1="490" y1="415" x2="570" y2="415" stroke="#555" stroke-width="2"/>
+<line x1="490" y1="410" x2="490" y2="420" stroke="#555" stroke-width="2"/>
+<line x1="570" y1="410" x2="570" y2="420" stroke="#555" stroke-width="2"/>
+<text x="530" y="430" class="road-label" text-anchor="middle" font-size="9">Not to scale</text>
+<text x="300" y="420" class="road-label" text-anchor="middle" font-size="8" fill="#888">North at top | Bldgs 1-2-3 run North to South | Wallisville Rd at top</text>
+</svg>
+<div class="popover" id="map-popover"></div>
+</div>
+<div class="map-legend-row">
+<div class="map-legend-item"><span class="legend-dot" style="background:#005E60"></span>Main Entrance / Security</div>
+<div class="map-legend-item"><span class="legend-dot" style="background:#4A90D9"></span>Visitor Parking</div>
+<div class="map-legend-item"><span class="legend-dot" style="background:#7B68EE"></span>Staff / Student Parking</div>
+<div class="map-legend-item"><span class="legend-dot" style="background:#C8FF08;border:1px solid #005E60"></span>Muster Points (click for info)</div>
+<div class="map-legend-item"><span class="legend-dot" style="background:#888"></span>Smoking Area (SW, Bldg 3)</div>
+</div>
+<div class="map-info-panel">
+<div class="info-item"><strong>Address</strong>8800 Wallisville Rd, Houston TX 77029</div>
+<div class="info-item"><strong>Speed Limit</strong>10 MPH on all campus roads</div>
+<div class="info-item"><strong>First Day</strong>Enter via Main Security - Building 1</div>
+<div class="info-item"><strong>Parking</strong>Reversed parking. Horn twice before backing.</div>
+<a href="https://maps.google.com/?q=8800+Wallisville+Rd+Houston+TX+77029" target="_blank" rel="noopener noreferrer" class="map-directions-btn">Get Directions on Google Maps</a>
+</div>
+</div>
+<script>
+(function(){
+var mp=[
+{label:'Muster Point 1',desc:'NW parking lot - Bldg 1 evacuation assembly area'},
+{label:'Muster Point 2',desc:'West side - Bldg 2 evacuation assembly area'},
+{label:'Muster Point 3',desc:'SW corner (Bldg 3 area) - also: Smoking Area nearby'}
+];
+var pop=document.getElementById('map-popover');
+var svg=document.querySelector('#hlc-map-container svg');
+if(!svg||!pop)return;
+var circles=svg.querySelectorAll('circle[fill="#C8FF08"][stroke="#005E60"]');
+circles.forEach(function(c,i){
+if(!mp[i])return;
+c.addEventListener('click',function(e){
+var cr=document.getElementById('hlc-map-container').getBoundingClientRect();
+pop.innerHTML='<strong style="color:#C8FF08">'+mp[i].label+'</strong><br>'+mp[i].desc;
+pop.style.left=Math.min(e.clientX-cr.left+10,cr.width-240)+'px';
+pop.style.top=Math.max(e.clientY-cr.top-70,5)+'px';
+pop.classList.add('visible');
+});
+});
+document.addEventListener('click',function(e){if(!e.target.closest('#hlc-map-container'))pop.classList.remove('visible');});
+})();
+</script>
