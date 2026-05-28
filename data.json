@@ -75,9 +75,9 @@
       },
       {
         "dept": "OPERATIONS",
-        "name": "HLC Front Desk",
-        "phone": "+1-713-672-3513",
-        "email": ""
+        "name": "HLC Security Desk",
+        "phone": "713-672-3513",
+        "email": "hlcsecurity@ge.com"
       },
       {
         "dept": "TRAINING",
@@ -113,9 +113,9 @@
       "Security: Doors locked and lights turned off."
     ],
     "atlas_reference": {
-      "title": "Attendance & Evaluation — ATLAS",
+      "title": "Attendance & Evaluation â ATLAS",
       "body": "Attendance for all internal classes is recorded in ATLAS (Advanced Training Log and Assessment System). ATLAS is the standard system for attendance tracking, student evaluations, and training records in alignment with DOL apprenticeship program requirements.",
-      "note": "Attendance must be recorded first thing in the morning — not end of day.",
+      "note": "Attendance must be recorded first thing in the morning â not end of day.",
       "link": {
         "label": "Open ATLAS Standard Work Document",
         "url": "https://gevernova.box.com/s/1on1mwa5ejwnqb09swjaom3z7y05l490",
@@ -133,7 +133,7 @@
         "If you already have a blue HLC staff badge, proceed directly to staff parking after checking in with the gate guard.",
         "Contact your PLL upon arrival to confirm you are onsite and for further direction.",
         "Your blue HLC staff badge provides 24/7 facility access. If you do not have one, contact your PLL.",
-        "HLC business hours: Monday–Friday, 7:30 AM – 4:30 PM."
+        "HLC business hours: MondayâFriday, 7:30 AM â 4:30 PM."
       ]
     },
     "escalation_matrix": {
@@ -141,9 +141,9 @@
       "intro": "The instructor is the primary point of contact for students during class and should escalate to the applicable contact as needed.",
       "columns": [
         "Issue",
-        "Internal — FE",
-        "Internal — OSS/Repairs",
-        "Internal — Craft",
+        "Internal â FE",
+        "Internal â OSS/Repairs",
+        "Internal â Craft",
         "Open Enrollment",
         "Site Specific"
       ],
@@ -232,7 +232,7 @@
           "note": "PPE requirements are posted on the door when entering lab areas."
         },
         {
-          "heading": "POWRA — Point of Work Risk Assessment",
+          "heading": "POWRA â Point of Work Risk Assessment",
           "body": "A POWRA must be completed before beginning any hands-on work in lab or bay areas. Contact your PLL for the current POWRA form."
         }
       ]
@@ -245,7 +245,7 @@
           "description": "Common office supplies (dry erase markers, pens, paper, hand sanitizer). PPE items including gloves, safety glasses, shoe covers, hard hats, and masks. Hard hats and overshoes are for temporary use and must be returned. See security at the front desk for access or to request more."
         },
         {
-          "name": "Building 1 — Room 1202 (2nd Floor)",
+          "name": "Building 1 â Room 1202 (2nd Floor)",
           "description": "Office supplies only. Accessible with your employee badge."
         },
         {
@@ -255,12 +255,12 @@
       ]
     },
     "av_system": {
-      "title": "A/V System — Rooms 1233/1235 and 1128–1131 (Building 1)",
+      "title": "A/V System â Rooms 1233/1235 and 1128â1131 (Building 1)",
       "intro": "These rooms use a Crestron switcher system. Follow the steps below to set up A/V before class.",
       "crestron_code": "1234",
       "steps": [
         "Power on the projector using the Crestron panel (code: 1234).",
-        "Select your input source: DisplayPort (HMI tower), HDMI (laptop — preferred), or VGA (laptop).",
+        "Select your input source: DisplayPort (HMI tower), HDMI (laptop â preferred), or VGA (laptop).",
         "For HDMI: Connect HDMI cable to laptop. Sync projector by holding FUNCTION key and toggling to 'Duplicate'.",
         "For VGA: Connect VGA cable to laptop. Select VGA on the Crestron panel.",
         "Verify Crestron Switcher rear connections: VGA, Audio, HDMI, DisplayPort, data cable, and power cable all connected.",
@@ -269,11 +269,11 @@
       ],
       "printers": [
         {
-          "label": "Building 1 — 1st Floor",
+          "label": "Building 1 â 1st Floor",
           "name": "HLCXeroxBldg_1"
         },
         {
-          "label": "Building 3 — 2nd Floor",
+          "label": "Building 3 â 2nd Floor",
           "name": "HLCXeroxBldg_3"
         }
       ]
@@ -291,7 +291,7 @@
         {
           "role": "HLC IT",
           "name": "Mike Evans",
-          "phone": "",
+          "phone": "757-604-1905",
           "email": "Michael.Evans@gevernova.com"
         },
         {
@@ -317,7 +317,7 @@
     },
     "rules": [
       {
-        "icon": "ð¥",
+        "icon": "Ã°ÂÂÂ¥",
         "category": "Fire Alarm",
         "items": [
           "Immediately evacuate via emergency exit routes",
@@ -328,7 +328,7 @@
         ]
       },
       {
-        "icon": "ðªï¸",
+        "icon": "Ã°ÂÂÂªÃ¯Â¸Â",
         "category": "Tornado",
         "items": [
           "Go to tornado shelter locations: Staircases in Bldg. 1 and Bldg. 3",
@@ -336,42 +336,42 @@
         ]
       },
       {
-        "icon": "ð",
+        "icon": "Ã°ÂÂÂ",
         "category": "Speed Limit",
         "items": [
           "Follow the posted 10 mph speed limit on all facility roads"
         ]
       },
       {
-        "icon": "ð¦º",
+        "icon": "Ã°ÂÂ¦Âº",
         "category": "PPE",
         "items": [
           "PPE is required when performing training in Lab or Bay areas and when working in the facility"
         ]
       },
       {
-        "icon": "ðª",
+        "icon": "Ã°ÂÂÂª",
         "category": "Entry",
         "items": [
           "Enter the building through the main security entrance"
         ]
       },
       {
-        "icon": "âï¸",
+        "icon": "Ã¢ÂÂÃ¯Â¸Â",
         "category": "Equipment",
         "items": [
           "Only trained individuals may operate: fire extinguishers, AED, forklifts, scissor lifts, aerial lifts, and overhead cranes"
         ]
       },
       {
-        "icon": "â ï¸",
+        "icon": "Ã¢ÂÂ Ã¯Â¸Â",
         "category": "Incident Reporting",
         "items": [
           "Report IMMEDIATELY any work-related illnesses, injuries, spills, property damage, or near misses to your host, instructor, or EHS"
         ]
       },
       {
-        "icon": "ð·",
+        "icon": "Ã°ÂÂÂ·",
         "category": "Photography",
         "items": [
           "Taking pictures or photographs is not permitted without site management authorization"
@@ -387,9 +387,9 @@
       },
       {
         "role": "HLC Front Desk",
-        "name": "",
+        "name": "HLC Security Desk",
         "phone": "713-672-3513",
-        "email": ""
+        "email": "hlcsecurity@ge.com"
       },
       {
         "role": "Emergency Status Line",
@@ -406,7 +406,7 @@
       {
         "role": "HLC IT",
         "name": "Mike Evans",
-        "phone": "",
+        "phone": "757-604-1905",
         "email": "Michael.Evans@gevernova.com"
       },
       {
