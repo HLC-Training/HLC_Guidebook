@@ -65,14 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.referrerPolicy = 'no-referrer-when-downgrade';
                     mapContainer.appendChild(iframe);
                 }
-                if (data.map.legend && data.map.legend.length) {
-                    var legend = document.getElementById('map-legend');
-                    data.map.legend.forEach(function(item) {
-                        var el = document.createElement('div'); el.className = 'map-legend-item';
-                        el.innerHTML = '<span class="map-legend-dot" style="background:' + item.color + '"></span>' + item.label;
-                        legend.appendChild(el);
-                    });
-                }
+            var mapNote = document.getElementById('map-note');
+                            if (mapNote && data.map.note) {
+                                                mapNote.textContent = data.map.note;
+                            }
             }
 
             // -- SITE RULES RENDERER (both pages) --
