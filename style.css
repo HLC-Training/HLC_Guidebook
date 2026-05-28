@@ -794,38 +794,6 @@ footer {
 
 
 
-
-
-
-
-/* Ã¢ÂÂÃ¢ÂÂ SITE RULES MODULE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
-
-
-
-
-
-
-
-#site-rules-section {
-
-
-
-        padding: 2rem 1rem;
-
-
-
-        background-color: var(--day, #FFFFFF);
-
-
-
-}
-
-
-
-
-
-
-
 #site-rules-title {
 
 
@@ -999,38 +967,6 @@ footer {
 
 
         color: rgba(255, 255, 255, 0.85);
-
-
-
-}
-
-
-
-
-
-
-
-/* Rule Cards Grid */
-
-
-
-#site-rules-grid {
-
-
-
-        display: grid;
-
-
-
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-
-
-
-        gap: 1rem;
-
-
-
-        margin-bottom: 2rem;
 
 
 
@@ -1539,18 +1475,6 @@ footer {
 
 
 @media (max-width: 768px) {
-
-
-
-        #site-rules-grid {
-
-
-
-                grid-template-columns: 1fr;
-
-
-
-        }
 
 
 
@@ -2254,22 +2178,6 @@ footer {
 
 
 
-
-
-/* ââ SITE RULES MODULE âââââââââââââââââââââââââââââââââââââââââââ */
-
-
-
-#site-rules-section {
-
-        padding: 2rem 1rem;
-
-        background-color: var(--day, #FFFFFF);
-
-}
-
-
-
 #site-rules-title {
 
         font-family: 'Inter', sans-serif;
@@ -2357,22 +2265,6 @@ footer {
         font-size: clamp(0.8rem, 1.8vw, 0.95rem);
 
         color: rgba(255, 255, 255, 0.85);
-
-}
-
-
-
-/* Rule Cards Grid */
-
-#site-rules-grid {
-
-        display: grid;
-
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-
-        gap: 1rem;
-
-        margin-bottom: 2rem;
 
 }
 
@@ -2627,12 +2519,6 @@ footer {
 /* ââ SITE RULES MOBILE BREAKPOINTS âââââââââââââââââââââââââââââââ */
 
 @media (max-width: 768px) {
-
-        #site-rules-grid {
-
-                grid-template-columns: 1fr;
-
-        }
 
         .emergency-callout {
 
@@ -3208,22 +3094,6 @@ footer {
 
 
 
-
-
-/* ââ SITE RULES MODULE âââââââââââââââââââââââââââââââââââââââââââ */
-
-
-
-#site-rules-section {
-
-        padding: 2rem 1rem;
-
-        background-color: var(--day, #FFFFFF);
-
-}
-
-
-
 #site-rules-title {
 
         font-family: 'Inter', sans-serif;
@@ -3311,22 +3181,6 @@ footer {
         font-size: clamp(0.8rem, 1.8vw, 0.95rem);
 
         color: rgba(255, 255, 255, 0.85);
-
-}
-
-
-
-/* Rule Cards Grid */
-
-#site-rules-grid {
-
-        display: grid;
-
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-
-        gap: 1rem;
-
-        margin-bottom: 2rem;
 
 }
 
@@ -3581,12 +3435,6 @@ footer {
 /* ââ SITE RULES MOBILE BREAKPOINTS âââââââââââââââââââââââââââââââ */
 
 @media (max-width: 768px) {
-
-        #site-rules-grid {
-
-                grid-template-columns: 1fr;
-
-        }
 
         .emergency-callout {
 
@@ -3938,14 +3786,6 @@ footer {
         .contact-card { padding: 1rem; }
 }
 
-
-/* ── SITE RULES MODULE ─────────────────────────────────────────── */
-
-#site-rules-section {
-        padding: 2rem 1rem;
-        background-color: var(--day, #FFFFFF);
-}
-
 #site-rules-title {
         font-family: 'Inter', sans-serif;
         font-weight: 900;
@@ -3990,14 +3830,6 @@ footer {
         font-family: 'Inter', sans-serif;
         font-size: clamp(0.8rem, 1.8vw, 0.95rem);
         color: rgba(255, 255, 255, 0.85);
-}
-
-/* Rule Cards Grid */
-#site-rules-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1rem;
-        margin-bottom: 2rem;
 }
 
 .site-rule-card {
@@ -4125,9 +3957,6 @@ footer {
 
 /* ── SITE RULES MOBILE BREAKPOINTS ─────────────────────────────── */
 @media (max-width: 768px) {
-        #site-rules-grid {
-                grid-template-columns: 1fr;
-        }
         .emergency-callout {
                 padding: 1rem;
         }
