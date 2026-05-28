@@ -269,6 +269,73 @@
           ]
         }
       ]
+    },
+    "incidentReporting": {
+      "title": "INCIDENT REPORTING",
+      "subtitle": "All incidents must be reported immediately — same day, no exceptions.",
+      "emergency": {
+        "label": "EMERGENCY",
+        "instruction": "Call First Aid or 911 immediately.",
+        "contacts": [
+          {
+            "label": "First Aid",
+            "number": "+1 (713) 672-3533"
+          },
+          {
+            "label": "Emergency / 911",
+            "number": "911"
+          }
+        ],
+        "note": "Emergency numbers are posted on all phones and throughout all departments."
+      },
+      "nonEmergency": {
+        "label": "NON-EMERGENCY",
+        "instruction": "Contact EHS before seeking medical attention.",
+        "contacts": [
+          {
+            "label": "EHS Department",
+            "number": "+1 (713) 672-3564"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "step": "1",
+          "heading": "STOP & SECURE",
+          "detail": "Stop the activity. Secure the area to prevent further injury or damage."
+        },
+        {
+          "step": "2",
+          "heading": "NOTIFY",
+          "detail": "Immediately notify your Instructor, Supervisor, or EHS — same day, no delay."
+        },
+        {
+          "step": "3",
+          "heading": "SEEK CARE",
+          "detail": "For emergencies, call First Aid at +1 (713) 672-3533 or 911. For non-emergencies, contact EHS at +1 (713) 672-3564 before seeking medical attention."
+        },
+        {
+          "step": "4",
+          "heading": "COOPERATE",
+          "detail": "Participate in the investigation. A team approach is used: element champion, EHS, injured employee, and instructor/supervisor."
+        },
+        {
+          "step": "5",
+          "heading": "DOCUMENT",
+          "detail": "All cases are documented. Corrective and preventive actions are tracked to closure. Lessons learned are shared via Safety Notifications."
+        }
+      ],
+      "reportingScope": [
+        "Injuries — any on-site injury, no matter how minor",
+        "Near Misses — any incident that could have caused injury or damage",
+        "Unsafe Conditions — hazards observed in labs, bays, or common areas",
+        "Environmental Events — spills, releases, or waste mismanagement"
+      ],
+      "osha": "HLC posts the OSHA Annual Summary (Form 300A) each year in the lunch room, break rooms, and on the EHS Training Student Support Central website.",
+      "actionButton": {
+        "label": "REPORT AN INCIDENT",
+        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
+      }
     }
   },
   "addendum": {
@@ -669,6 +736,73 @@
           ]
         }
       ]
+    },
+    "incidentReporting": {
+      "title": "INCIDENT REPORTING",
+      "subtitle": "All incidents must be reported immediately — same day, no exceptions.",
+      "emergency": {
+        "label": "EMERGENCY",
+        "instruction": "Call First Aid or 911 immediately.",
+        "contacts": [
+          {
+            "label": "First Aid",
+            "number": "+1 (713) 672-3533"
+          },
+          {
+            "label": "Emergency / 911",
+            "number": "911"
+          }
+        ],
+        "note": "Emergency numbers are posted on all phones and throughout all departments."
+      },
+      "nonEmergency": {
+        "label": "NON-EMERGENCY",
+        "instruction": "Contact EHS before seeking medical attention.",
+        "contacts": [
+          {
+            "label": "EHS Department",
+            "number": "+1 (713) 672-3564"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "step": "1",
+          "heading": "STOP & SECURE",
+          "detail": "Stop the activity. Secure the area to prevent further injury or damage."
+        },
+        {
+          "step": "2",
+          "heading": "NOTIFY",
+          "detail": "Immediately notify your Instructor, Supervisor, or EHS — same day, no delay."
+        },
+        {
+          "step": "3",
+          "heading": "SEEK CARE",
+          "detail": "For emergencies, call First Aid at +1 (713) 672-3533 or 911. For non-emergencies, contact EHS at +1 (713) 672-3564 before seeking medical attention."
+        },
+        {
+          "step": "4",
+          "heading": "COOPERATE",
+          "detail": "Participate in the investigation. A team approach is used: element champion, EHS, injured employee, and instructor/supervisor."
+        },
+        {
+          "step": "5",
+          "heading": "DOCUMENT",
+          "detail": "All cases are documented. Corrective and preventive actions are tracked to closure. Lessons learned are shared via Safety Notifications."
+        }
+      ],
+      "reportingScope": [
+        "Injuries — any on-site injury, no matter how minor",
+        "Near Misses — any incident that could have caused injury or damage",
+        "Unsafe Conditions — hazards observed in labs, bays, or common areas",
+        "Environmental Events — spills, releases, or waste mismanagement"
+      ],
+      "osha": "HLC posts the OSHA Annual Summary (Form 300A) each year in the lunch room, break rooms, and on the EHS Training Student Support Central website.",
+      "actionButton": {
+        "label": "REPORT AN INCIDENT",
+        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
+      }
     }
   },
   "map": {
@@ -850,4 +984,4 @@
       "label": "By entering this facility, you acknowledge and agree to follow all HLC Site Rules."
     }
   }
-            }
+}
