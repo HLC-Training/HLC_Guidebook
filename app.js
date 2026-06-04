@@ -425,7 +425,7 @@
 
   // ── BOOT ─────────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function() {
-    fetch('data.json')
+    fetch('data.json?v=7')
       .then(function(r) { return r.json(); })
       .then(function(data) {
         var isAddendum = window.location.pathname.indexOf('addendum') !== -1;
