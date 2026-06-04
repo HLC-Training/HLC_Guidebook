@@ -1,0 +1,894 @@
+{
+  "guidebook": {
+    "meta": {
+      "title": "HLC Training Guidebook",
+      "version": "7.0",
+      "updated": "June 2026"
+    },
+    "hero": {
+      "title": "WELCOME TO THE HOUSTON LEARNING CENTER",
+      "subtitle": "8800 Wallisville Rd, Houston TX 77029",
+      "image": "images/hlc-exterior.jpg"
+    },
+    "actions": [
+      {
+        "label": "SAFETY VIDEO",
+        "sublabel": "Watch before entering lab areas",
+        "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd",
+        "style": "primary"
+      },
+      {
+        "label": "REPORT A CONCERN",
+        "sublabel": "EHS incident or safety issue",
+        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137",
+        "style": "alert"
+      },
+      {
+        "label": "FACILITY HELP",
+        "sublabel": "HVAC, AV, building issues",
+        "url": "https://buildsmart.capgemini.com/workflows/initiate/801910",
+        "style": "secondary"
+      }
+    ],
+    "lifeSavingRules": {
+      "title": "LIFE SAVING RULES",
+      "intro": "We start work only when it is safe — and stop when it is not.",
+      "link": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a",
+      "rules": [
+        {
+          "label": "CONFINED SPACE",
+          "icon": "images/Confined-Space.svg"
+        },
+        {
+          "label": "DRIVING SAFETY",
+          "icon": "images/Driving-Safety.svg"
+        },
+        {
+          "label": "ENERGY ISOLATION",
+          "icon": "images/Energy-Isolation.svg"
+        },
+        {
+          "label": "FIRE & EXPLOSION",
+          "icon": "images/Fire-and-Explosion.svg"
+        },
+        {
+          "label": "LINE OF FIRE",
+          "icon": "images/Line-of-Fire.svg"
+        },
+        {
+          "label": "LIVE ELECTRICAL",
+          "icon": "images/Live-Electrical.svg"
+        },
+        {
+          "label": "MECHANICAL LIFTING",
+          "icon": "images/Mechanical-Lifting.svg"
+        },
+        {
+          "label": "WORK AT HEIGHT",
+          "icon": "images/Work-at-Height.svg"
+        },
+        {
+          "label": "WORK AUTHORIZATION",
+          "icon": "images/Work-Authorization.svg"
+        }
+      ]
+    },
+    "contacts": {
+      "title": "KEY CONTACTS",
+      "groups": [
+        {
+          "groupLabel": "TRAINING LEADERSHIP",
+          "contacts": [
+            {
+              "name": "Jim Rosen",
+              "title": "Training Delivery Manager",
+              "phone": "+1 (832) 714-2496",
+              "email": "jim.rosen@gevernova.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "PRODUCT LINE LEADERS",
+          "contacts": [
+            {
+              "name": "Sherif Khalifa",
+              "title": "Gas Turbine PLL",
+              "phone": "+1 (281) 387-4979",
+              "email": "Sherif.Khalifa@ge.com"
+            },
+            {
+              "name": "Pablo Schibli",
+              "title": "Steam Turbine PLL",
+              "phone": "+41 (79) 878-7173",
+              "email": "pablo.schibli@ge.com"
+            },
+            {
+              "name": "Ben Smith",
+              "title": "Excitation / Generator PLL",
+              "phone": "+1 (513) 646-5243",
+              "email": "Ben.Smith1@gevernova.com"
+            },
+            {
+              "name": "Mohammed Nizami",
+              "title": "Controls / GIC PLL",
+              "phone": "+1 (281) 744-2541",
+              "email": "Mohammed.Nizami@gevernova.com"
+            },
+            {
+              "name": "Harry Hanson",
+              "title": "Craft / Repairs / ILES PLL",
+              "phone": "+1 (630) 561-5231",
+              "email": "harry.hanson@ge.com"
+            },
+            {
+              "name": "Greg Walker",
+              "title": "Aeroderivative PLL",
+              "phone": "+1 (936) 520-0397",
+              "email": "GregoryD.Walker@ge.com"
+            },
+            {
+              "name": "Linda Nelson",
+              "title": "CTE / Workforce Readiness PLL",
+              "phone": "+1 (214) 457-4548",
+              "email": "Linda.Nelson@gevernova.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "LOGISTICS & OPERATIONS",
+          "contacts": [
+            {
+              "name": "Andrew Ruch",
+              "title": "Global Logistics Leader",
+              "phone": "+1 (281) 229-5417",
+              "email": "Andrew.Ruch@ge.com"
+            },
+            {
+              "name": "Maria Medina",
+              "title": "OE Project Manager",
+              "phone": "+1 (713) 597-1935",
+              "email": "maria.medina@ge.com"
+            },
+            {
+              "name": "Marisol Guidry",
+              "title": "Training Coordinator",
+              "phone": "+1 (832) 998-4104",
+              "email": "Marisol.Guidry@ge.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "FACILITY & EHS",
+          "contacts": [
+            {
+              "name": "Lizlee Galley",
+              "title": "EHS Manager",
+              "phone": "+1 (346) 324-1774",
+              "email": "Lizlee.galley1@ge.com"
+            },
+            {
+              "name": "Steve Urban",
+              "title": "Facilities",
+              "phone": "+1 (862) 210-5487",
+              "email": "stephen.urban@ge.com"
+            }
+          ]
+        }
+      ]
+    },
+    "campusMap": {
+      "title": "CAMPUS MAP",
+      "subtitle": "8800 Wallisville Rd, Houston TX 77029 | 10 MPH on all campus roads",
+      "directionsUrl": "https://maps.google.com/?q=8800+Wallisville+Rd+Houston+TX+77029",
+      "buildings": [
+        {
+          "id": "b1",
+          "label": "BUILDING 1",
+          "color": "#005E60",
+          "note": "Main Entrance / Security",
+          "floors": [
+            {
+              "floor": "Floor 1",
+              "rooms": [
+                "Security — 1103",
+                "Customer Lounge — 1108",
+                "Edison Conference Room — 1100",
+                "Thomson-Houston Conf. Room — 1101",
+                "Women's Prayer Room — 1112",
+                "Mother's Room — 1115",
+                "Men's Prayer Room — 1118",
+                "Energy Training Room — 1128",
+                "Conservation Training Room — 1129",
+                "Innovation Training Room — 1130",
+                "Legacy Training Room — 1131",
+                "First Aid Room",
+                "Dining",
+                "Bays 1 & 2 (north)",
+                "Bays 3 & 4 (south)"
+              ]
+            },
+            {
+              "floor": "Floor 2",
+              "rooms": [
+                "Babbage Training Room — 1224",
+                "Turning Training Room — 1225",
+                "Tesla Training Room — 1226",
+                "Brown Training Room — 1227",
+                "Boveri Training Room — 1230",
+                "Rickover Training Room — 1231",
+                "Eckhardt Training Room — 1232",
+                "Adams Training Room — 1233",
+                "Fortescue Training Room — 1234",
+                "Curtis Training Room — 1235",
+                "Parsons Training Room — 1236"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "label": "BUILDING 2",
+          "color": "#007A7C",
+          "note": "Craft Training",
+          "floors": [
+            {
+              "floor": "Ground",
+              "rooms": [
+                "Craft Training Areas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "label": "BUILDING 3",
+          "color": "#00989A",
+          "note": "Aero, Excitation & Controls Training",
+          "floors": [
+            {
+              "floor": "Ground",
+              "rooms": [
+                "Aero Training",
+                "Excitation Training",
+                "Controls Training",
+                "Generator (south)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "label": "BUILDING 4",
+          "color": "#59c3c9",
+          "note": "Separate facility",
+          "floors": [
+            {
+              "floor": "Ground",
+              "rooms": [
+                "Building 4"
+              ]
+            }
+          ]
+        }
+      ],
+      "musterPoints": [
+        {
+          "id": "MP1",
+          "label": "MUSTER POINT 1",
+          "desc": "Assembly point for Building 1 personnel",
+          "location": "West side of Building 1 near main entrance"
+        },
+        {
+          "id": "MP2",
+          "label": "MUSTER POINT 2",
+          "desc": "Assembly point for Building 2 personnel",
+          "location": "South parking area near Building 2"
+        },
+        {
+          "id": "MP3",
+          "label": "MUSTER POINT 3",
+          "desc": "Assembly point for Building 3 personnel",
+          "location": "East parking area near Building 3"
+        }
+      ],
+      "keyFacts": [
+        {
+          "label": "SPEED LIMIT",
+          "value": "10 MPH on all campus roads"
+        },
+        {
+          "label": "PARKING",
+          "value": "Reverse into spaces. Horn twice before backing."
+        },
+        {
+          "label": "FIRST DAY",
+          "value": "Enter via Building 1 Main Security"
+        },
+        {
+          "label": "EMERGENCY",
+          "value": "Dial 911 immediately"
+        }
+      ]
+    },
+    "siteRules": {
+      "title": "SITE RULES",
+      "emergency": "911",
+      "sections": [
+        {
+          "id": "general",
+          "icon": "🏢",
+          "heading": "GENERAL CONDUCT",
+          "rules": [
+            "Follow all posted signs and instructions from security and safety personnel.",
+            "Photography is not permitted without prior written authorization.",
+            "All visitors must sign in at Building 1 Security Desk before proceeding.",
+            "Badges must be worn and visible at all times on campus."
+          ]
+        },
+        {
+          "id": "driving",
+          "icon": "🚗",
+          "heading": "DRIVING & PARKING",
+          "rules": [
+            "10 MPH speed limit on all campus roads — strictly enforced.",
+            "Reverse into parking spaces. Sound horn twice before backing.",
+            "No parking in fire lanes, loading zones, or reserved spaces.",
+            "Pedestrians always have right of way in crosswalks."
+          ]
+        },
+        {
+          "id": "ppe",
+          "icon": "🦺",
+          "heading": "PPE REQUIREMENTS",
+          "rules": [
+            "PPE is mandatory in all lab and bay areas at all times.",
+            "Minimum requirements: safety glasses, hard hat, steel-toed boots.",
+            "High-visibility vest required in bay areas.",
+            "PPE must be worn correctly — no exceptions for visitors or executives."
+          ]
+        },
+        {
+          "id": "safety",
+          "icon": "⚡",
+          "heading": "ENERGY & EQUIPMENT",
+          "rules": [
+            "Never energize equipment without a signed Work Authorization.",
+            "Lockout/Tagout procedures must be followed before any maintenance work.",
+            "No one works alone on energized equipment or in confined spaces.",
+            "Report any unsafe condition immediately using the Report a Concern button."
+          ]
+        },
+        {
+          "id": "facilities",
+          "icon": "🏗️",
+          "heading": "FACILITIES",
+          "rules": [
+            "Report facility issues (HVAC, AV, lighting, elevators) via the Facility Help button.",
+            "Abby's Café is located in Building 1, Floor 1.",
+            "Printing (B&W) available in Building 1 and Building 3.",
+            "Wi-Fi: Connect to GE Guest network. Credentials available from Security Desk."
+          ]
+        }
+      ]
+    },
+    "incidentReporting": {
+      "title": "INCIDENT REPORTING",
+      "subtitle": "ALL INCIDENTS MUST BE REPORTED — NO EXCEPTIONS",
+      "emergency": {
+        "label": "EMERGENCY",
+        "instruction": "Call 911 immediately for any life-threatening emergency.",
+        "contacts": [
+          {
+            "label": "Emergency Services",
+            "number": "911"
+          },
+          {
+            "label": "HLC Security Desk",
+            "number": "713-672-3513"
+          }
+        ],
+        "note": "After calling 911, notify the HLC Security Desk immediately."
+      },
+      "nonEmergency": {
+        "label": "REPORT A CONCERN",
+        "instruction": "Use the online form for non-emergency safety concerns and near-misses.",
+        "contacts": [
+          {
+            "label": "EHS Online Form",
+            "number": "Report Online"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "step": "1",
+          "heading": "STOP WORK",
+          "detail": "Stop all work immediately. Ensure your own safety and the safety of others nearby."
+        },
+        {
+          "step": "2",
+          "heading": "CALL 911",
+          "detail": "For any life-threatening emergency, call 911 first. Do not delay emergency services."
+        },
+        {
+          "step": "3",
+          "heading": "NOTIFY SECURITY",
+          "detail": "Call the HLC Security Desk at 713-672-3513 immediately after emergency services."
+        },
+        {
+          "step": "4",
+          "heading": "CONTACT YOUR PLL",
+          "detail": "Notify your Product Line Leader or Training Manager as soon as possible."
+        },
+        {
+          "step": "5",
+          "heading": "DOCUMENT",
+          "detail": "Complete the EHS online incident report within 24 hours of the incident."
+        }
+      ],
+      "reportingScope": [
+        "Injuries, illnesses, or medical emergencies",
+        "Near-misses — incidents that could have caused injury",
+        "Property damage or equipment damage",
+        "Environmental spills or releases",
+        "Unsafe conditions or behaviors",
+        "Security concerns"
+      ],
+      "osha": "GE Vernova is required by OSHA regulations to record and report certain workplace injuries and illnesses. All incidents must be reported regardless of severity.",
+      "actionButton": {
+        "label": "REPORT A CONCERN ONLINE",
+        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
+      }
+    },
+    "survivalBasics": {
+      "title": "SURVIVAL BASICS",
+      "items": [
+        {
+          "icon": "🪪",
+          "heading": "BADGES",
+          "detail": "Pick up your visitor badge at Building 1 Security Desk on arrival. Wear it visibly at all times. Return it on your last day."
+        },
+        {
+          "icon": "👔",
+          "heading": "DRESS CODE",
+          "detail": "Business casual in office areas. Full PPE required in lab and bay areas. Closed-toe shoes are mandatory throughout the facility."
+        },
+        {
+          "icon": "🅿️",
+          "heading": "PARKING",
+          "detail": "Visitor parking west of Building 1. Reverse into spaces. Sound horn twice before backing. 10 MPH on all roads."
+        },
+        {
+          "icon": "📶",
+          "heading": "WI-FI",
+          "detail": "Connect to GE Guest network. Credentials available from the Security Desk (Building 1, Room 1103)."
+        },
+        {
+          "icon": "🖨️",
+          "heading": "PRINTING",
+          "detail": "Black & white printing available in Building 1 and Building 3. Ask your instructor or the Security Desk for access."
+        },
+        {
+          "icon": "☕",
+          "heading": "DINING",
+          "detail": "Abby's Café is in Building 1, Floor 1. Nearby restaurants and convenience stores are within 5 minutes on Wallisville Rd."
+        },
+        {
+          "icon": "🏨",
+          "heading": "HOTELS",
+          "detail": "Several hotel options are available within 10 minutes of the campus. Ask your Training Coordinator for the GE preferred rate list."
+        }
+      ]
+    },
+    "resources": {
+      "title": "RESOURCES & LINKS",
+      "groups": [
+        {
+          "groupLabel": "OFS TRAINING",
+          "links": [
+            {
+              "label": "OFS Training SharePoint",
+              "desc": "Training team home — schedules, news, and team resources",
+              "url": "https://spo-teamsite.ge.com/sites/GEVGasPower-OneFieldServices-TechnicalTraining/SitePages/GE-Vernova.aspx"
+            },
+            {
+              "label": "MyLearning Portal",
+              "desc": "GE Vernova LMS — courses, completions, and transcripts",
+              "url": "https://mylearning.gevernova.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "EHS & SAFETY",
+          "links": [
+            {
+              "label": "OFS Training EHS SharePoint",
+              "desc": "All EHS policies, procedures, LOTO, POWRA, chemical management, and waste disposal",
+              "url": "https://spo-teamsite.ge.com/sites/GEVGasPower-OneFieldServices-TechnicalTraining/SitePages/EHS.aspx?csf=1&web=1&e=X29R8q"
+            },
+            {
+              "label": "Life Saving Rules",
+              "desc": "GE Vernova Life Saving Rules — full details on The Watt",
+              "url": "https://thewatt.gevernova.com/content/page/6627e24aed686c0a2c2dab1a"
+            },
+            {
+              "label": "Report a Concern (EHS)",
+              "desc": "Submit a safety concern, near-miss, or incident report online",
+              "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
+            }
+          ]
+        },
+        {
+          "groupLabel": "FACILITY",
+          "links": [
+            {
+              "label": "Facility Help (BuildSmart)",
+              "desc": "Report HVAC, AV, lighting, elevator, or building issues",
+              "url": "https://buildsmart.capgemini.com/workflows/initiate/801910"
+            },
+            {
+              "label": "Google Maps — HLC Campus",
+              "desc": "Get directions to 8800 Wallisville Rd, Houston TX 77029",
+              "url": "https://maps.google.com/?q=8800+Wallisville+Rd+Houston+TX+77029"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "addendum": {
+    "meta": {
+      "title": "Borrowed Instructor Addendum",
+      "version": "4.0",
+      "updated": "June 2026",
+      "audience": "Borrowed Instructors only — not for general distribution"
+    },
+    "hero": {
+      "title": "BORROWED INSTRUCTOR ADDENDUM",
+      "subtitle": "HLC Site Guide for Visiting Instructors",
+      "image": "images/technicians-hands-on.jpg"
+    },
+    "actions": [
+      {
+        "label": "SAFETY VIDEO",
+        "sublabel": "Required before entering lab areas",
+        "url": "https://gevernova.box.com/s/qyfjwgtziz6e1skid4scpko9cstz1qgd",
+        "style": "primary"
+      },
+      {
+        "label": "REPORT A CONCERN",
+        "sublabel": "EHS incident or safety issue",
+        "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137",
+        "style": "alert"
+      },
+      {
+        "label": "FACILITY HELP",
+        "sublabel": "HVAC, AV, building issues",
+        "url": "https://buildsmart.capgemini.com/workflows/initiate/801910",
+        "style": "secondary"
+      }
+    ],
+    "arrivalChecklist": {
+      "title": "ARRIVAL & CHECK-IN",
+      "steps": [
+        {
+          "step": "1",
+          "heading": "SIGN IN AT SECURITY",
+          "detail": "Building 1, Room 1103. Sign in and collect your instructor badge. Badge must be worn and visible at all times."
+        },
+        {
+          "step": "2",
+          "heading": "WATCH SAFETY VIDEO",
+          "detail": "Required before entering any lab or bay area. Complete via the Safety Video button above or ask Security for a kiosk."
+        },
+        {
+          "step": "3",
+          "heading": "PPE PICKUP",
+          "detail": "If you did not bring your own PPE, visit the Security Desk to be directed to the PPE station. Hard hat, safety glasses, and steel-toed boots are mandatory in bay areas."
+        },
+        {
+          "step": "4",
+          "heading": "LOCATE YOUR CLASSROOM",
+          "detail": "Building 1 training rooms are on Floor 1 (1128-1131) and Floor 2 (1224-1236). Buildings 2 and 3 have lab and bay areas. Refer to the campus map."
+        },
+        {
+          "step": "5",
+          "heading": "CONTACT YOUR PLL",
+          "detail": "Check in with your Product Line Leader before your first class. They own the technical content and are your primary escalation point."
+        }
+      ]
+    },
+    "issueRouting": {
+      "title": "WHO TO CONTACT — ISSUE ROUTING",
+      "subtitle": "Use this matrix to identify the correct contact for each issue type.",
+      "matrix": [
+        {
+          "issue": "Technical / Content",
+          "description": "Training equipment, simulation, course content, lab setup",
+          "internal_fe": "PLL",
+          "internal_oss": "PLL",
+          "internal_craft": "PLL",
+          "customer_oe": "PLL",
+          "customer_ss": "PLL"
+        },
+        {
+          "issue": "Student Issue",
+          "description": "Behavior, medical, travel emergency, no-show",
+          "internal_fe": "PLL + Andrew Ruch",
+          "internal_oss": "PLL + Andrew Ruch",
+          "internal_craft": "PLL + Andrew Ruch",
+          "customer_oe": "PLL + Maria Medina",
+          "customer_ss": "PLL + PM"
+        },
+        {
+          "issue": "Logistical",
+          "description": "Office supplies, certificates, manuals, catering",
+          "internal_fe": "Marisol Guidry",
+          "internal_oss": "Marisol Guidry",
+          "internal_craft": "Marisol Guidry",
+          "customer_oe": "—",
+          "customer_ss": "—"
+        },
+        {
+          "issue": "Facility",
+          "description": "HVAC, projectors, lighting, elevators, internet",
+          "internal_fe": "Steve Urban / Yegor Spencer / Boyce Hernandez",
+          "internal_oss": "Steve Urban / Yegor Spencer / Boyce Hernandez",
+          "internal_craft": "Steve Urban / Yegor Spencer / Boyce Hernandez",
+          "customer_oe": "Steve Urban / Yegor Spencer / Boyce Hernandez",
+          "customer_ss": "Steve Urban / Yegor Spencer / Boyce Hernandez"
+        },
+        {
+          "issue": "EHS",
+          "description": "Safety incidents, near-misses, environmental",
+          "internal_fe": "Lizlee Galley / PLL",
+          "internal_oss": "Lizlee Galley / PLL",
+          "internal_craft": "Lizlee Galley / PLL",
+          "customer_oe": "Lizlee Galley / PLL",
+          "customer_ss": "Lizlee Galley / PLL"
+        }
+      ]
+    },
+    "contacts": {
+      "title": "KEY CONTACTS — ADDENDUM",
+      "groups": [
+        {
+          "groupLabel": "TRAINING LEADERSHIP",
+          "contacts": [
+            {
+              "name": "Jim Rosen",
+              "title": "Training Delivery Manager",
+              "phone": "+1 (832) 714-2496",
+              "email": "jim.rosen@gevernova.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "PRODUCT LINE LEADERS",
+          "contacts": [
+            {
+              "name": "Sherif Khalifa",
+              "title": "Gas Turbine PLL",
+              "phone": "+1 (281) 387-4979",
+              "email": "Sherif.Khalifa@ge.com"
+            },
+            {
+              "name": "Pablo Schibli",
+              "title": "Steam Turbine PLL",
+              "phone": "+41 (79) 878-7173",
+              "email": "pablo.schibli@ge.com"
+            },
+            {
+              "name": "Ben Smith",
+              "title": "Excitation / Generator PLL",
+              "phone": "+1 (513) 646-5243",
+              "email": "Ben.Smith1@gevernova.com"
+            },
+            {
+              "name": "Mohammed Nizami",
+              "title": "Controls / GIC PLL",
+              "phone": "+1 (281) 744-2541",
+              "email": "Mohammed.Nizami@gevernova.com"
+            },
+            {
+              "name": "Harry Hanson",
+              "title": "Craft / Repairs / ILES PLL",
+              "phone": "+1 (630) 561-5231",
+              "email": "harry.hanson@ge.com"
+            },
+            {
+              "name": "Greg Walker",
+              "title": "Aeroderivative PLL",
+              "phone": "+1 (936) 520-0397",
+              "email": "GregoryD.Walker@ge.com"
+            },
+            {
+              "name": "Linda Nelson",
+              "title": "CTE / Workforce Readiness PLL",
+              "phone": "+1 (214) 457-4548",
+              "email": "Linda.Nelson@gevernova.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "LOGISTICS & OPERATIONS",
+          "contacts": [
+            {
+              "name": "Andrew Ruch",
+              "title": "Global Logistics Leader",
+              "phone": "+1 (281) 229-5417",
+              "email": "Andrew.Ruch@ge.com"
+            },
+            {
+              "name": "Maria Medina",
+              "title": "OE Project Manager",
+              "phone": "+1 (713) 597-1935",
+              "email": "maria.medina@ge.com"
+            },
+            {
+              "name": "Marisol Guidry",
+              "title": "Training Coordinator",
+              "phone": "+1 (832) 998-4104",
+              "email": "Marisol.Guidry@ge.com"
+            }
+          ]
+        },
+        {
+          "groupLabel": "FACILITY & EHS",
+          "contacts": [
+            {
+              "name": "Lizlee Galley",
+              "title": "EHS Manager",
+              "phone": "+1 (346) 324-1774",
+              "email": "Lizlee.galley1@ge.com"
+            },
+            {
+              "name": "Steve Urban",
+              "title": "Facilities",
+              "phone": "+1 (862) 210-5487",
+              "email": "stephen.urban@ge.com"
+            },
+            {
+              "name": "Boyce Hernandez",
+              "title": "Facilities",
+              "phone": "+1 (832) 339-3500",
+              "email": ""
+            }
+          ]
+        }
+      ]
+    },
+    "avInstructions": {
+      "title": "AV SYSTEM OPERATION",
+      "items": [
+        {
+          "heading": "POWERING ON",
+          "detail": "Use the Crestron touch panel on the instructor desk. Press 'Power On' and select your source (laptop, HDMI, or wireless)."
+        },
+        {
+          "heading": "LAPTOP CONNECTION",
+          "detail": "HDMI cables are provided at the instructor station. Connect before powering on the display for best results."
+        },
+        {
+          "heading": "WIRELESS DISPLAY",
+          "detail": "For wireless, use the ClickShare device on the instructor desk. Download the ClickShare app or use the USB dongle provided."
+        },
+        {
+          "heading": "AUDIO",
+          "detail": "Room audio is controlled via the Crestron panel. Microphones are available from the Security Desk for rooms 1128-1131."
+        },
+        {
+          "heading": "ISSUES",
+          "detail": "Contact Facilities via the Facility Help button above or call Steve Urban directly. Do not attempt to reset AV equipment yourself."
+        }
+      ]
+    },
+    "classroomChecklist": {
+      "title": "END-OF-CLASS CHECKLIST",
+      "subtitle": "Complete before leaving the classroom at the end of each day and at course end.",
+      "items": [
+        {
+          "category": "CLASSROOM",
+          "checks": [
+            "Chairs returned to original positions",
+            "Tables wiped down and cleared",
+            "Whiteboard erased",
+            "Projector / display powered off via Crestron panel",
+            "HDMI cables coiled and returned to instructor station",
+            "Windows closed if applicable"
+          ]
+        },
+        {
+          "category": "LAB / BAY AREAS",
+          "checks": [
+            "All tools returned to designated storage",
+            "PPE returned to storage hooks/racks",
+            "Work area cleaned and 5S standards maintained",
+            "All energy sources de-energized and LOTO removed (if applicable)",
+            "Any damaged equipment tagged and reported to PLL"
+          ]
+        },
+        {
+          "category": "ADMINISTRATION",
+          "checks": [
+            "Attendance confirmed in ATLAS for every student",
+            "Evaluations distributed and collected (or online link shared)",
+            "Any student issues reported to PLL or Andrew Ruch",
+            "Classroom booking released if not needed next day"
+          ]
+        }
+      ]
+    },
+    "powra": {
+      "title": "POWRA — PRE-TASK RISK ASSESSMENT",
+      "intro": "A POWRA must be completed before any hands-on lab or bay work. This is not optional.",
+      "steps": [
+        "Plan the work — identify every task step before starting",
+        "Observe the environment — walk the work area and identify hazards",
+        "Work safely — confirm controls are in place before starting",
+        "Review at completion — confirm area is clean and safe"
+      ],
+      "note": "If you are unsure whether a POWRA is required for your activity, ask your PLL. When in doubt, do one."
+    },
+    "resources": {
+      "title": "RESOURCES & LINKS",
+      "groups": [
+        {
+          "groupLabel": "OFS TRAINING",
+          "links": [
+            {
+              "label": "OFS Training SharePoint",
+              "desc": "Training team home — schedules, news, and team resources",
+              "url": "https://spo-teamsite.ge.com/sites/GEVGasPower-OneFieldServices-TechnicalTraining/SitePages/GE-Vernova.aspx"
+            },
+            {
+              "label": "MyLearning Portal",
+              "desc": "GE Vernova LMS — courses, completions, and transcripts",
+              "url": "https://mylearning.gevernova.com"
+            },
+            {
+              "label": "ATLAS — Attendance & Evaluations",
+              "desc": "Log in daily to record attendance and distribute evaluations",
+              "url": "https://gevernova.box.com/s/8mkgl4n26pb8sq0thqb12ekiknsr0yp2"
+            },
+            {
+              "label": "OFS Standard Work Documents",
+              "desc": "Governing SOPs for training delivery — instructor requirements, attendance, evaluations, and more",
+              "url": "https://gevernova.box.com/s/38mhfpb0hunm72dv1ycx9cdrlxfo7x84"
+            }
+          ]
+        },
+        {
+          "groupLabel": "EHS & SAFETY",
+          "links": [
+            {
+              "label": "OFS Training EHS SharePoint",
+              "desc": "All EHS policies, procedures, LOTO, POWRA, chemical management, and waste disposal",
+              "url": "https://spo-teamsite.ge.com/sites/GEVGasPower-OneFieldServices-TechnicalTraining/SitePages/EHS.aspx?csf=1&web=1&e=X29R8q"
+            },
+            {
+              "label": "Report a Concern (EHS)",
+              "desc": "Submit a safety concern, near-miss, or incident report",
+              "url": "https://ehs.gepower.com/?siteId=1188&deptId=20137"
+            }
+          ]
+        },
+        {
+          "groupLabel": "FACILITY & AV",
+          "links": [
+            {
+              "label": "Facility Help (BuildSmart)",
+              "desc": "Report HVAC, AV, lighting, or building issues",
+              "url": "https://buildsmart.capgemini.com/workflows/initiate/801910"
+            },
+            {
+              "label": "ClickShare App",
+              "desc": "Download for wireless screen sharing from your laptop",
+              "url": "https://www.barco.com/en/clickshare/app"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
