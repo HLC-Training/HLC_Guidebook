@@ -1,0 +1,331 @@
+<style>
+.campus-map-wrap { font-family: 'Inter', sans-serif; }
+.map-toggle-bar {
+  display: flex; gap: 0; margin-bottom: 12px;
+  border: 2px solid #005E60; border-radius: 6px; overflow: hidden;
+  width: fit-content;
+}
+.map-toggle-btn {
+  padding: 8px 20px; font-size: 11px; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  cursor: pointer; border: none; background: #fff;
+  color: #005E60; transition: all 0.15s;
+}
+.map-toggle-btn.active { background: #005E60; color: #C8FF08; }
+.map-toggle-btn:hover:not(.active) { background: #E6F2F2; }
+.map-svg-wrap {
+  position: relative; width: 100%;
+  border: 2px solid #005E60; border-radius: 8px;
+  overflow: hidden; background: #2a2a2a;
+}
+.map-svg-wrap svg { display: block; width: 100%; height: auto; }
+.map-legend {
+  display: flex; flex-wrap: wrap; gap: 8px 16px;
+  margin: 12px 0; padding: 12px 14px;
+  background: #f8f8f6; border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+.map-legend.zone-legend { display: none; }
+.map-legend.overview-legend { display: flex; }
+.legend-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 10px; font-weight: 600; color: #333;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.legend-swatch {
+  width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0;
+}
+.map-info-bar {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px; padding: 12px 14px;
+  background: #212121; border-radius: 6px; margin-top: 10px;
+}
+.map-fact strong {
+  display: block; font-size: 9px; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: #C8FF08; margin-bottom: 2px;
+}
+.map-fact span { font-size: 12px; color: rgba(255,255,255,0.8); }
+.map-directions-btn {
+  display: inline-block; background: #005E60; color: #C8FF08;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.8px;
+  text-transform: uppercase; text-decoration: none;
+  padding: 8px 16px; border-radius: 4px; white-space: nowrap;
+  align-self: center;
+}
+.map-directions-btn:hover { background: #003E40; }
+.mp-pulse { animation: mp-anim 2s ease-out infinite; transform-origin: center; }
+@keyframes mp-anim {
+  0%   { opacity: 0.7; transform: scale(1); }
+  70%  { opacity: 0; transform: scale(2.2); }
+  100% { opacity: 0; transform: scale(2.2); }
+}
+.map-tooltip {
+  position: absolute; background: #212121; color: #fff;
+  padding: 8px 12px; font-size: 12px; font-family: 'Inter',sans-serif;
+  border-left: 3px solid #C8FF08; border-radius: 0 4px 4px 0;
+  pointer-events: none; z-index: 20; display: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4); min-width: 160px;
+  line-height: 1.4;
+}
+.map-tooltip.visible { display: block; }
+.map-tooltip strong { color: #C8FF08; display: block; margin-bottom: 2px; }
+@media (max-width: 600px) {
+  .map-toggle-btn { padding: 7px 14px; font-size: 10px; }
+  .map-info-bar { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+<div class="campus-map-wrap">
+
+  <!-- Toggle -->
+  <div class="map-toggle-bar">
+    <button class="map-toggle-btn active" id="btn-overview" onclick="setMapMode('overview')">Overview</button>
+    <button class="map-toggle-btn" id="btn-zones" onclick="setMapMode('zones')">Training Zones</button>
+  </div>
+
+  <!-- SVG Map -->
+  <div class="map-svg-wrap" id="map-svg-wrap">
+    <svg id="campus-svg" viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg">
+      <!-- BACKGROUND -->
+      <rect width="800" height="620" fill="#1e1e1e"/>
+      <!-- WALLISVILLE ROAD -->
+      <rect x="0" y="0" width="800" height="44" fill="#3a3530"/>
+      <rect x="0" y="20" width="800" height="4" fill="rgba(255,255,255,0.15)"/>
+      <text x="400" y="28" font-family="Inter,sans-serif" font-size="11" font-weight="700"
+            fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="3">WALLISVILLE ROAD</text>
+      <!-- ENTRANCE ROAD -->
+      <rect x="140" y="44" width="36" height="55" fill="#2e2a25"/>
+      <polygon points="148,90 168,90 158,75" fill="#C8FF08" opacity="0.9"/>
+      <text x="158" y="72" font-family="Inter,sans-serif" font-size="8" font-weight="900"
+            fill="#C8FF08" text-anchor="middle">IN</text>
+      <!-- VISITOR PARKING -->
+      <rect x="60" y="44" width="82" height="52" rx="3"
+            fill="rgba(74,144,217,0.15)" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="101" y="68" font-family="Inter,sans-serif" font-size="8" font-weight="700"
+            fill="#4A90D9" text-anchor="middle">VISITOR</text>
+      <text x="101" y="80" font-family="Inter,sans-serif" font-size="8" font-weight="700"
+            fill="#4A90D9" text-anchor="middle">PARKING</text>
+      <!-- STUDENT PARKING -->
+      <rect x="0" y="100" width="52" height="320" rx="3"
+            fill="rgba(123,104,238,0.12)" stroke="#7B68EE" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="26" y="265" font-family="Inter,sans-serif" font-size="9" font-weight="700"
+            fill="#7B68EE" text-anchor="middle" transform="rotate(-90,26,265)">STUDENT PARKING</text>
+      <!-- INTERNAL ROAD -->
+      <rect x="52" y="96" width="700" height="22" fill="#2a2520" opacity="0.8"/>
+      <!-- BUILDING 1 -->
+      <rect id="b1-bg" x="56" y="118" width="280" height="185" rx="4"
+            fill="#1a3a3c" stroke="#005E60" stroke-width="2.5"/>
+      <rect x="56" y="118" width="280" height="30" rx="4" fill="#005E60"/>
+      <text x="196" y="137" font-family="Inter,sans-serif" font-size="13" font-weight="900"
+            fill="#C8FF08" text-anchor="middle" letter-spacing="1">BUILDING 1</text>
+      <text x="196" y="165" font-family="Inter,sans-serif" font-size="9" font-weight="600"
+            fill="rgba(255,255,255,0.6)" text-anchor="middle">MAIN ENTRANCE · SECURITY · DINING</text>
+      <text x="196" y="180" font-family="Inter,sans-serif" font-size="8"
+            fill="rgba(255,255,255,0.45)" text-anchor="middle">Training Rooms 1100-1131 (Floor 1)</text>
+      <text x="196" y="193" font-family="Inter,sans-serif" font-size="8"
+            fill="rgba(255,255,255,0.45)" text-anchor="middle">Training Rooms 1224-1236 (Floor 2)</text>
+      <!-- Zone layers B1 -->
+      <rect class="zone-layer" id="z-gt" x="58" y="200" width="68" height="100" rx="2"
+            fill="#4A90D9" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" id="zl-gt" x="92" y="255" font-family="Inter,sans-serif"
+            font-size="8" font-weight="800" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">GT</text>
+      <rect class="zone-layer" id="z-gen" x="126" y="200" width="68" height="100" rx="2"
+            fill="#E67E22" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" id="zl-gen" x="160" y="255" font-family="Inter,sans-serif"
+            font-size="8" font-weight="800" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">GEN</text>
+      <rect class="zone-layer" id="z-shared" x="194" y="200" width="70" height="100" rx="2"
+            fill="#C4A35A" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" id="zl-shared" x="229" y="255" font-family="Inter,sans-serif"
+            font-size="7" font-weight="800" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">SHARED</text>
+      <!-- BAYS 1 and 2 -->
+      <rect id="bays12-bg" x="336" y="118" width="140" height="90" rx="3"
+            fill="#0d2a2c" stroke="#005E60" stroke-width="1.5" stroke-dasharray="5,3"/>
+      <rect class="zone-layer" x="336" y="118" width="140" height="90" rx="3"
+            fill="#5BB8C4" opacity="0" style="transition:opacity 0.3s"/>
+      <text x="406" y="158" font-family="Inter,sans-serif" font-size="10" font-weight="800"
+            fill="rgba(255,255,255,0.7)" text-anchor="middle">BAYS 1 &amp; 2</text>
+      <text x="406" y="173" font-family="Inter,sans-serif" font-size="8"
+            fill="rgba(255,255,255,0.4)" text-anchor="middle">Training Bays</text>
+      <!-- BAYS 3 and 4 -->
+      <rect id="bays34-bg" x="336" y="213" width="140" height="90" rx="3"
+            fill="#0d2a2c" stroke="#005E60" stroke-width="1.5" stroke-dasharray="5,3"/>
+      <rect class="zone-layer" x="336" y="213" width="140" height="90" rx="3"
+            fill="#7EC8D0" opacity="0" style="transition:opacity 0.3s"/>
+      <text x="406" y="253" font-family="Inter,sans-serif" font-size="10" font-weight="800"
+            fill="rgba(255,255,255,0.7)" text-anchor="middle">BAYS 3 &amp; 4</text>
+      <text x="406" y="268" font-family="Inter,sans-serif" font-size="8"
+            fill="rgba(255,255,255,0.4)" text-anchor="middle">Training Bays</text>
+      <!-- STAFF PARKING -->
+      <rect x="490" y="118" width="90" height="185" rx="3"
+            fill="rgba(123,104,238,0.1)" stroke="#7B68EE" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="535" y="208" font-family="Inter,sans-serif" font-size="9" font-weight="700"
+            fill="#7B68EE" text-anchor="middle" transform="rotate(-90,535,208)">STAFF PARKING</text>
+      <!-- Road B1-B2 -->
+      <rect x="56" y="303" width="524" height="20" fill="#2a2520" opacity="0.7"/>
+      <!-- BUILDING 2 -->
+      <rect id="b2-bg" x="56" y="323" width="280" height="130" rx="4"
+            fill="#1a2a1a" stroke="#007A7C" stroke-width="2"/>
+      <rect x="56" y="323" width="280" height="28" rx="4" fill="#007A7C"/>
+      <text x="196" y="341" font-family="Inter,sans-serif" font-size="13" font-weight="900"
+            fill="#C8FF08" text-anchor="middle" letter-spacing="1">BUILDING 2</text>
+      <text x="196" y="368" font-family="Inter,sans-serif" font-size="9"
+            fill="rgba(255,255,255,0.5)" text-anchor="middle">Craft Training</text>
+      <rect class="zone-layer" x="58" y="351" width="276" height="99" rx="2"
+            fill="#5BB8C4" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" x="196" y="408" font-family="Inter,sans-serif"
+            font-size="10" font-weight="900" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">CRAFT TRAINING</text>
+      <!-- Road B2-B3 -->
+      <rect x="56" y="453" width="524" height="20" fill="#2a2520" opacity="0.7"/>
+      <!-- BUILDING 3 -->
+      <rect id="b3-bg" x="56" y="473" width="420" height="130" rx="4"
+            fill="#1a1a2a" stroke="#00989A" stroke-width="2"/>
+      <rect x="56" y="473" width="420" height="28" rx="4" fill="#00989A"/>
+      <text x="266" y="491" font-family="Inter,sans-serif" font-size="13" font-weight="900"
+            fill="#C8FF08" text-anchor="middle" letter-spacing="1">BUILDING 3</text>
+      <text x="266" y="516" font-family="Inter,sans-serif" font-size="9"
+            fill="rgba(255,255,255,0.5)" text-anchor="middle">Aero · Excitation · Controls · Generator</text>
+      <!-- Zone layers B3 -->
+      <rect class="zone-layer" x="58" y="501" width="104" height="99" rx="2"
+            fill="#C0392B" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" x="110" y="555" font-family="Inter,sans-serif"
+            font-size="9" font-weight="900" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">AERO</text>
+      <rect class="zone-layer" x="162" y="501" width="104" height="99" rx="2"
+            fill="#16A085" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" x="214" y="555" font-family="Inter,sans-serif"
+            font-size="9" font-weight="900" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">EXCITATION</text>
+      <rect class="zone-layer" x="266" y="501" width="104" height="99" rx="2"
+            fill="#8E44AD" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" x="318" y="555" font-family="Inter,sans-serif"
+            font-size="9" font-weight="900" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">CONTROLS</text>
+      <rect class="zone-layer" x="370" y="501" width="104" height="99" rx="2"
+            fill="#E67E22" opacity="0" style="transition:opacity 0.3s"/>
+      <text class="zone-label" x="422" y="555" font-family="Inter,sans-serif"
+            font-size="9" font-weight="900" fill="white" text-anchor="middle"
+            opacity="0" style="transition:opacity 0.3s">GEN</text>
+      <!-- Smoking area -->
+      <rect x="424" y="555" width="50" height="46" rx="3"
+            fill="rgba(136,136,136,0.15)" stroke="#888" stroke-width="1.5"/>
+      <text x="449" y="574" font-family="Inter,sans-serif" font-size="8" font-weight="700"
+            fill="#999" text-anchor="middle">SMOKE</text>
+      <text x="449" y="587" font-family="Inter,sans-serif" font-size="7"
+            fill="#777" text-anchor="middle">AREA</text>
+      <!-- BUILDING 4 -->
+      <rect id="b4-bg" x="56" y="575" width="120" height="38" rx="4"
+            fill="#1a1a28" stroke="#59C3C9" stroke-width="1.5"/>
+      <rect x="56" y="575" width="120" height="20" rx="4" fill="#59C3C9"/>
+      <text x="116" y="589" font-family="Inter,sans-serif" font-size="10" font-weight="900"
+            fill="#212121" text-anchor="middle" letter-spacing="0.5">BUILDING 4</text>
+      <!-- NORTH COMPASS -->
+      <g transform="translate(754,54)">
+        <circle cx="0" cy="0" r="22" fill="#212121" stroke="#C8FF08" stroke-width="1.5"/>
+        <polygon points="0,-16 4,-4 0,-8 -4,-4" fill="#C8FF08"/>
+        <polygon points="0,16 4,4 0,8 -4,4" fill="#555"/>
+        <text x="0" y="-4" font-family="Inter,sans-serif" font-size="10" font-weight="900"
+              fill="#C8FF08" text-anchor="middle">N</text>
+      </g>
+      <!-- MUSTER POINTS -->
+      <circle cx="40" cy="215" r="28" fill="#C8FF08" opacity="0.08" class="mp-pulse"/>
+      <circle cx="40" cy="215" r="16" fill="#C8FF08" stroke="#212121" stroke-width="2"
+              style="cursor:pointer"
+              onmouseenter="showTip(event,'MP1','Muster Point 1','Building 1 personnel - assemble here')"
+              onmouseleave="hideTip()"
+              onclick="showTip(event,'MP1','Muster Point 1','Building 1 personnel - assemble here')"/>
+      <text x="40" y="220" font-family="Inter,sans-serif" font-size="9" font-weight="900"
+            fill="#212121" text-anchor="middle" style="pointer-events:none">MP1</text>
+      <circle cx="40" cy="390" r="28" fill="#C8FF08" opacity="0.08" class="mp-pulse" style="animation-delay:.8s"/>
+      <circle cx="40" cy="390" r="16" fill="#C8FF08" stroke="#212121" stroke-width="2"
+              style="cursor:pointer"
+              onmouseenter="showTip(event,'MP2','Muster Point 2','Building 2 personnel - assemble here')"
+              onmouseleave="hideTip()"
+              onclick="showTip(event,'MP2','Muster Point 2','Building 2 personnel - assemble here')"/>
+      <text x="40" y="395" font-family="Inter,sans-serif" font-size="9" font-weight="900"
+            fill="#212121" text-anchor="middle" style="pointer-events:none">MP2</text>
+      <circle cx="40" cy="538" r="28" fill="#C8FF08" opacity="0.08" class="mp-pulse" style="animation-delay:1.6s"/>
+      <circle cx="40" cy="538" r="16" fill="#C8FF08" stroke="#212121" stroke-width="2"
+              style="cursor:pointer"
+              onmouseenter="showTip(event,'MP3','Muster Point 3','Building 3 personnel - assemble here')"
+              onmouseleave="hideTip()"
+              onclick="showTip(event,'MP3','Muster Point 3','Building 3 personnel - assemble here')"/>
+      <text x="40" y="543" font-family="Inter,sans-serif" font-size="9" font-weight="900"
+            fill="#212121" text-anchor="middle" style="pointer-events:none">MP3</text>
+    </svg>
+    <div class="map-tooltip" id="map-tip"></div>
+  </div>
+
+  <!-- OVERVIEW LEGEND -->
+  <div class="map-legend overview-legend" id="legend-overview">
+    <div class="legend-item"><span class="legend-swatch" style="background:#005E60"></span>Building 1</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#007A7C"></span>Building 2</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#00989A"></span>Building 3</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#59C3C9"></span>Building 4</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#4A90D9"></span>Visitor Parking</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#7B68EE"></span>Staff / Student Parking</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#C8FF08;border:1px solid #555"></span>Muster Points (hover/tap)</div>
+  </div>
+
+  <!-- ZONE LEGEND -->
+  <div class="map-legend zone-legend" id="legend-zones">
+    <div class="legend-item"><span class="legend-swatch" style="background:#4A90D9"></span>Gas Turbine</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#E67E22"></span>Generator</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#27AE60"></span>Steam Turbine</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#5BB8C4"></span>Craft Training</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#C0392B"></span>Aero Training</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#16A085"></span>Excitation</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#8E44AD"></span>Controls</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#C4A35A"></span>Facility Shared</div>
+  </div>
+
+  <!-- INFO BAR -->
+  <div class="map-info-bar">
+    <div class="map-fact"><strong>Address</strong><span>8800 Wallisville Rd, Houston TX 77029</span></div>
+    <div class="map-fact"><strong>Speed Limit</strong><span>10 MPH on all campus roads</span></div>
+    <div class="map-fact"><strong>First Day</strong><span>Enter via Building 1 - Security</span></div>
+    <div class="map-fact"><strong>Parking</strong><span>Reverse in - horn twice before backing</span></div>
+    <a href="https://maps.google.com/?q=8800+Wallisville+Rd+Houston+TX+77029"
+       target="_blank" rel="noopener" class="map-directions-btn">GET DIRECTIONS</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  var zoneMode = false;
+  window.setMapMode = function(mode) {
+    zoneMode = (mode === 'zones');
+    document.getElementById('btn-overview').classList.toggle('active', !zoneMode);
+    document.getElementById('btn-zones').classList.toggle('active', zoneMode);
+    var zones = document.querySelectorAll('.zone-layer, .zone-label');
+    zones.forEach(function(el) { el.style.opacity = zoneMode ? '0.88' : '0'; });
+    document.getElementById('legend-overview').style.display = zoneMode ? 'none' : 'flex';
+    document.getElementById('legend-zones').style.display = zoneMode ? 'flex' : 'none';
+  };
+  window.showTip = function(evt, id, title, desc) {
+    var tip = document.getElementById('map-tip');
+    if (!tip) return;
+    tip.innerHTML = '<strong>' + title + '</strong>' + desc;
+    var wrap = document.getElementById('map-svg-wrap');
+    var rect = wrap.getBoundingClientRect();
+    var x = (evt.clientX - rect.left) + 12;
+    var y = (evt.clientY - rect.top) - 30;
+    if (x + 200 > rect.width) x = x - 220;
+    if (y < 0) y = 5;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+    tip.classList.add('visible');
+  };
+  window.hideTip = function() {
+    var tip = document.getElementById('map-tip');
+    if (tip) tip.classList.remove('visible');
+  };
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest || !e.target.closest('#map-svg-wrap')) hideTip();
+  });
+})();
+</script>
