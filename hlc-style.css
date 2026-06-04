@@ -56,10 +56,11 @@ body {
 }
 .hero-content {
   position: relative; z-index: 1;
-  padding: 48px 6% 52px;
+  padding: 52px 6% 56px;
   width: 100%;
   border-left: 8px solid var(--lime);
   margin-left: 0;
+  background: linear-gradient(90deg, rgba(0,62,64,0.5) 0%, transparent 100%);
 }
 .hero-eyebrow {
   font-size: 11px; font-weight: 700; letter-spacing: 3px;
@@ -113,6 +114,8 @@ body {
 .section { padding: 56px 0; }
 .section-dark { background: var(--night); }
 .section-tinted { background: var(--ev-light); }
+/* Alternating section visual weight */
+.section-dark + .section { box-shadow: inset 0 4px 12px rgba(0,0,0,0.06); }
 .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 6%; }
 .section-header { margin-bottom: 32px; }
 .section-title {
@@ -130,29 +133,29 @@ body {
 /* ── LIFE SAVING RULES ─────────────────────────────────────── */
 .lsr-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
   margin-bottom: 24px;
 }
 .lsr-card {
   background: var(--white);
   border: 2px solid var(--border);
   border-radius: 8px;
-  padding: 20px 12px;
+  padding: 16px 8px 12px;
   text-align: center;
   text-decoration: none;
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
   transition: all 0.2s;
 }
 .lsr-card:hover {
   border-color: var(--ev);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,94,96,0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,94,96,0.15);
 }
-.lsr-card img { width: 52px; height: 52px; }
+.lsr-card img { width: 40px; height: 40px; }
 .lsr-card-label {
-  font-size: 9px; font-weight: 800;
-  text-transform: uppercase; letter-spacing: 0.8px;
+  font-size: 8px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.6px;
   color: var(--ev); line-height: 1.3;
 }
 .lsr-footer { text-align: center; }
@@ -185,7 +188,9 @@ body {
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 8px;
   padding: 14px 16px;
+  transition: background 0.15s;
 }
+.contact-card:hover { background: rgba(255,255,255,0.1); }
 .contact-name {
   font-size: 14px; font-weight: 700; color: var(--white);
   margin-bottom: 2px;
@@ -300,6 +305,9 @@ body {
   border-top: 2px solid var(--lime);
 }
 .rule-item.open .rule-body { display: block; }
+/* Ensure accordion JS works with section elements */
+section .rule-item .rule-body { display: none; }
+section .rule-item.open .rule-body { display: block; }
 .rule-list {
   list-style: none; padding: 0; margin: 0;
   display: flex; flex-direction: column; gap: 8px;
@@ -417,6 +425,11 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px; padding: 18px 16px;
   border-top: 3px solid var(--ev);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.basics-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,94,96,0.1);
 }
 .basics-icon { font-size: 24px; margin-bottom: 10px; }
 .basics-heading {
@@ -557,7 +570,7 @@ body {
   .contact-cards { grid-template-columns: 1fr; }
   .basics-grid { grid-template-columns: 1fr 1fr; }
   .powra-steps { grid-template-columns: 1fr 1fr; }
-  .lsr-grid { grid-template-columns: repeat(3, 1fr); }
+  .lsr-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .map-info-bar { grid-template-columns: 1fr; }
 }
 

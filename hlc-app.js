@@ -230,8 +230,15 @@
 
   function renderMap(mapData) {
     var host = el('campus-map-host');
-    if (!host || !mapData) return;
-    host.innerHTML = buildCampusMap(mapData);
+    if (!host) return;
+    // Load the standalone campus map module
+    fetch('campus-map-module.html?v=7')
+      .then(function(r) { return r.text(); })
+      .then(function(html) { host.innerHTML = html; })
+      .catch(function(err) {
+        console.warn('Campus map failed to load:', err);
+        if (host) host.innerHTML = '<p style="color:#888;padding:20px;text-align:center">Campus map unavailable</p>';
+      });
   }
 
   function renderSiteRules(siteRules) {
