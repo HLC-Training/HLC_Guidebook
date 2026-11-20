@@ -388,23 +388,20 @@
 
     if (!host) return;
 
-    // Load the standalone campus map module
-
-    fetch('campus-map-module.html?v=7')
-
-      .then(function(r) { return r.text(); })
-
-      .then(function(html) { host.innerHTML = html; })
-
-      .catch(function(err) {
-
-        console.warn('Campus map failed to load:', err);
-
-        if (host) host.innerHTML = '<p style="color:#888;padding:20px;text-align:center">Campus map unavailable</p>';
-
-      });
+    // 3D campus map (campus-map-3d.js), geometry from data.json
+    function go() { window.HLCCampus3D.mount(host, mapData); }
+    if (window.HLCCampus3D) { go(); return; }
+    var s = document.createElement('script');
+    s.src = 'campus-map-3d.js?v=8';
+    s.onload = go;
+    s.onerror = function() {
+      host.innerHTML = '<p style="color:#888;padding:20px;text-align:center">Campus map unavailable. <a href="' + (mapData.directionsUrl || '#') + '" target="_blank" rel="noopener">Get directions</a></p>';
+    };
+    document.head.appendChild(s);
 
   }
+
+
 
   function renderSiteRules(siteRules) {
 

@@ -2,7 +2,7 @@
   "guidebook": {
     "meta": {
       "title": "HLC Training Guidebook",
-      "version": "7.1",
+      "version": "7.2",
       "updated": "November 2026"
     },
     "hero": {
@@ -185,7 +185,7 @@
           "id": "b1",
           "label": "BUILDING 1",
           "color": "#005E60",
-          "note": "Main Entrance / Security",
+          "note": "Main entrance · Security · Dining · Training rooms",
           "floors": [
             {
               "floor": "Floor 1",
@@ -202,9 +202,7 @@
                 "Innovation Training Room — 1130",
                 "Legacy Training Room — 1131",
                 "First Aid Room",
-                "Dining",
-                "Bays 1 & 2 (north)",
-                "Bays 3 & 4 (south)"
+                "Dining"
               ]
             },
             {
@@ -223,52 +221,136 @@
                 "Parsons Training Room — 1236"
               ]
             }
+          ],
+          "fp": [[68.6, 225.4], [153.6, 225.4], [153.6, 238.0], [205.8, 238.0], [205.8, 176.8], [110.6, 176.8], [110.6, 170.1], [68.6, 170.1]],
+          "h": 10,
+          "entrance": [126.0, 225.4],
+          "exit": [126.0, 225.4],
+          "zones": [
+            {
+              "label": "Steam Turbine",
+              "c": "#D4AC0D",
+              "fp": [[154.1, 242.6], [206.7, 242.6], [206.7, 212], [182, 212], [182, 190.7], [206.7, 190.7], [206.7, 177.5], [154.1, 177.5]],
+              "labelAt": [166, 232]
+            },
+            {
+              "label": "Gas Turbine (HA)",
+              "c": "#7FB3E8",
+              "fp": [[182, 212], [206.3, 212], [206.3, 190.7], [182, 190.7]]
+            },
+            {
+              "label": "Generator",
+              "c": "#E67E22",
+              "fp": [[88.3, 226.7], [109.2, 226.7], [109.2, 172.9], [88.3, 172.9]]
+            },
+            {
+              "label": "Gas Turbine",
+              "c": "#4A90D9",
+              "fp": [[67.1, 227.1], [87.6, 227.1], [87.6, 172.5], [67.1, 172.5]]
+            }
+          ],
+          "bays": [
+            {
+              "label": "BAY 1",
+              "fp": [[178.5, 240.2], [206.7, 240.2], [206.7, 177.5], [178.5, 177.5]]
+            },
+            {
+              "label": "BAY 2",
+              "fp": [[154.5, 240.6], [178.5, 240.6], [178.5, 177.9], [154.5, 177.9]]
+            },
+            {
+              "label": "BAY 3",
+              "fp": [[88.3, 226.7], [109.6, 226.7], [109.6, 172.5], [88.3, 172.5]]
+            },
+            {
+              "label": "BAY 4",
+              "fp": [[67.8, 227.1], [88, 227.1], [88, 174], [67.8, 174]]
+            }
           ]
         },
         {
           "id": "b2",
           "label": "BUILDING 2",
           "color": "#007A7C",
-          "note": "Craft Training",
-          "floors": [
+          "note": "Craft training · GT repairs · Classrooms",
+          "floors": [],
+          "fp": [[91.7, 159.2], [131.9, 159.2], [131.9, 133.0], [152.9, 133.0], [152.9, 117.6], [91.7, 117.6]],
+          "h": 11,
+          "entrance": [91.7, 136.5],
+          "exit": [91.7, 136.5],
+          "zones": [
             {
-              "floor": "Ground",
-              "rooms": [
-                "Craft Training Areas"
-              ]
+              "label": "Classrooms",
+              "c": "#C4A35A",
+              "fp": [[132, 133.4], [154.1, 133.4], [154.1, 117.5], [132, 117.5]]
+            },
+            {
+              "label": "Craft Training",
+              "c": "#5BB8C4",
+              "fp": [[111.5, 159.3], [131.3, 159.3], [131.3, 117.5], [111.5, 117.5]]
+            },
+            {
+              "label": "GT Repairs",
+              "c": "#2F6FB0",
+              "fp": [[91.4, 159.3], [110.8, 159.3], [110.8, 117.2], [91.4, 117.2]]
             }
-          ]
+          ],
+          "bays": []
         },
         {
           "id": "b3",
           "label": "BUILDING 3",
           "color": "#00989A",
-          "note": "Aero, Excitation & Controls Training",
-          "floors": [
+          "note": "Aero · Excitation · Controls · Generator",
+          "floors": [],
+          "fp": [[85.4, 110.2], [152.9, 110.2], [152.9, 91.0], [133.0, 91.0], [133.0, 66.5], [92.8, 66.5], [92.8, 96.2], [85.4, 96.2]],
+          "h": 11,
+          "entrance": [92.8, 84.0],
+          "exit": [92.8, 84.0],
+          "zones": [
             {
-              "floor": "Ground",
-              "rooms": [
-                "Aero Training",
-                "Excitation Training",
-                "Controls Training",
-                "Generator (south)"
-              ]
+              "label": "Controls",
+              "c": "#8E44AD",
+              "fp": [[132.8, 109.4], [154.1, 109.4], [154.1, 90.1], [132.8, 90.1]]
+            },
+            {
+              "label": "Excitation",
+              "c": "#16A085",
+              "fp": [[112.3, 109], [133.2, 109], [133.2, 65], [112.3, 65]]
+            },
+            {
+              "label": "Aero",
+              "c": "#C0392B",
+              "fp": [[91.4, 109.8], [112.3, 109.8], [112.3, 75], [91.4, 75]]
+            },
+            {
+              "label": "Generator",
+              "c": "#E67E22",
+              "fp": [[91.5, 73.9], [111.5, 73.9], [111.5, 65], [91.5, 65]]
             }
-          ]
+          ],
+          "bays": []
         },
         {
           "id": "b4",
-          "label": "BUILDING 4",
+          "label": "WAREHOUSE",
           "color": "#59c3c9",
-          "note": "Separate facility",
+          "note": "Building 4 · Warehouse",
           "floors": [
             {
               "floor": "Ground",
               "rooms": [
-                "Building 4"
+                "Warehouse"
               ]
             }
-          ]
+          ],
+          "fp": [[171.1, 12.6], [205.8, 12.6], [205.8, 47.2], [171.1, 47.2]],
+          "h": 8,
+          "entrance": [171.1, 29.7],
+          "exit": [171.1, 29.7],
+          "zones": [],
+          "bays": [],
+          "via": [[164.5, 59.5], [87.5, 59.5]]
         }
       ],
       "musterPoints": [
@@ -276,19 +358,32 @@
           "id": "MP1",
           "label": "MUSTER POINT 1",
           "desc": "Assembly point for Building 1 personnel",
-          "location": "West side of Building 1 near main entrance"
+          "location": "North side, in front of Building 1 by Wallisville Rd",
+          "xy": [147.0, 259.0],
+          "serves": [
+            "b1"
+          ]
         },
         {
           "id": "MP2",
           "label": "MUSTER POINT 2",
           "desc": "Assembly point for Building 2 personnel",
-          "location": "South parking area near Building 2"
+          "location": "West side, in student parking, level with Building 2",
+          "xy": [24.5, 138.6],
+          "serves": [
+            "b2"
+          ]
         },
         {
           "id": "MP3",
           "label": "MUSTER POINT 3",
-          "desc": "Assembly point for Building 3 personnel",
-          "location": "East parking area near Building 3"
+          "desc": "Assembly point for Building 3 and Warehouse personnel",
+          "location": "West side, in student parking, level with Building 3",
+          "xy": [24.5, 84.0],
+          "serves": [
+            "b3",
+            "b4"
+          ]
         }
       ],
       "keyFacts": [
@@ -297,18 +392,74 @@
           "value": "10 MPH on all campus roads"
         },
         {
-          "label": "PARKING",
-          "value": "Reverse into spaces. Horn twice before backing."
+          "label": "GATES",
+          "value": "Enter by the west gate. Leave by the east gate."
         },
         {
           "label": "FIRST DAY",
-          "value": "Enter via Building 1 Main Security"
+          "value": "Park in student parking, then Building 1 Main Security"
         },
         {
           "label": "EMERGENCY",
           "value": "Dial 911 immediately"
         }
-      ]
+      ],
+      "geometry": {
+        "boundary": [[4.2, 5.2], [214.9, 5.2], [214.9, 276.5], [4.2, 276.5]],
+        "road": {
+          "name": "WALLISVILLE ROAD",
+          "y": 282.4,
+          "width": 11
+        },
+        "gates": [
+          {
+            "label": "IN",
+            "xy": [93.8, 276.5]
+          },
+          {
+            "label": "OUT",
+            "xy": [177.8, 276.5]
+          }
+        ],
+        "parking": [
+          {
+            "id": "visitor",
+            "label": "VISITOR PARKING",
+            "c": "#4A90D9",
+            "fp": [[70.0, 239.7], [204.8, 239.7], [204.8, 255.5], [70.0, 255.5]]
+          },
+          {
+            "id": "staff",
+            "label": "STAFF PARKING",
+            "c": "#C4A35A",
+            "fp": [[172.5, 87.5], [207.9, 87.5], [207.9, 164.8], [172.5, 164.8]]
+          },
+          {
+            "id": "student",
+            "label": "STUDENT PARKING",
+            "c": "#7B68EE",
+            "fp": [[7.7, 274.8], [70.0, 274.8], [70.0, 255.5], [49.0, 255.5], [49.0, 75.2], [7.7, 75.2]],
+            "labelAt": [28.3, 175.0]
+          }
+        ],
+        "pond": [[112.7, 32.2], [111.2, 27.9], [106.9, 23.8], [100.0, 20.3], [91.0, 17.7], [80.5, 16.0], [69.3, 15.4], [58.1, 16.0], [47.6, 17.7], [38.6, 20.3], [31.7, 23.8], [27.4, 27.9], [25.9, 32.2], [27.4, 36.5], [31.7, 40.6], [38.6, 44.1], [47.6, 46.7], [58.1, 48.4], [69.3, 49.0], [80.5, 48.4], [91.0, 46.7], [100.0, 44.1], [106.9, 40.6], [111.2, 36.5]],
+        "roadway": [
+          [[184.4, 274.8], [210.0, 274.8], [210.0, 255.5], [184.4, 255.5]]
+        ],
+        "features": [
+          {
+            "label": "SMOKING AREA",
+            "c": "#9a9a9a",
+            "fp": [[72.1, 60.7], [84.9, 60.7], [84.9, 51.5], [72.1, 51.5]]
+          }
+        ],
+        "firstDay": {
+          "drive": [[93.8, 285.2], [93.8, 236.2], [56.0, 235.2], [33.2, 222.2]],
+          "walk": [[33.2, 222.2], [52.5, 232.4], [126.0, 231.7], [126.0, 224.7]]
+        },
+        "units": "m",
+        "note": "Traced from the guidebook site map. Approximate scale. x east, y north."
+      }
     },
     "siteRules": {
       "title": "SITE RULES",
@@ -331,6 +482,7 @@
           "heading": "DRIVING & PARKING",
           "rules": [
             "10 MPH speed limit on all campus roads — strictly enforced.",
+            "Enter by the west gate and leave by the east gate. Both gates are one way.",
             "Reverse into parking spaces. Sound horn twice before backing.",
             "No parking in fire lanes, loading zones, or reserved spaces.",
             "Pedestrians always have right of way in crosswalks."
@@ -456,7 +608,7 @@
         {
           "icon": "🅿️",
           "heading": "PARKING",
-          "detail": "Visitor parking west of Building 1. Reverse into spaces. Sound horn twice before backing. 10 MPH on all roads."
+          "detail": "Students park in the west lot. Visitors park in front of Building 1. Enter by the west gate and leave by the east gate. Reverse into spaces and sound your horn twice before backing. 10 MPH on all roads."
         },
         {
           "icon": "📶",
