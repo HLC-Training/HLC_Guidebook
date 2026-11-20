@@ -2,8 +2,8 @@
   "guidebook": {
     "meta": {
       "title": "HLC Training Guidebook",
-      "version": "7.0",
-      "updated": "June 2026"
+      "version": "7.1",
+      "updated": "November 2026"
     },
     "hero": {
       "title": "WELCOME TO THE HOUSTON LEARNING CENTER",
@@ -81,7 +81,7 @@
           "contacts": [
             {
               "name": "Jim Rosen",
-              "title": "Training Delivery Manager",
+              "title": "Global Training Delivery Manager",
               "phone": "+1 (832) 714-2496",
               "email": "jim.rosen@gevernova.com"
             }
@@ -94,13 +94,13 @@
               "name": "Sherif Khalifa",
               "title": "Gas Turbine PLL",
               "phone": "+1 (281) 387-4979",
-              "email": "Sherif.Khalifa@ge.com"
+              "email": "Sherif.Khalifa@gevernova.com"
             },
             {
               "name": "Pablo Schibli",
               "title": "Steam Turbine PLL",
               "phone": "+41 (79) 878-7173",
-              "email": "pablo.schibli@ge.com"
+              "email": "pablo.schibli@gevernova.com"
             },
             {
               "name": "Ben Smith",
@@ -118,13 +118,13 @@
               "name": "Harry Hanson",
               "title": "Craft / Repairs / ILES PLL",
               "phone": "+1 (630) 561-5231",
-              "email": "harry.hanson@ge.com"
+              "email": "harry.hanson@gevernova.com"
             },
             {
               "name": "Greg Walker",
               "title": "Aeroderivative PLL",
               "phone": "+1 (936) 520-0397",
-              "email": "GregoryD.Walker@ge.com"
+              "email": "GregoryD.Walker@gevernova.com"
             },
             {
               "name": "Linda Nelson",
@@ -141,19 +141,19 @@
               "name": "Andrew Ruch",
               "title": "Global Logistics Leader",
               "phone": "+1 (281) 229-5417",
-              "email": "Andrew.Ruch@ge.com"
+              "email": "Andrew.Ruch@gevernova.com"
             },
             {
               "name": "Maria Medina",
               "title": "OE Project Manager",
               "phone": "+1 (713) 597-1935",
-              "email": "maria.medina@ge.com"
+              "email": "maria.medina@gevernova.com"
             },
             {
               "name": "Marisol Guidry",
               "title": "Training Coordinator",
               "phone": "+1 (832) 998-4104",
-              "email": "Marisol.Guidry@ge.com"
+              "email": "Marisol.Guidry@gevernova.com"
             }
           ]
         },
@@ -161,16 +161,16 @@
           "groupLabel": "FACILITY & EHS",
           "contacts": [
             {
-              "name": "Lizlee Galley",
+              "name": "Lizlee Arnold",
               "title": "EHS Manager",
               "phone": "+1 (346) 324-1774",
-              "email": "Lizlee.galley1@ge.com"
+              "email": "Lizlee.galley1@gevernova.com"
             },
             {
               "name": "Steve Urban",
               "title": "Facilities",
               "phone": "+1 (862) 210-5487",
-              "email": "stephen.urban@ge.com"
+              "email": "stephen.urban@gevernova.com"
             }
           ]
         }
@@ -211,7 +211,7 @@
               "floor": "Floor 2",
               "rooms": [
                 "Babbage Training Room — 1224",
-                "Turning Training Room — 1225",
+                "Turing Training Room — 1225",
                 "Tesla Training Room — 1226",
                 "Brown Training Room — 1227",
                 "Boveri Training Room — 1230",
@@ -494,7 +494,7 @@
             {
               "label": "MyLearning Portal",
               "desc": "GE Vernova LMS — courses, completions, and transcripts",
-              "url": "https://mylearning.gevernova.com"
+              "url": "https://gevernova.sumtotal.host/"
             }
           ]
         },
@@ -539,8 +539,8 @@
   "addendum": {
     "meta": {
       "title": "Borrowed Instructor Addendum",
-      "version": "4.0",
-      "updated": "June 2026",
+      "version": "4.1",
+      "updated": "November 2026",
       "audience": "Borrowed Instructors only — not for general distribution"
     },
     "hero": {
@@ -632,20 +632,20 @@
         {
           "issue": "Facility",
           "description": "HVAC, projectors, lighting, elevators, internet",
-          "internal_fe": "Steve Urban / Yegor Spencer / Boyce Hernandez",
-          "internal_oss": "Steve Urban / Yegor Spencer / Boyce Hernandez",
-          "internal_craft": "Steve Urban / Yegor Spencer / Boyce Hernandez",
-          "customer_oe": "Steve Urban / Yegor Spencer / Boyce Hernandez",
-          "customer_ss": "Steve Urban / Yegor Spencer / Boyce Hernandez"
+          "internal_fe": "Steve Urban / Boyce Hernandez",
+          "internal_oss": "Steve Urban / Boyce Hernandez",
+          "internal_craft": "Steve Urban / Boyce Hernandez",
+          "customer_oe": "Steve Urban / Boyce Hernandez",
+          "customer_ss": "Steve Urban / Boyce Hernandez"
         },
         {
           "issue": "EHS",
           "description": "Safety incidents, near-misses, environmental",
-          "internal_fe": "Lizlee Galley / PLL",
-          "internal_oss": "Lizlee Galley / PLL",
-          "internal_craft": "Lizlee Galley / PLL",
-          "customer_oe": "Lizlee Galley / PLL",
-          "customer_ss": "Lizlee Galley / PLL"
+          "internal_fe": "Lizlee Arnold / PLL",
+          "internal_oss": "Lizlee Arnold / PLL",
+          "internal_craft": "Lizlee Arnold / PLL",
+          "customer_oe": "Lizlee Arnold / PLL",
+          "customer_ss": "Lizlee Arnold / PLL"
         }
       ]
     },
@@ -657,7 +657,7 @@
           "contacts": [
             {
               "name": "Jim Rosen",
-              "title": "Training Delivery Manager",
+              "title": "Global Training Delivery Manager",
               "phone": "+1 (832) 714-2496",
               "email": "jim.rosen@gevernova.com"
             }
@@ -670,13 +670,13 @@
               "name": "Sherif Khalifa",
               "title": "Gas Turbine PLL",
               "phone": "+1 (281) 387-4979",
-              "email": "Sherif.Khalifa@ge.com"
+              "email": "Sherif.Khalifa@gevernova.com"
             },
             {
               "name": "Pablo Schibli",
               "title": "Steam Turbine PLL",
               "phone": "+41 (79) 878-7173",
-              "email": "pablo.schibli@ge.com"
+              "email": "pablo.schibli@gevernova.com"
             },
             {
               "name": "Ben Smith",
@@ -694,13 +694,13 @@
               "name": "Harry Hanson",
               "title": "Craft / Repairs / ILES PLL",
               "phone": "+1 (630) 561-5231",
-              "email": "harry.hanson@ge.com"
+              "email": "harry.hanson@gevernova.com"
             },
             {
               "name": "Greg Walker",
               "title": "Aeroderivative PLL",
               "phone": "+1 (936) 520-0397",
-              "email": "GregoryD.Walker@ge.com"
+              "email": "GregoryD.Walker@gevernova.com"
             },
             {
               "name": "Linda Nelson",
@@ -717,19 +717,19 @@
               "name": "Andrew Ruch",
               "title": "Global Logistics Leader",
               "phone": "+1 (281) 229-5417",
-              "email": "Andrew.Ruch@ge.com"
+              "email": "Andrew.Ruch@gevernova.com"
             },
             {
               "name": "Maria Medina",
               "title": "OE Project Manager",
               "phone": "+1 (713) 597-1935",
-              "email": "maria.medina@ge.com"
+              "email": "maria.medina@gevernova.com"
             },
             {
               "name": "Marisol Guidry",
               "title": "Training Coordinator",
               "phone": "+1 (832) 998-4104",
-              "email": "Marisol.Guidry@ge.com"
+              "email": "Marisol.Guidry@gevernova.com"
             }
           ]
         },
@@ -737,22 +737,22 @@
           "groupLabel": "FACILITY & EHS",
           "contacts": [
             {
-              "name": "Lizlee Galley",
+              "name": "Lizlee Arnold",
               "title": "EHS Manager",
               "phone": "+1 (346) 324-1774",
-              "email": "Lizlee.galley1@ge.com"
+              "email": "Lizlee.galley1@gevernova.com"
             },
             {
               "name": "Steve Urban",
               "title": "Facilities",
               "phone": "+1 (862) 210-5487",
-              "email": "stephen.urban@ge.com"
+              "email": "stephen.urban@gevernova.com"
             },
             {
               "name": "Boyce Hernandez",
               "title": "Facilities",
               "phone": "+1 (832) 339-3500",
-              "email": ""
+              "email": "Boyce.Hernandez@gevernova.com"
             }
           ]
         }
@@ -844,7 +844,7 @@
             {
               "label": "MyLearning Portal",
               "desc": "GE Vernova LMS — courses, completions, and transcripts",
-              "url": "https://mylearning.gevernova.com"
+              "url": "https://gevernova.sumtotal.host/"
             },
             {
               "label": "ATLAS — Attendance & Evaluations",
